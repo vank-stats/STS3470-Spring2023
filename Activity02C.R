@@ -71,3 +71,30 @@ t.test(diff)
 # 95% CI --> (0.70, 2.46)
 # Interval interpretation: We are 95% confident that the population mean sleep
 #   increase is between 0.7 and 2.46 hours more for drug 2 than for drug 1.
+
+
+# 11
+
+# Display first row of sleep data
+sleep[1, ]
+
+# Display first column of sleep data
+sleep[, 1]
+
+# Check if sleep is a vector (it is not)
+is.vector(sleep)
+
+# Check if the first column of sleep is a vector (it is)
+is.vector(sleep[, 1])
+
+# Get information about the structure of the sleep data frame
+#   It's a data frame with three variables and 20 observations
+str(sleep)
+
+# Get information about the structure of the first row of the sleep data frame
+#   It's a data frame with three variables and only 1 observation
+str(sleep[1, ])
+
+# Get information about the structure of the first column of the sleep data
+#   It's no longer a data frame - It's a numeric vector with 20 values
+str(sleep[, 1])

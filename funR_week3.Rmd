@@ -1,0 +1,93 @@
+---
+title: "An Introduction to RMarkdown"
+author: 'Name: Put your name here'
+date: "Tuesday, February 14, 2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# R Markdown
+
+This is an R Markdown document. R Markdown documents let you combine text, code, and output into a single document. You can add lots of other formatting touches as well. These documents can be outputted as HTML, pdf, or Word documents. To learn more, see the [official R Markdown page](https://rmarkdown.rstudio.com/lesson-1.html) or this [free online book](https://bookdown.org/yihui/rmarkdown/).
+
+
+## Code Chunks
+
+Code chunks are put between two sets of three tick marks (with a note in curly brackets about what type of code it is). When you *knit* a document, it runs all of the code and produces a document including text, code, and output.
+
+Replace the line starting with **mystery** with a line that reads the mystery dataset into R. To do this, you should have the .csv file in the same folder as your 
+
+```{r cars}
+library(readr)
+mystery <- data.frame(t = NA, x = NA, y = NA, message = NA)
+```
+
+You can run individual code chunks using the green triangle button or run everything at once using the Knit button.
+
+
+### Output
+
+So far our code hasn't produced any output. What about when we run the code below?
+
+```{r}
+head(mystery, n = 5)
+summary(mystery)
+```
+
+It's hard to tell what's going on in our data. Let's make a graph.
+
+
+### Graphs
+
+We haven't learned how to create graphs yet in class, but I've added some code below that produces one. So far it's not showing up in the document though. That's because I used the `eval = FALSE` option in the curly brackets to tell R not to run this code. Try changing it to say `eval = TRUE`.
+
+
+```{r, eval = FALSE}
+plot(mystery$x, mystery$y, type = 'l', col = 'red', lwd = 5)
+text(0, 0, paste0(na.omit(mystery$message), collapse = ""), 
+     col = "white", cex = 1.5)
+```
+
+Try changing `eval = TRUE` to `echo = FALSE`. Then knit the document. How does the output change?
+
+`echo = FALSE` makes it so... **Put your answer here**
+
+`eval = FALSE` makes it so... **Answer this too**
+
+---
+
+# Other options
+
+There is a lot you can do with R Markdown. Answer some of the following questions:
+
+1. How did I bold text above? How did I italicize text?
+
+  - To bold...
+  - To italicize...
+
+
+<br>
+
+
+2. What happens when we put one or more `#` symbols before text (not code) in our document?
+
+**Answer**: 
+
+
+<br>
+
+
+3. How did I add a link to my document? Try creating one below.
+
+
+
+<br>
+
+
+4. Try checking out the [R Markdown Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf?_ga=2.131025807.1002863843.1676231540-532515614.1670352209) and finding some other things you can do in a markdown document. Test them out below.
+
+
+

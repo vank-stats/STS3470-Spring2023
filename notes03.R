@@ -90,3 +90,30 @@ chick2
 library(dplyr)
 chick3 <- filter(ChickWeight, Chick == 3)
 chick3
+
+
+
+
+
+# Piping example
+
+# No piping
+library(dplyr)
+diet1 <- filter(ChickWeight, Diet == 1)
+diet1 <- group_by(diet1, Chick)
+diet_summary <- summarize(diet1, MaxWt = max(weight))
+diet_summary <- arrange(diet_summary, desc(MaxWt))
+head(diet_summary, 3)
+
+# Using the piping operator (%>%)
+
+chick_summary <- ChickWeight %>%
+  filter(Diet == 1) %>%
+  group_by(Chick) %>%
+  summarize(MaxWt = max(weight)) %>%
+  arrange(desc(MaxWt)) %>%
+  head(3)
+
+# Another non-piping approach (not recommended)
+
+head(arrange(summarize(group_by(filter(ChickWeight, Diet == 1), Chick), MaxWt = max(weight)), desc(MaxWt)), 3)

@@ -1,0 +1,1312 @@
+Season,Week,Date,Day of Week,Visiting Team,Home Team,Visiting Team Points,Home Team Points,Visiting Team Yards,Home Team Yards,Visiting Team Turnovers,Home Team Turnovers,Attendance,Fans Present?,Time of Game
+2021,1,9/9/21,Thu,Dallas Cowboys,Tampa Bay Buccaneers,29,31,451,431,1,4,65566,TRUE,20:20:00
+2021,1,9/12/21,Sun,Philadelphia Eagles,Atlanta Falcons,32,6,434,260,0,0,68633,TRUE,13:00:00
+2021,1,9/12/21,Sun,Pittsburgh Steelers,Buffalo Bills,23,16,252,371,0,1,69787,TRUE,13:00:00
+2021,1,9/12/21,Sun,New York Jets,Carolina Panthers,14,19,252,381,1,1,70211,TRUE,13:00:00
+2021,1,9/12/21,Sun,Minnesota Vikings,Cincinnati Bengals,24,27,403,366,1,0,56525,TRUE,13:00:00
+2021,1,9/12/21,Sun,Seattle Seahawks,Indianapolis Colts,28,16,381,336,1,1,63347,TRUE,13:00:00
+2021,1,9/12/21,Sun,Arizona Cardinals,Tennessee Titans,38,13,416,248,1,3,67216,TRUE,13:00:00
+2021,1,9/12/21,Sun,San Francisco 49ers,Detroit Lions,41,33,442,430,2,1,59374,TRUE,13:00:00
+2021,1,9/12/21,Sun,Jacksonville Jaguars,Houston Texans,21,37,395,449,3,0,68105,TRUE,13:00:00
+2021,1,9/12/21,Sun,Los Angeles Chargers,Washington Football Team,20,16,424,259,2,1,52753,TRUE,13:00:00
+2021,1,9/12/21,Sun,Cleveland Browns,Kansas City Chiefs,29,33,457,397,2,0,72973,TRUE,16:25:00
+2021,1,9/12/21,Sun,Denver Broncos,New York Giants,27,13,420,314,1,1,74119,TRUE,16:25:00
+2021,1,9/12/21,Sun,Green Bay Packers,New Orleans Saints,3,38,229,322,3,0,35242,TRUE,16:25:00
+2021,1,9/12/21,Sun,Miami Dolphins,New England Patriots,17,16,259,393,1,2,65878,TRUE,16:25:00
+2021,1,9/12/21,Sun,Chicago Bears,Los Angeles Rams,14,34,322,386,2,0,70445,TRUE,20:20:00
+2021,1,9/13/21,Mon,Baltimore Ravens,Las Vegas Raiders,27,33,406,491,2,1,61756,TRUE,20:15:00
+2021,2,9/16/21,Thu,New York Giants,Washington Football Team,29,30,391,407,0,1,50118,TRUE,20:20:00
+2021,2,9/19/21,Sun,Buffalo Bills,Miami Dolphins,35,0,314,216,2,3,65040,TRUE,13:00:00
+2021,2,9/19/21,Sun,New Orleans Saints,Carolina Panthers,7,26,128,383,2,1,70675,TRUE,13:00:00
+2021,2,9/19/21,Sun,Cincinnati Bengals,Chicago Bears,17,20,248,206,4,1,60840,TRUE,13:00:00
+2021,2,9/19/21,Sun,Houston Texans,Cleveland Browns,21,31,302,355,2,2,67431,TRUE,13:00:00
+2021,2,9/19/21,Sun,Los Angeles Rams,Indianapolis Colts,27,24,371,354,2,2,63076,TRUE,13:00:00
+2021,2,9/19/21,Sun,Denver Broncos,Jacksonville Jaguars,23,13,398,189,0,2,58461,TRUE,13:00:00
+2021,2,9/19/21,Sun,New England Patriots,New York Jets,25,6,260,336,0,4,75626,TRUE,13:00:00
+2021,2,9/19/21,Sun,San Francisco 49ers,Philadelphia Eagles,17,11,306,328,0,0,69796,TRUE,13:00:00
+2021,2,9/19/21,Sun,Las Vegas Raiders,Pittsburgh Steelers,26,17,425,331,0,1,63707,TRUE,13:00:00
+2021,2,9/19/21,Sun,Atlanta Falcons,Tampa Bay Buccaneers,25,48,348,341,3,1,63694,TRUE,16:05:00
+2021,2,9/19/21,Sun,Minnesota Vikings,Arizona Cardinals,33,34,419,474,0,2,60115,TRUE,16:05:00
+2021,2,9/19/21,Sun,Dallas Cowboys,Los Angeles Chargers,20,17,419,408,1,2,70240,TRUE,16:25:00
+2021,2,9/19/21,Sun,Tennessee Titans,Seattle Seahawks,33,30,532,397,1,0,68585,TRUE,16:25:00
+2021,2,9/19/21,Sun,Kansas City Chiefs,Baltimore Ravens,35,36,405,481,2,2,70417,TRUE,20:20:00
+2021,2,9/20/21,Mon,Detroit Lions,Green Bay Packers,17,35,344,323,2,0,77240,TRUE,20:15:00
+2021,3,9/23/21,Thu,Carolina Panthers,Houston Texans,24,9,407,193,0,0,68320,TRUE,20:20:00
+2021,3,9/26/21,Sun,Atlanta Falcons,New York Giants,17,14,296,346,1,1,75307,TRUE,13:00:00
+2021,3,9/26/21,Sun,Washington Football Team,Buffalo Bills,21,43,290,481,3,0,68434,TRUE,13:00:00
+2021,3,9/26/21,Sun,Chicago Bears,Cleveland Browns,6,26,47,418,0,0,67431,TRUE,13:00:00
+2021,3,9/26/21,Sun,Cincinnati Bengals,Pittsburgh Steelers,24,10,268,342,1,2,58076,TRUE,13:00:00
+2021,3,9/26/21,Sun,Indianapolis Colts,Tennessee Titans,16,25,265,368,0,3,67914,TRUE,13:00:00
+2021,3,9/26/21,Sun,Arizona Cardinals,Jacksonville Jaguars,31,19,407,361,1,4,58012,TRUE,13:00:00
+2021,3,9/26/21,Sun,Baltimore Ravens,Detroit Lions,19,17,387,285,1,0,50788,TRUE,13:00:00
+2021,3,9/26/21,Sun,Los Angeles Chargers,Kansas City Chiefs,30,24,352,437,0,4,72980,TRUE,13:00:00
+2021,3,9/26/21,Sun,New Orleans Saints,New England Patriots,28,13,252,300,0,3,65878,TRUE,13:00:00
+2021,3,9/26/21,Sun,New York Jets,Denver Broncos,0,26,162,343,2,1,75882,TRUE,16:05:00
+2021,3,9/26/21,Sun,Miami Dolphins,Las Vegas Raiders,28,31,330,497,0,1,59311,TRUE,16:05:00
+2021,3,9/26/21,Sun,Seattle Seahawks,Minnesota Vikings,17,30,389,453,0,0,66729,TRUE,16:25:00
+2021,3,9/26/21,Sun,Tampa Bay Buccaneers,Los Angeles Rams,24,34,446,407,0,0,73205,TRUE,16:25:00
+2021,3,9/26/21,Sun,Green Bay Packers,San Francisco 49ers,30,28,353,298,0,2,69853,TRUE,20:20:00
+2021,3,9/27/21,Mon,Philadelphia Eagles,Dallas Cowboys,21,41,367,380,2,1,93267,TRUE,20:15:00
+2021,4,9/30/21,Thu,Jacksonville Jaguars,Cincinnati Bengals,21,24,341,420,0,0,63198,TRUE,20:20:00
+2021,4,10/3/21,Sun,Washington Football Team,Atlanta Falcons,34,30,412,374,0,0,68333,TRUE,13:00:00
+2021,4,10/3/21,Sun,Houston Texans,Buffalo Bills,0,40,109,450,5,1,68087,TRUE,13:00:00
+2021,4,10/3/21,Sun,Carolina Panthers,Dallas Cowboys,28,36,379,433,2,0,93262,TRUE,13:00:00
+2021,4,10/3/21,Sun,Detroit Lions,Chicago Bears,14,24,351,373,2,1,61468,TRUE,13:00:00
+2021,4,10/3/21,Sun,Cleveland Browns,Minnesota Vikings,14,7,327,255,0,1,66703,TRUE,13:00:00
+2021,4,10/3/21,Sun,Indianapolis Colts,Miami Dolphins,27,17,349,203,1,2,64571,TRUE,13:00:00
+2021,4,10/3/21,Sun,Kansas City Chiefs,Philadelphia Eagles,42,30,471,461,1,0,69796,TRUE,13:00:00
+2021,4,10/3/21,Sun,New York Giants,New Orleans Saints,27,21,485,405,1,1,69170,TRUE,13:00:00
+2021,4,10/3/21,Sun,Tennessee Titans,New York Jets,24,27,430,355,0,1,70232,TRUE,13:00:00
+2021,4,10/3/21,Sun,Arizona Cardinals,Los Angeles Rams,37,20,465,401,0,2,70003,TRUE,16:05:00
+2021,4,10/3/21,Sun,Seattle Seahawks,San Francisco 49ers,28,21,234,457,0,2,68912,TRUE,16:05:00
+2021,4,10/3/21,Sun,Baltimore Ravens,Denver Broncos,23,7,406,254,0,1,76490,TRUE,16:25:00
+2021,4,10/3/21,Sun,Pittsburgh Steelers,Green Bay Packers,17,27,282,367,2,1,78281,TRUE,16:25:00
+2021,4,10/3/21,Sun,Tampa Bay Buccaneers,New England Patriots,19,17,381,294,0,2,65878,TRUE,20:20:00
+2021,4,10/4/21,Mon,Las Vegas Raiders,Los Angeles Chargers,14,28,213,380,1,0,70240,TRUE,20:15:00
+2021,5,10/7/21,Thu,Los Angeles Rams,Seattle Seahawks,26,17,476,354,1,2,68747,TRUE,20:20:00
+2021,5,10/10/21,Sun,New York Jets,Atlanta Falcons,20,27,230,450,1,2,60589,TRUE,9:30:00
+2021,5,10/10/21,Sun,Philadelphia Eagles,Carolina Panthers,21,18,273,267,2,3,72545,TRUE,13:00:00
+2021,5,10/10/21,Sun,Green Bay Packers,Cincinnati Bengals,25,22,466,367,1,2,64195,TRUE,13:00:00
+2021,5,10/10/21,Sun,Denver Broncos,Pittsburgh Steelers,19,27,374,391,1,1,59841,TRUE,13:00:00
+2021,5,10/10/21,Sun,Detroit Lions,Minnesota Vikings,17,19,288,384,2,2,66538,TRUE,13:00:00
+2021,5,10/10/21,Sun,New England Patriots,Houston Texans,25,22,352,360,2,1,68450,TRUE,13:00:00
+2021,5,10/10/21,Sun,Tennessee Titans,Jacksonville Jaguars,37,19,368,454,0,2,58282,TRUE,13:00:00
+2021,5,10/10/21,Sun,Miami Dolphins,Tampa Bay Buccaneers,17,45,301,558,2,0,65570,TRUE,13:00:00
+2021,5,10/10/21,Sun,New Orleans Saints,Washington Football Team,33,22,369,373,2,2,50137,TRUE,13:00:00
+2021,5,10/10/21,Sun,Chicago Bears,Las Vegas Raiders,20,9,252,259,0,1,59122,TRUE,16:05:00
+2021,5,10/10/21,Sun,Cleveland Browns,Los Angeles Chargers,42,47,531,493,0,1,70240,TRUE,16:05:00
+2021,5,10/10/21,Sun,San Francisco 49ers,Arizona Cardinals,10,17,338,304,1,1,62716,TRUE,16:25:00
+2021,5,10/10/21,Sun,New York Giants,Dallas Cowboys,20,44,367,515,2,2,93476,TRUE,16:25:00
+2021,5,10/10/21,Sun,Buffalo Bills,Kansas City Chiefs,38,20,436,392,0,4,73389,TRUE,20:20:00
+2021,5,10/11/21,Mon,Indianapolis Colts,Baltimore Ravens,25,31,513,523,1,1,70510,TRUE,20:15:00
+2021,6,10/14/21,Thu,Tampa Bay Buccaneers,Philadelphia Eagles,28,22,399,213,1,1,69796,TRUE,20:20:00
+2021,6,10/17/21,Sun,Miami Dolphins,Jacksonville Jaguars,20,23,431,396,1,1,60784,TRUE,9:30:00
+2021,6,10/17/21,Sun,Minnesota Vikings,Carolina Panthers,34,28,571,306,1,3,72104,TRUE,13:00:00
+2021,6,10/17/21,Sun,Green Bay Packers,Chicago Bears,24,14,323,277,0,1,62332,TRUE,13:00:00
+2021,6,10/17/21,Sun,Cincinnati Bengals,Detroit Lions,34,11,398,228,1,1,50831,TRUE,13:00:00
+2021,6,10/17/21,Sun,Houston Texans,Indianapolis Colts,3,31,353,388,3,0,57947,TRUE,13:00:00
+2021,6,10/17/21,Sun,Kansas City Chiefs,Washington Football Team,31,13,499,276,3,2,51322,TRUE,13:00:00
+2021,6,10/17/21,Sun,Los Angeles Rams,New York Giants,38,11,365,261,2,4,73920,TRUE,13:00:00
+2021,6,10/17/21,Sun,Los Angeles Chargers,Baltimore Ravens,6,34,208,327,1,2,70704,TRUE,13:00:00
+2021,6,10/17/21,Sun,Arizona Cardinals,Cleveland Browns,37,14,352,290,0,3,67431,TRUE,16:05:00
+2021,6,10/17/21,Sun,Dallas Cowboys,New England Patriots,35,29,567,335,2,2,65878,TRUE,16:25:00
+2021,6,10/17/21,Sun,Las Vegas Raiders,Denver Broncos,34,24,426,421,0,4,76854,TRUE,16:25:00
+2021,6,10/17/21,Sun,Seattle Seahawks,Pittsburgh Steelers,20,23,309,345,1,1,60821,TRUE,20:20:00
+2021,6,10/18/21,Mon,Buffalo Bills,Tennessee Titans,31,34,417,362,1,1,69419,TRUE,20:15:00
+2021,7,10/21/21,Thu,Denver Broncos,Cleveland Browns,14,17,223,376,1,0,67431,TRUE,20:20:00
+2021,7,10/24/21,Sun,Atlanta Falcons,Miami Dolphins,30,28,397,413,2,2,62739,TRUE,13:00:00
+2021,7,10/24/21,Sun,Carolina Panthers,New York Giants,3,25,173,302,1,0,71889,TRUE,13:00:00
+2021,7,10/24/21,Sun,Cincinnati Bengals,Baltimore Ravens,41,17,520,393,1,0,70659,TRUE,13:00:00
+2021,7,10/24/21,Sun,Washington Football Team,Green Bay Packers,10,24,430,304,2,1,78219,TRUE,13:00:00
+2021,7,10/24/21,Sun,Kansas City Chiefs,Tennessee Titans,3,27,334,369,3,1,69484,TRUE,13:00:00
+2021,7,10/24/21,Sun,New York Jets,New England Patriots,13,54,299,551,3,0,65878,TRUE,13:00:00
+2021,7,10/24/21,Sun,Detroit Lions,Los Angeles Rams,19,28,415,374,2,0,70540,TRUE,16:05:00
+2021,7,10/24/21,Sun,Philadelphia Eagles,Las Vegas Raiders,22,33,358,442,2,1,62000,TRUE,16:05:00
+2021,7,10/24/21,Sun,Chicago Bears,Tampa Bay Buccaneers,3,38,311,408,5,1,65635,TRUE,16:25:00
+2021,7,10/24/21,Sun,Houston Texans,Arizona Cardinals,5,31,160,397,1,1,60297,TRUE,16:25:00
+2021,7,10/24/21,Sun,Indianapolis Colts,San Francisco 49ers,30,18,295,280,2,4,56576,TRUE,20:20:00
+2021,7,10/25/21,Mon,New Orleans Saints,Seattle Seahawks,13,10,304,219,1,0,68563,TRUE,20:15:00
+2021,8,10/28/21,Thu,Green Bay Packers,Arizona Cardinals,24,21,335,334,0,3,63696,TRUE,20:20:00
+2021,8,10/31/21,Sun,Carolina Panthers,Atlanta Falcons,19,13,332,213,1,2,68583,TRUE,13:00:00
+2021,8,10/31/21,Sun,Miami Dolphins,Buffalo Bills,11,26,262,351,2,0,69355,TRUE,13:00:00
+2021,8,10/31/21,Sun,San Francisco 49ers,Chicago Bears,33,22,467,324,0,1,60877,TRUE,13:00:00
+2021,8,10/31/21,Sun,Cincinnati Bengals,New York Jets,31,34,318,511,1,3,67503,TRUE,13:00:00
+2021,8,10/31/21,Sun,Pittsburgh Steelers,Cleveland Browns,15,10,370,306,0,1,67431,TRUE,13:00:00
+2021,8,10/31/21,Sun,Tennessee Titans,Indianapolis Colts,34,31,340,307,2,3,59175,TRUE,13:00:00
+2021,8,10/31/21,Sun,Philadelphia Eagles,Detroit Lions,44,6,350,228,0,1,47192,TRUE,13:00:00
+2021,8,10/31/21,Sun,Los Angeles Rams,Houston Texans,38,22,467,323,0,1,66013,TRUE,13:00:00
+2021,8,10/31/21,Sun,Jacksonville Jaguars,Seattle Seahawks,7,31,309,229,1,0,67243,TRUE,16:05:00
+2021,8,10/31/21,Sun,New England Patriots,Los Angeles Chargers,27,24,352,369,1,2,70240,TRUE,16:05:00
+2021,8,10/31/21,Sun,Tampa Bay Buccaneers,New Orleans Saints,27,36,421,361,3,0,69170,TRUE,16:25:00
+2021,8,10/31/21,Sun,Washington Football Team,Denver Broncos,10,17,342,273,2,1,75973,TRUE,16:25:00
+2021,8,10/31/21,Sun,Dallas Cowboys,Minnesota Vikings,20,16,419,278,2,0,66633,TRUE,20:20:00
+2021,8,11/1/21,Mon,New York Giants,Kansas City Chiefs,17,20,300,368,1,2,72898,TRUE,20:15:00
+2021,9,11/4/21,Thu,New York Jets,Indianapolis Colts,30,45,486,532,2,0,59593,TRUE,20:20:00
+2021,9,11/7/21,Sun,Atlanta Falcons,New Orleans Saints,27,25,366,376,0,1,69170,TRUE,13:00:00
+2021,9,11/7/21,Sun,Buffalo Bills,Jacksonville Jaguars,6,9,301,218,3,1,63110,TRUE,13:00:00
+2021,9,11/7/21,Sun,Denver Broncos,Dallas Cowboys,30,16,407,290,0,2,93503,TRUE,13:00:00
+2021,9,11/7/21,Sun,Minnesota Vikings,Baltimore Ravens,31,34,318,500,0,2,70599,TRUE,13:00:00
+2021,9,11/7/21,Sun,New England Patriots,Carolina Panthers,24,6,273,240,2,3,72203,TRUE,13:00:00
+2021,9,11/7/21,Sun,Cleveland Browns,Cincinnati Bengals,41,16,361,348,0,3,65451,TRUE,13:00:00
+2021,9,11/7/21,Sun,Houston Texans,Miami Dolphins,9,17,272,262,4,5,60232,TRUE,13:00:00
+2021,9,11/7/21,Sun,Las Vegas Raiders,New York Giants,16,23,403,247,3,1,74512,TRUE,13:00:00
+2021,9,11/7/21,Sun,Los Angeles Chargers,Philadelphia Eagles,27,24,445,331,0,0,69796,TRUE,16:05:00
+2021,9,11/7/21,Sun,Arizona Cardinals,San Francisco 49ers,31,17,437,337,0,3,59012,TRUE,16:25:00
+2021,9,11/7/21,Sun,Green Bay Packers,Kansas City Chiefs,7,13,301,237,2,0,73476,TRUE,16:25:00
+2021,9,11/7/21,Sun,Tennessee Titans,Los Angeles Rams,28,16,194,347,1,2,71785,TRUE,20:20:00
+2021,9,11/8/21,Mon,Chicago Bears,Pittsburgh Steelers,27,29,414,280,2,1,60788,TRUE,20:15:00
+2021,10,11/11/21,Thu,Baltimore Ravens,Miami Dolphins,10,22,304,350,2,0,65948,TRUE,20:20:00
+2021,10,11/14/21,Sun,Atlanta Falcons,Dallas Cowboys,3,43,214,431,3,1,93436,TRUE,13:00:00
+2021,10,11/14/21,Sun,Buffalo Bills,New York Jets,45,17,489,366,2,5,77625,TRUE,13:00:00
+2021,10,11/14/21,Sun,Detroit Lions,Pittsburgh Steelers,16,16,306,387,0,3,58716,TRUE,13:00:00
+2021,10,11/14/21,Sun,New Orleans Saints,Tennessee Titans,21,23,373,264,1,0,69414,TRUE,13:00:00
+2021,10,11/14/21,Sun,Tampa Bay Buccaneers,Washington Football Team,19,29,273,320,2,1,52128,TRUE,13:00:00
+2021,10,11/14/21,Sun,Cleveland Browns,New England Patriots,7,45,217,452,1,0,65878,TRUE,13:00:00
+2021,10,11/14/21,Sun,Jacksonville Jaguars,Indianapolis Colts,17,23,331,295,1,0,60622,TRUE,13:00:00
+2021,10,11/14/21,Sun,Minnesota Vikings,Los Angeles Chargers,27,20,381,253,1,1,70240,TRUE,16:05:00
+2021,10,11/14/21,Sun,Carolina Panthers,Arizona Cardinals,34,10,341,169,2,2,62400,TRUE,16:05:00
+2021,10,11/14/21,Sun,Philadelphia Eagles,Denver Broncos,30,13,386,308,1,1,76766,TRUE,16:25:00
+2021,10,11/14/21,Sun,Seattle Seahawks,Green Bay Packers,0,17,208,393,2,1,78235,TRUE,16:25:00
+2021,10,11/14/21,Sun,Kansas City Chiefs,Las Vegas Raiders,41,14,516,299,1,2,62125,TRUE,20:20:00
+2021,10,11/15/21,Mon,Los Angeles Rams,San Francisco 49ers,10,31,278,335,2,0,64256,TRUE,20:15:00
+2021,11,11/18/21,Thu,New England Patriots,Atlanta Falcons,25,0,308,165,1,4,68286,TRUE,20:20:00
+2021,11,11/21/21,Sun,Indianapolis Colts,Buffalo Bills,41,15,370,311,0,4,69866,TRUE,13:00:00
+2021,11,11/21/21,Sun,Baltimore Ravens,Chicago Bears,16,13,299,353,1,1,60679,TRUE,13:00:00
+2021,11,11/21/21,Sun,Houston Texans,Tennessee Titans,22,13,190,420,0,5,67395,TRUE,13:00:00
+2021,11,11/21/21,Sun,San Francisco 49ers,Jacksonville Jaguars,30,10,333,200,0,2,60268,TRUE,13:00:00
+2021,11,11/21/21,Sun,New Orleans Saints,Philadelphia Eagles,29,40,323,380,3,1,69796,TRUE,13:00:00
+2021,11,11/21/21,Sun,Washington Football Team,Carolina Panthers,27,21,369,297,1,0,73350,TRUE,13:00:00
+2021,11,11/21/21,Sun,Detroit Lions,Cleveland Browns,10,13,245,349,2,2,67431,TRUE,13:00:00
+2021,11,11/21/21,Sun,Green Bay Packers,Minnesota Vikings,31,34,467,408,0,0,66959,TRUE,13:00:00
+2021,11,11/21/21,Sun,Miami Dolphins,New York Jets,24,17,388,380,1,1,72303,TRUE,13:00:00
+2021,11,11/21/21,Sun,Cincinnati Bengals,Las Vegas Raiders,32,13,288,278,1,2,61712,TRUE,16:05:00
+2021,11,11/21/21,Sun,Dallas Cowboys,Kansas City Chiefs,9,19,276,370,3,2,73494,TRUE,16:25:00
+2021,11,11/21/21,Sun,Arizona Cardinals,Seattle Seahawks,23,13,413,266,0,0,68833,TRUE,16:25:00
+2021,11,11/21/21,Sun,Pittsburgh Steelers,Los Angeles Chargers,37,41,300,533,0,1,70240,TRUE,20:20:00
+2021,11,11/22/21,Mon,New York Giants,Tampa Bay Buccaneers,10,30,215,402,3,1,65643,TRUE,20:15:00
+2021,12,11/25/21,Thu,Chicago Bears,Detroit Lions,16,14,378,239,1,1,56355,TRUE,12:30:00
+2021,12,11/25/21,Thu,Las Vegas Raiders,Dallas Cowboys,36,33,509,437,0,0,93483,TRUE,16:30:00
+2021,12,11/25/21,Thu,Buffalo Bills,New Orleans Saints,31,6,361,190,2,1,69170,TRUE,20:20:00
+2021,12,11/28/21,Sun,Atlanta Falcons,Jacksonville Jaguars,21,14,332,357,1,2,60031,TRUE,13:00:00
+2021,12,11/28/21,Sun,Pittsburgh Steelers,Cincinnati Bengals,10,41,301,370,3,1,63238,TRUE,13:00:00
+2021,12,11/28/21,Sun,New York Jets,Houston Texans,21,14,266,202,1,1,65120,TRUE,13:00:00
+2021,12,11/28/21,Sun,Philadelphia Eagles,New York Giants,7,13,332,264,4,0,73969,TRUE,13:00:00
+2021,12,11/28/21,Sun,Carolina Panthers,Miami Dolphins,10,33,198,315,3,1,62389,TRUE,13:00:00
+2021,12,11/28/21,Sun,Tampa Bay Buccaneers,Indianapolis Colts,38,31,359,392,2,5,66140,TRUE,13:00:00
+2021,12,11/28/21,Sun,Tennessee Titans,New England Patriots,13,36,355,394,4,0,65878,TRUE,13:00:00
+2021,12,11/28/21,Sun,Los Angeles Chargers,Denver Broncos,13,28,357,302,2,1,75807,TRUE,16:05:00
+2021,12,11/28/21,Sun,Minnesota Vikings,San Francisco 49ers,26,34,323,423,2,1,71493,TRUE,16:25:00
+2021,12,11/28/21,Sun,Los Angeles Rams,Green Bay Packers,28,36,353,399,3,1,77948,TRUE,16:25:00
+2021,12,11/28/21,Sun,Cleveland Browns,Baltimore Ravens,10,16,262,303,2,4,70355,TRUE,20:20:00
+2021,12,11/29/21,Mon,Seattle Seahawks,Washington Football Team,15,17,267,371,1,1,52680,TRUE,20:15:00
+2021,13,12/2/21,Thu,Dallas Cowboys,New Orleans Saints,27,17,377,405,1,4,69170,TRUE,20:20:00
+2021,13,12/5/21,Sun,Tampa Bay Buccaneers,Atlanta Falcons,30,17,425,380,1,1,69366,TRUE,13:00:00
+2021,13,12/5/21,Sun,Arizona Cardinals,Chicago Bears,33,22,257,329,0,4,60803,TRUE,13:00:00
+2021,13,12/5/21,Sun,Los Angeles Chargers,Cincinnati Bengals,41,22,363,356,3,4,51414,TRUE,13:00:00
+2021,13,12/5/21,Sun,Minnesota Vikings,Detroit Lions,27,29,426,372,1,2,45691,TRUE,13:00:00
+2021,13,12/5/21,Sun,Philadelphia Eagles,New York Jets,33,18,418,281,0,1,73311,TRUE,13:00:00
+2021,13,12/5/21,Sun,Indianapolis Colts,Houston Texans,31,0,389,141,1,2,65291,TRUE,13:00:00
+2021,13,12/5/21,Sun,New York Giants,Miami Dolphins,9,20,250,297,1,0,65898,TRUE,13:00:00
+2021,13,12/5/21,Sun,San Francisco 49ers,Seattle Seahawks,23,30,365,327,3,3,68758,TRUE,16:00:00
+2021,13,12/5/21,Sun,Washington Football Team,Las Vegas Raiders,17,15,298,310,1,0,61607,TRUE,16:05:00
+2021,13,12/5/21,Sun,Jacksonville Jaguars,Los Angeles Rams,7,37,197,418,2,0,70801,TRUE,16:25:00
+2021,13,12/5/21,Sun,Baltimore Ravens,Pittsburgh Steelers,19,20,326,321,1,0,59303,TRUE,16:25:00
+2021,13,12/5/21,Sun,Denver Broncos,Kansas City Chiefs,9,22,404,267,3,1,73185,TRUE,20:20:00
+2021,13,12/6/21,Mon,New England Patriots,Buffalo Bills,14,10,241,230,1,1,69694,TRUE,20:15:00
+2021,14,12/9/21,Thu,Pittsburgh Steelers,Minnesota Vikings,28,36,375,458,1,2,66718,TRUE,20:20:00
+2021,14,12/12/21,Sun,Atlanta Falcons,Carolina Panthers,29,21,318,334,1,3,72243,TRUE,13:00:00
+2021,14,12/12/21,Sun,San Francisco 49ers,Cincinnati Bengals,26,23,355,397,0,2,50481,TRUE,13:00:00
+2021,14,12/12/21,Sun,Baltimore Ravens,Cleveland Browns,22,24,389,290,2,1,67431,TRUE,13:00:00
+2021,14,12/12/21,Sun,Dallas Cowboys,Washington Football Team,27,20,323,224,2,4,61308,TRUE,13:00:00
+2021,14,12/12/21,Sun,Seattle Seahawks,Houston Texans,33,13,453,380,0,0,67610,TRUE,13:00:00
+2021,14,12/12/21,Sun,Jacksonville Jaguars,Tennessee Titans,0,20,192,263,4,0,67808,TRUE,13:00:00
+2021,14,12/12/21,Sun,Las Vegas Raiders,Kansas City Chiefs,9,48,290,372,5,0,73278,TRUE,13:00:00
+2021,14,12/12/21,Sun,New Orleans Saints,New York Jets,30,9,344,256,0,0,69129,TRUE,13:00:00
+2021,14,12/12/21,Sun,Detroit Lions,Denver Broncos,10,38,316,358,2,0,76211,TRUE,16:05:00
+2021,14,12/12/21,Sun,New York Giants,Los Angeles Chargers,21,37,316,423,2,0,70240,TRUE,16:05:00
+2021,14,12/12/21,Sun,Buffalo Bills,Tampa Bay Buccaneers,27,33,466,488,1,0,65655,TRUE,16:25:00
+2021,14,12/12/21,Sun,Chicago Bears,Green Bay Packers,30,45,347,439,3,0,78273,TRUE,20:20:00
+2021,14,12/13/21,Mon,Los Angeles Rams,Arizona Cardinals,30,23,356,447,0,2,63999,TRUE,20:15:00
+2021,15,12/16/21,Thu,Kansas City Chiefs,Los Angeles Chargers,34,28,496,428,2,2,70240,TRUE,20:20:00
+2021,15,12/18/21,Sat,New England Patriots,Indianapolis Colts,17,27,365,275,2,1,66391,TRUE,20:20:00
+2021,15,12/19/21,Sun,Carolina Panthers,Buffalo Bills,14,31,275,312,1,1,65398,TRUE,13:00:00
+2021,15,12/19/21,Sun,Arizona Cardinals,Detroit Lions,12,30,398,338,1,1,45211,TRUE,13:00:00
+2021,15,12/19/21,Sun,Dallas Cowboys,New York Giants,21,6,328,302,1,4,77413,TRUE,13:00:00
+2021,15,12/19/21,Sun,Green Bay Packers,Baltimore Ravens,31,30,346,354,0,0,70815,TRUE,13:00:00
+2021,15,12/19/21,Sun,Houston Texans,Jacksonville Jaguars,30,16,281,296,1,0,60252,TRUE,13:00:00
+2021,15,12/19/21,Sun,New York Jets,Miami Dolphins,24,31,228,379,1,3,66035,TRUE,13:00:00
+2021,15,12/19/21,Sun,Tennessee Titans,Pittsburgh Steelers,13,19,318,168,4,0,59521,TRUE,13:00:00
+2021,15,12/19/21,Sun,Atlanta Falcons,San Francisco 49ers,13,31,275,397,1,1,71650,TRUE,16:05:00
+2021,15,12/19/21,Sun,Cincinnati Bengals,Denver Broncos,15,10,249,292,0,1,76134,TRUE,16:05:00
+2021,15,12/19/21,Sun,New Orleans Saints,Tampa Bay Buccaneers,9,0,212,302,0,2,65744,TRUE,20:20:00
+2021,15,12/20/21,Mon,Las Vegas Raiders,Cleveland Browns,16,14,328,236,2,0,67431,TRUE,17:00:00
+2021,15,12/20/21,Mon,Minnesota Vikings,Chicago Bears,17,9,193,370,1,3,60082,TRUE,20:15:00
+2021,15,12/21/21,Tue,Washington Football Team,Philadelphia Eagles,17,27,237,519,0,2,69796,TRUE,19:00:00
+2021,15,12/21/21,Tue,Seattle Seahawks,Los Angeles Rams,10,20,214,332,1,1,71565,TRUE,19:00:00
+2021,16,12/23/21,Thu,San Francisco 49ers,Tennessee Titans,17,20,389,278,2,0,69361,TRUE,20:20:00
+2021,16,12/25/21,Sat,Cleveland Browns,Green Bay Packers,22,24,408,311,4,0,77901,TRUE,16:30:00
+2021,16,12/25/21,Sat,Indianapolis Colts,Arizona Cardinals,22,16,346,378,0,0,63900,TRUE,20:15:00
+2021,16,12/26/21,Sun,Detroit Lions,Atlanta Falcons,16,20,338,254,1,1,68638,TRUE,13:00:00
+2021,16,12/26/21,Sun,Buffalo Bills,New England Patriots,33,21,428,288,0,2,65878,TRUE,13:00:00
+2021,16,12/26/21,Sun,Tampa Bay Buccaneers,Carolina Panthers,32,6,391,273,0,1,71918,TRUE,13:00:00
+2021,16,12/26/21,Sun,Baltimore Ravens,Cincinnati Bengals,21,41,334,575,1,0,63922,TRUE,13:00:00
+2021,16,12/26/21,Sun,Los Angeles Chargers,Houston Texans,29,41,417,437,3,0,65674,TRUE,13:00:00
+2021,16,12/26/21,Sun,Jacksonville Jaguars,New York Jets,21,26,384,373,1,0,67120,TRUE,13:00:00
+2021,16,12/26/21,Sun,Los Angeles Rams,Minnesota Vikings,30,23,356,361,3,1,66708,TRUE,13:00:00
+2021,16,12/26/21,Sun,New York Giants,Philadelphia Eagles,10,34,192,324,2,0,69796,TRUE,13:00:00
+2021,16,12/26/21,Sun,Chicago Bears,Seattle Seahawks,25,24,317,331,0,0,68492,TRUE,16:05:00
+2021,16,12/26/21,Sun,Denver Broncos,Las Vegas Raiders,13,17,158,342,0,3,60972,TRUE,16:25:00
+2021,16,12/26/21,Sun,Pittsburgh Steelers,Kansas City Chiefs,10,36,303,381,3,0,73371,TRUE,16:25:00
+2021,16,12/26/21,Sun,Washington Football Team,Dallas Cowboys,14,56,257,497,2,0,93482,TRUE,20:20:00
+2021,16,12/27/21,Mon,Miami Dolphins,New Orleans Saints,20,3,259,164,1,2,69170,TRUE,20:15:00
+2021,17,1/2/22,Sun,Atlanta Falcons,Buffalo Bills,15,29,265,351,1,3,64948,TRUE,13:00:00
+2021,17,1/2/22,Sun,Carolina Panthers,New Orleans Saints,10,18,178,280,2,0,69170,TRUE,13:00:00
+2021,17,1/2/22,Sun,New York Giants,Chicago Bears,3,29,155,249,4,2,59594,TRUE,13:00:00
+2021,17,1/2/22,Sun,Kansas City Chiefs,Cincinnati Bengals,31,34,414,475,0,0,64505,TRUE,13:00:00
+2021,17,1/2/22,Sun,Las Vegas Raiders,Indianapolis Colts,23,20,326,262,2,0,65985,TRUE,13:00:00
+2021,17,1/2/22,Sun,Arizona Cardinals,Dallas Cowboys,25,22,399,301,0,1,93459,TRUE,13:00:00
+2021,17,1/2/22,Sun,Jacksonville Jaguars,New England Patriots,10,50,253,471,3,0,65878,TRUE,13:00:00
+2021,17,1/2/22,Sun,Miami Dolphins,Tennessee Titans,3,34,256,308,2,0,69091,TRUE,13:00:00
+2021,17,1/2/22,Sun,Tampa Bay Buccaneers,New York Jets,28,24,467,374,1,1,72243,TRUE,13:00:00
+2021,17,1/2/22,Sun,Philadelphia Eagles,Washington Football Team,20,16,330,312,0,1,51563,TRUE,13:00:00
+2021,17,1/2/22,Sun,Denver Broncos,Los Angeles Chargers,13,34,319,341,1,0,70240,TRUE,16:05:00
+2021,17,1/2/22,Sun,Houston Texans,San Francisco 49ers,7,23,222,416,1,1,71612,TRUE,16:05:00
+2021,17,1/2/22,Sun,Detroit Lions,Seattle Seahawks,29,51,357,497,3,0,68043,TRUE,16:25:00
+2021,17,1/2/22,Sun,Los Angeles Rams,Baltimore Ravens,20,19,373,327,3,2,70328,TRUE,16:25:00
+2021,17,1/2/22,Sun,Minnesota Vikings,Green Bay Packers,10,37,206,481,0,0,77832,TRUE,20:20:00
+2021,17,1/3/22,Mon,Cleveland Browns,Pittsburgh Steelers,14,26,232,299,2,1,63624,TRUE,20:15:00
+2021,18,1/8/22,Sat,Kansas City Chiefs,Denver Broncos,28,24,390,364,0,1,76012,TRUE,16:30:00
+2021,18,1/8/22,Sat,Dallas Cowboys,Philadelphia Eagles,51,26,475,315,0,1,69796,TRUE,20:15:00
+2021,18,1/9/22,Sun,New Orleans Saints,Atlanta Falcons,30,20,369,257,0,3,68336,TRUE,13:00:00
+2021,18,1/9/22,Sun,New York Jets,Buffalo Bills,10,27,53,424,0,0,64783,TRUE,13:00:00
+2021,18,1/9/22,Sun,Carolina Panthers,Tampa Bay Buccaneers,17,41,317,409,2,0,65473,TRUE,13:00:00
+2021,18,1/9/22,Sun,Chicago Bears,Minnesota Vikings,17,31,356,331,2,0,66625,TRUE,13:00:00
+2021,18,1/9/22,Sun,Cincinnati Bengals,Cleveland Browns,16,21,182,376,0,2,67431,TRUE,13:00:00
+2021,18,1/9/22,Sun,Indianapolis Colts,Jacksonville Jaguars,11,26,233,318,2,0,60516,TRUE,13:00:00
+2021,18,1/9/22,Sun,Green Bay Packers,Detroit Lions,30,37,378,404,3,0,56735,TRUE,13:00:00
+2021,18,1/9/22,Sun,Tennessee Titans,Houston Texans,28,25,405,353,0,0,66722,TRUE,13:00:00
+2021,18,1/9/22,Sun,New England Patriots,Miami Dolphins,24,33,379,298,3,0,66514,TRUE,13:00:00
+2021,18,1/9/22,Sun,Washington Football Team,New York Giants,22,7,325,177,0,3,69923,TRUE,13:00:00
+2021,18,1/9/22,Sun,Pittsburgh Steelers,Baltimore Ravens,16,13,314,381,1,3,70453,TRUE,13:00:00
+2021,18,1/9/22,Sun,Seattle Seahawks,Arizona Cardinals,38,30,431,305,2,1,63858,TRUE,16:25:00
+2021,18,1/9/22,Sun,San Francisco 49ers,Los Angeles Rams,27,24,449,265,2,2,74447,TRUE,16:25:00
+2021,18,1/9/22,Sun,Los Angeles Chargers,Las Vegas Raiders,32,35,440,346,2,0,62068,TRUE,20:25:00
+2020,1,9/10/20,Thu,Houston Texans,Kansas City Chiefs,20,34,360,369,1,0,15895,TRUE,20:20:00
+2020,1,9/13/20,Sun,Seattle Seahawks,Atlanta Falcons,38,25,383,506,0,2,0,FALSE,13:00:00
+2020,1,9/13/20,Sun,New York Jets,Buffalo Bills,17,27,254,404,2,2,0,FALSE,13:00:00
+2020,1,9/13/20,Sun,Las Vegas Raiders,Carolina Panthers,34,30,372,388,0,0,0,FALSE,13:00:00
+2020,1,9/13/20,Sun,Chicago Bears,Detroit Lions,27,23,363,426,0,1,0,FALSE,13:00:00
+2020,1,9/13/20,Sun,Cleveland Browns,Baltimore Ravens,6,38,306,381,3,1,0,FALSE,13:00:00
+2020,1,9/13/20,Sun,Indianapolis Colts,Jacksonville Jaguars,20,27,445,241,2,0,14100,TRUE,13:00:00
+2020,1,9/13/20,Sun,Green Bay Packers,Minnesota Vikings,43,34,522,382,0,1,0,FALSE,13:00:00
+2020,1,9/13/20,Sun,Miami Dolphins,New England Patriots,11,21,269,357,3,1,0,FALSE,13:00:00
+2020,1,9/13/20,Sun,Philadelphia Eagles,Washington Football Team,17,27,265,239,3,0,0,FALSE,13:00:00
+2020,1,9/13/20,Sun,Los Angeles Chargers,Cincinnati Bengals,16,13,362,295,0,2,0,FALSE,16:05:00
+2020,1,9/13/20,Sun,Arizona Cardinals,San Francisco 49ers,24,20,404,366,1,0,0,FALSE,16:25:00
+2020,1,9/13/20,Sun,Tampa Bay Buccaneers,New Orleans Saints,23,34,310,271,3,0,0,FALSE,16:25:00
+2020,1,9/13/20,Sun,Dallas Cowboys,Los Angeles Rams,17,20,380,422,0,1,0,FALSE,20:20:00
+2020,1,9/14/20,Mon,Pittsburgh Steelers,New York Giants,26,16,349,291,1,2,0,FALSE,19:15:00
+2020,1,9/14/20,Mon,Tennessee Titans,Denver Broncos,16,14,377,323,0,1,0,FALSE,22:10:00
+2020,2,9/17/20,Thu,Cincinnati Bengals,Cleveland Browns,30,35,353,434,1,1,6000,TRUE,20:20:00
+2020,2,9/20/20,Sun,Atlanta Falcons,Dallas Cowboys,39,40,380,570,0,3,21708,TRUE,13:00:00
+2020,2,9/20/20,Sun,Buffalo Bills,Miami Dolphins,31,28,523,410,1,0,11075,TRUE,13:00:00
+2020,2,9/20/20,Sun,Carolina Panthers,Tampa Bay Buccaneers,17,31,427,339,4,2,0,FALSE,13:00:00
+2020,2,9/20/20,Sun,New York Giants,Chicago Bears,13,17,295,304,2,2,0,FALSE,13:00:00
+2020,2,9/20/20,Sun,Minnesota Vikings,Indianapolis Colts,11,28,175,354,3,1,2500,TRUE,13:00:00
+2020,2,9/20/20,Sun,Denver Broncos,Pittsburgh Steelers,21,26,319,410,2,2,0,FALSE,13:00:00
+2020,2,9/20/20,Sun,Detroit Lions,Green Bay Packers,21,42,307,488,1,0,0,FALSE,13:00:00
+2020,2,9/20/20,Sun,Jacksonville Jaguars,Tennessee Titans,30,33,480,354,2,0,0,FALSE,13:00:00
+2020,2,9/20/20,Sun,San Francisco 49ers,New York Jets,31,13,359,277,1,0,0,FALSE,13:00:00
+2020,2,9/20/20,Sun,Los Angeles Rams,Philadelphia Eagles,37,19,449,363,1,3,0,FALSE,13:00:00
+2020,2,9/20/20,Sun,Washington Football Team,Arizona Cardinals,15,30,316,438,2,1,0,FALSE,16:05:00
+2020,2,9/20/20,Sun,Baltimore Ravens,Houston Texans,33,16,407,304,0,2,0,FALSE,16:25:00
+2020,2,9/20/20,Sun,Kansas City Chiefs,Los Angeles Chargers,23,20,414,479,0,1,0,FALSE,16:25:00
+2020,2,9/20/20,Sun,New England Patriots,Seattle Seahawks,30,35,464,429,1,1,0,FALSE,20:20:00
+2020,2,9/21/20,Mon,New Orleans Saints,Las Vegas Raiders,24,34,424,377,1,1,0,FALSE,20:15:00
+2020,3,9/24/20,Thu,Miami Dolphins,Jacksonville Jaguars,31,13,294,318,0,2,16563,TRUE,20:20:00
+2020,3,9/27/20,Sun,Chicago Bears,Atlanta Falcons,30,26,437,371,2,1,0,FALSE,13:00:00
+2020,3,9/27/20,Sun,Los Angeles Rams,Buffalo Bills,32,35,478,375,2,2,0,FALSE,13:00:00
+2020,3,9/27/20,Sun,Cincinnati Bengals,Philadelphia Eagles,23,23,304,378,0,2,0,FALSE,13:00:00
+2020,3,9/27/20,Sun,Washington Football Team,Cleveland Browns,20,34,309,300,5,0,6000,TRUE,13:00:00
+2020,3,9/27/20,Sun,Houston Texans,Pittsburgh Steelers,21,28,260,387,1,0,0,FALSE,13:00:00
+2020,3,9/27/20,Sun,Tennessee Titans,Minnesota Vikings,31,30,444,464,1,3,0,FALSE,13:00:00
+2020,3,9/27/20,Sun,Las Vegas Raiders,New England Patriots,20,36,375,406,3,1,0,FALSE,13:00:00
+2020,3,9/27/20,Sun,San Francisco 49ers,New York Giants,36,9,420,231,0,3,0,FALSE,13:00:00
+2020,3,9/27/20,Sun,Carolina Panthers,Los Angeles Chargers,21,16,302,436,0,4,0,FALSE,16:05:00
+2020,3,9/27/20,Sun,New York Jets,Indianapolis Colts,7,36,260,353,3,0,7480,TRUE,16:05:00
+2020,3,9/27/20,Sun,Detroit Lions,Arizona Cardinals,26,23,322,377,0,3,0,FALSE,16:25:00
+2020,3,9/27/20,Sun,Dallas Cowboys,Seattle Seahawks,31,38,522,412,3,1,0,FALSE,16:25:00
+2020,3,9/27/20,Sun,Tampa Bay Buccaneers,Denver Broncos,28,10,353,226,0,2,5226,TRUE,16:25:00
+2020,3,9/27/20,Sun,Green Bay Packers,New Orleans Saints,37,30,369,397,0,1,748,TRUE,20:20:00
+2020,3,9/28/20,Mon,Kansas City Chiefs,Baltimore Ravens,34,20,517,228,1,1,0,FALSE,20:15:00
+2020,4,10/1/20,Thu,Denver Broncos,New York Jets,37,28,359,321,3,0,0,FALSE,20:20:00
+2020,4,10/4/20,Sun,Arizona Cardinals,Carolina Panthers,21,31,262,444,1,1,5120,TRUE,13:00:00
+2020,4,10/4/20,Sun,Indianapolis Colts,Chicago Bears,19,11,289,269,0,1,0,FALSE,13:00:00
+2020,4,10/4/20,Sun,Jacksonville Jaguars,Cincinnati Bengals,25,33,429,505,1,1,6243,TRUE,13:00:00
+2020,4,10/4/20,Sun,Cleveland Browns,Dallas Cowboys,49,38,508,566,0,3,25021,TRUE,13:00:00
+2020,4,10/4/20,Sun,New Orleans Saints,Detroit Lions,35,29,392,281,1,1,0,FALSE,13:00:00
+2020,4,10/4/20,Sun,Minnesota Vikings,Houston Texans,31,23,410,386,0,1,12102,TRUE,13:00:00
+2020,4,10/4/20,Sun,Seattle Seahawks,Miami Dolphins,31,23,441,415,1,2,12369,TRUE,13:00:00
+2020,4,10/4/20,Sun,Baltimore Ravens,Washington Football Team,31,17,350,343,2,1,0,FALSE,13:00:00
+2020,4,10/4/20,Sun,Los Angeles Chargers,Tampa Bay Buccaneers,31,38,324,484,2,1,6383,TRUE,13:00:00
+2020,4,10/4/20,Sun,New York Giants,Los Angeles Rams,9,17,295,240,1,1,0,FALSE,16:05:00
+2020,4,10/4/20,Sun,Buffalo Bills,Las Vegas Raiders,30,23,337,383,0,2,0,FALSE,16:25:00
+2020,4,10/4/20,Sun,Philadelphia Eagles,San Francisco 49ers,25,20,267,417,1,3,0,FALSE,20:20:00
+2020,4,10/5/20,Mon,New England Patriots,Kansas City Chiefs,10,26,357,323,4,1,12729,TRUE,19:05:00
+2020,4,10/5/20,Mon,Atlanta Falcons,Green Bay Packers,16,30,327,403,0,0,0,FALSE,20:15:00
+2020,5,10/8/20,Thu,Tampa Bay Buccaneers,Chicago Bears,19,20,339,243,1,1,0,FALSE,20:20:00
+2020,5,10/11/20,Sun,Carolina Panthers,Atlanta Falcons,23,16,437,373,0,1,6656,TRUE,13:00:00
+2020,5,10/11/20,Sun,Cincinnati Bengals,Baltimore Ravens,3,27,205,332,3,1,0,FALSE,13:00:00
+2020,5,10/11/20,Sun,Arizona Cardinals,New York Jets,30,10,496,285,1,0,0,FALSE,13:00:00
+2020,5,10/11/20,Sun,Jacksonville Jaguars,Houston Texans,14,30,364,486,2,2,12413,TRUE,13:00:00
+2020,5,10/11/20,Sun,Las Vegas Raiders,Kansas City Chiefs,40,32,490,413,1,1,13311,TRUE,13:00:00
+2020,5,10/11/20,Sun,Philadelphia Eagles,Pittsburgh Steelers,29,38,336,367,2,1,4708,TRUE,13:00:00
+2020,5,10/11/20,Sun,Los Angeles Rams,Washington Football Team,30,10,429,108,1,0,0,FALSE,13:00:00
+2020,5,10/11/20,Sun,Miami Dolphins,San Francisco 49ers,43,17,436,259,0,3,0,FALSE,16:05:00
+2020,5,10/11/20,Sun,Indianapolis Colts,Cleveland Browns,23,32,308,385,2,2,11759,TRUE,16:25:00
+2020,5,10/11/20,Sun,New York Giants,Dallas Cowboys,34,37,300,402,1,2,25147,TRUE,16:25:00
+2020,5,10/11/20,Sun,Minnesota Vikings,Seattle Seahawks,26,27,449,314,2,1,0,FALSE,20:20:00
+2020,5,10/12/20,Mon,Los Angeles Chargers,New Orleans Saints,27,30,350,408,0,1,749,TRUE,20:15:00
+2020,5,10/13/20,Tue,Buffalo Bills,Tennessee Titans,16,42,370,334,3,0,8403,TRUE,19:00:00
+2020,6,10/18/20,Sun,Denver Broncos,New England Patriots,18,12,299,288,2,3,0,FALSE,13:00:00
+2020,6,10/18/20,Sun,Detroit Lions,Jacksonville Jaguars,34,16,403,275,1,2,14513,TRUE,13:00:00
+2020,6,10/18/20,Sun,Atlanta Falcons,Minnesota Vikings,40,23,462,365,1,3,0,FALSE,13:00:00
+2020,6,10/18/20,Sun,Chicago Bears,Carolina Panthers,23,16,261,303,1,3,5240,TRUE,13:00:00
+2020,6,10/18/20,Sun,Cincinnati Bengals,Indianapolis Colts,27,31,398,430,1,2,12453,TRUE,13:00:00
+2020,6,10/18/20,Sun,Cleveland Browns,Pittsburgh Steelers,7,38,220,277,2,0,5260,TRUE,13:00:00
+2020,6,10/18/20,Sun,Houston Texans,Tennessee Titans,36,42,412,607,0,2,10166,TRUE,13:00:00
+2020,6,10/18/20,Sun,Washington Football Team,New York Giants,19,20,337,240,2,1,0,FALSE,13:00:00
+2020,6,10/18/20,Sun,Baltimore Ravens,Philadelphia Eagles,30,28,355,364,0,1,0,FALSE,13:00:00
+2020,6,10/18/20,Sun,New York Jets,Miami Dolphins,0,24,263,302,1,2,10772,TRUE,16:05:00
+2020,6,10/18/20,Sun,Green Bay Packers,Tampa Bay Buccaneers,10,38,201,324,2,0,15540,TRUE,16:25:00
+2020,6,10/18/20,Sun,Los Angeles Rams,San Francisco 49ers,16,24,311,390,1,0,0,FALSE,20:20:00
+2020,6,10/19/20,Mon,Kansas City Chiefs,Buffalo Bills,26,17,466,206,1,1,0,FALSE,17:00:00
+2020,6,10/19/20,Mon,Arizona Cardinals,Dallas Cowboys,38,10,438,344,0,4,25174,TRUE,20:15:00
+2020,7,10/22/20,Thu,New York Giants,Philadelphia Eagles,21,22,325,442,3,1,0,FALSE,20:20:00
+2020,7,10/25/20,Sun,Green Bay Packers,Houston Texans,35,20,379,365,0,1,12618,TRUE,13:00:00
+2020,7,10/25/20,Sun,Pittsburgh Steelers,Tennessee Titans,27,24,362,292,3,0,10355,TRUE,13:00:00
+2020,7,10/25/20,Sun,Detroit Lions,Atlanta Falcons,23,22,386,388,0,1,7796,TRUE,13:00:00
+2020,7,10/25/20,Sun,Buffalo Bills,New York Jets,18,10,422,191,1,2,0,FALSE,13:00:00
+2020,7,10/25/20,Sun,Carolina Panthers,New Orleans Saints,24,27,283,415,0,1,3000,TRUE,13:00:00
+2020,7,10/25/20,Sun,Cleveland Browns,Cincinnati Bengals,37,34,398,468,1,2,9732,TRUE,13:00:00
+2020,7,10/25/20,Sun,Dallas Cowboys,Washington Football Team,3,25,142,397,1,0,0,FALSE,13:00:00
+2020,7,10/25/20,Sun,Tampa Bay Buccaneers,Las Vegas Raiders,45,20,454,347,0,1,0,FALSE,16:05:00
+2020,7,10/25/20,Sun,Kansas City Chiefs,Denver Broncos,43,16,286,411,1,4,5314,TRUE,16:25:00
+2020,7,10/25/20,Sun,San Francisco 49ers,New England Patriots,33,6,467,241,2,4,0,FALSE,16:25:00
+2020,7,10/25/20,Sun,Jacksonville Jaguars,Los Angeles Chargers,29,39,294,484,1,0,0,FALSE,16:25:00
+2020,7,10/25/20,Sun,Seattle Seahawks,Arizona Cardinals,34,37,572,519,3,2,1200,TRUE,20:20:00
+2020,7,10/26/20,Mon,Chicago Bears,Los Angeles Rams,10,24,279,371,2,1,0,FALSE,20:15:00
+2020,8,10/29/20,Thu,Atlanta Falcons,Carolina Panthers,25,17,401,304,1,1,5240,TRUE,20:20:00
+2020,8,11/1/20,Sun,Indianapolis Colts,Detroit Lions,41,21,366,326,0,2,0,FALSE,13:00:00
+2020,8,11/1/20,Sun,Minnesota Vikings,Green Bay Packers,28,22,324,400,0,1,0,FALSE,13:00:00
+2020,8,11/1/20,Sun,Los Angeles Rams,Miami Dolphins,17,28,471,145,4,2,12397,TRUE,13:00:00
+2020,8,11/1/20,Sun,Pittsburgh Steelers,Baltimore Ravens,28,24,221,457,1,4,4345,TRUE,13:00:00
+2020,8,11/1/20,Sun,New England Patriots,Buffalo Bills,21,24,349,339,1,1,0,FALSE,13:00:00
+2020,8,11/1/20,Sun,Tennessee Titans,Cincinnati Bengals,20,31,441,367,1,0,9712,TRUE,13:00:00
+2020,8,11/1/20,Sun,Las Vegas Raiders,Cleveland Browns,16,6,309,223,0,1,10972,TRUE,13:00:00
+2020,8,11/1/20,Sun,New York Jets,Kansas City Chiefs,9,35,221,496,1,0,11932,TRUE,13:00:00
+2020,8,11/1/20,Sun,Los Angeles Chargers,Denver Broncos,30,31,485,351,2,1,5231,TRUE,16:05:00
+2020,8,11/1/20,Sun,San Francisco 49ers,Seattle Seahawks,27,37,351,350,2,0,0,FALSE,16:25:00
+2020,8,11/1/20,Sun,New Orleans Saints,Chicago Bears,26,23,394,329,0,1,0,FALSE,16:25:00
+2020,8,11/1/20,Sun,Dallas Cowboys,Philadelphia Eagles,9,23,265,222,2,4,0,FALSE,20:20:00
+2020,8,11/2/20,Mon,Tampa Bay Buccaneers,New York Giants,25,23,344,357,1,2,0,FALSE,20:15:00
+2020,9,11/5/20,Thu,Green Bay Packers,San Francisco 49ers,34,17,405,337,0,2,0,FALSE,20:20:00
+2020,9,11/8/20,Sun,Baltimore Ravens,Indianapolis Colts,24,10,266,339,1,2,12200,TRUE,13:00:00
+2020,9,11/8/20,Sun,Detroit Lions,Minnesota Vikings,20,34,421,487,3,0,0,FALSE,13:00:00
+2020,9,11/8/20,Sun,Houston Texans,Jacksonville Jaguars,27,25,374,403,1,1,15668,TRUE,13:00:00
+2020,9,11/8/20,Sun,Denver Broncos,Atlanta Falcons,27,34,405,363,1,1,7665,TRUE,13:00:00
+2020,9,11/8/20,Sun,Seattle Seahawks,Buffalo Bills,34,44,419,420,4,0,0,FALSE,13:00:00
+2020,9,11/8/20,Sun,Carolina Panthers,Kansas City Chiefs,31,33,435,397,0,1,12073,TRUE,13:00:00
+2020,9,11/8/20,Sun,Chicago Bears,Tennessee Titans,17,24,375,228,2,0,13871,TRUE,13:00:00
+2020,9,11/8/20,Sun,New York Giants,Washington Football Team,23,20,350,402,0,5,3000,TRUE,13:00:00
+2020,9,11/8/20,Sun,Las Vegas Raiders,Los Angeles Chargers,31,26,320,440,1,1,0,FALSE,16:05:00
+2020,9,11/8/20,Sun,Miami Dolphins,Arizona Cardinals,34,31,312,442,0,1,4200,TRUE,16:25:00
+2020,9,11/8/20,Sun,Pittsburgh Steelers,Dallas Cowboys,24,19,355,364,0,2,31700,TRUE,16:25:00
+2020,9,11/8/20,Sun,New Orleans Saints,Tampa Bay Buccaneers,38,3,420,194,2,3,15740,TRUE,20:20:00
+2020,9,11/9/20,Mon,New England Patriots,New York Jets,30,27,433,322,0,1,0,FALSE,20:15:00
+2020,10,11/12/20,Thu,Indianapolis Colts,Tennessee Titans,34,17,430,294,0,0,13949,TRUE,20:20:00
+2020,10,11/15/20,Sun,Houston Texans,Cleveland Browns,7,10,243,356,0,0,10613,TRUE,13:00:00
+2020,10,11/15/20,Sun,Washington Football Team,Detroit Lions,27,30,464,372,1,0,0,FALSE,13:00:00
+2020,10,11/15/20,Sun,Jacksonville Jaguars,Green Bay Packers,20,24,260,395,1,2,0,FALSE,13:00:00
+2020,10,11/15/20,Sun,Tampa Bay Buccaneers,Carolina Panthers,46,23,544,187,1,1,5815,TRUE,13:00:00
+2020,10,11/15/20,Sun,Philadelphia Eagles,New York Giants,17,27,346,382,0,0,0,FALSE,13:00:00
+2020,10,11/15/20,Sun,Denver Broncos,Las Vegas Raiders,12,37,313,357,5,0,0,FALSE,16:05:00
+2020,10,11/15/20,Sun,Los Angeles Chargers,Miami Dolphins,21,29,273,280,1,1,12751,TRUE,16:05:00
+2020,10,11/15/20,Sun,Buffalo Bills,Arizona Cardinals,30,32,369,453,2,2,4200,TRUE,16:05:00
+2020,10,11/15/20,Sun,Cincinnati Bengals,Pittsburgh Steelers,10,36,324,377,2,0,5909,TRUE,16:25:00
+2020,10,11/15/20,Sun,San Francisco 49ers,New Orleans Saints,13,27,281,237,4,2,5979,TRUE,16:25:00
+2020,10,11/15/20,Sun,Seattle Seahawks,Los Angeles Rams,16,23,333,389,3,1,0,FALSE,16:25:00
+2020,10,11/15/20,Sun,Baltimore Ravens,New England Patriots,17,23,357,308,1,0,0,FALSE,20:20:00
+2020,10,11/16/20,Mon,Minnesota Vikings,Chicago Bears,19,13,385,149,2,2,0,FALSE,20:15:00
+2020,11,11/19/20,Thu,Arizona Cardinals,Seattle Seahawks,21,28,314,347,0,0,0,FALSE,20:20:00
+2020,11,11/22/20,Sun,Atlanta Falcons,New Orleans Saints,9,24,248,376,2,1,6000,TRUE,13:00:00
+2020,11,11/22/20,Sun,Cincinnati Bengals,Washington Football Team,9,20,272,325,2,1,0,FALSE,13:00:00
+2020,11,11/22/20,Sun,Philadelphia Eagles,Cleveland Browns,17,22,315,324,3,1,11133,TRUE,13:00:00
+2020,11,11/22/20,Sun,New England Patriots,Houston Texans,20,27,435,399,0,0,12503,TRUE,13:00:00
+2020,11,11/22/20,Sun,Pittsburgh Steelers,Jacksonville Jaguars,27,3,373,206,1,4,17244,TRUE,13:00:00
+2020,11,11/22/20,Sun,Tennessee Titans,Baltimore Ravens,30,24,423,306,1,1,0,FALSE,13:00:00
+2020,11,11/22/20,Sun,Detroit Lions,Carolina Panthers,0,20,185,374,1,2,5546,TRUE,13:00:00
+2020,11,11/22/20,Sun,Miami Dolphins,Denver Broncos,13,20,223,459,1,2,5351,TRUE,16:05:00
+2020,11,11/22/20,Sun,New York Jets,Los Angeles Chargers,28,34,292,376,1,1,0,FALSE,16:05:00
+2020,11,11/22/20,Sun,Green Bay Packers,Indianapolis Colts,31,34,367,420,4,2,12495,TRUE,16:25:00
+2020,11,11/22/20,Sun,Dallas Cowboys,Minnesota Vikings,31,28,376,430,1,2,0,FALSE,16:25:00
+2020,11,11/22/20,Sun,Kansas City Chiefs,Las Vegas Raiders,35,31,460,364,1,1,0,FALSE,20:20:00
+2020,11,11/23/20,Mon,Los Angeles Rams,Tampa Bay Buccaneers,27,24,413,251,2,2,15730,TRUE,20:15:00
+2020,12,11/26/20,Thu,Houston Texans,Detroit Lions,41,25,384,388,1,3,0,FALSE,12:30:00
+2020,12,11/26/20,Thu,Washington Football Team,Dallas Cowboys,41,16,338,247,1,2,30048,TRUE,16:30:00
+2020,12,11/29/20,Sun,Las Vegas Raiders,Atlanta Falcons,6,43,243,304,5,1,9124,TRUE,13:00:00
+2020,12,11/29/20,Sun,Los Angeles Chargers,Buffalo Bills,17,27,367,332,1,3,0,FALSE,13:00:00
+2020,12,11/29/20,Sun,New York Giants,Cincinnati Bengals,19,17,386,155,1,3,10208,TRUE,13:00:00
+2020,12,11/29/20,Sun,Cleveland Browns,Jacksonville Jaguars,27,25,459,375,1,0,15926,TRUE,13:00:00
+2020,12,11/29/20,Sun,Tennessee Titans,Indianapolis Colts,45,26,449,336,0,1,12464,TRUE,13:00:00
+2020,12,11/29/20,Sun,Arizona Cardinals,New England Patriots,17,20,298,179,1,2,0,FALSE,13:00:00
+2020,12,11/29/20,Sun,Miami Dolphins,New York Jets,20,3,345,260,2,2,0,FALSE,13:00:00
+2020,12,11/29/20,Sun,Carolina Panthers,Minnesota Vikings,27,28,374,387,1,3,0,FALSE,13:00:00
+2020,12,11/29/20,Sun,New Orleans Saints,Denver Broncos,31,3,292,112,1,3,0,FALSE,16:05:00
+2020,12,11/29/20,Sun,San Francisco 49ers,Los Angeles Rams,23,20,345,308,3,4,0,FALSE,16:05:00
+2020,12,11/29/20,Sun,Kansas City Chiefs,Tampa Bay Buccaneers,27,24,543,417,1,2,15950,TRUE,16:25:00
+2020,12,11/29/20,Sun,Chicago Bears,Green Bay Packers,25,41,350,393,3,0,0,FALSE,20:20:00
+2020,12,11/30/20,Mon,Seattle Seahawks,Philadelphia Eagles,23,17,301,250,0,1,0,FALSE,20:15:00
+2020,12,12/2/20,Wed,Baltimore Ravens,Pittsburgh Steelers,14,19,219,334,2,2,0,FALSE,15:40:00
+2020,13,12/6/20,Sun,New Orleans Saints,Atlanta Falcons,21,16,424,332,1,1,8713,TRUE,13:00:00
+2020,13,12/6/20,Sun,Detroit Lions,Chicago Bears,34,30,460,389,1,1,0,FALSE,13:00:00
+2020,13,12/6/20,Sun,Cincinnati Bengals,Miami Dolphins,7,19,196,406,2,1,12577,TRUE,13:00:00
+2020,13,12/6/20,Sun,Cleveland Browns,Tennessee Titans,41,35,458,431,1,3,13986,TRUE,13:00:00
+2020,13,12/6/20,Sun,Indianapolis Colts,Houston Texans,26,20,371,398,0,2,12316,TRUE,13:00:00
+2020,13,12/6/20,Sun,Jacksonville Jaguars,Minnesota Vikings,24,27,390,420,4,2,0,FALSE,13:00:00
+2020,13,12/6/20,Sun,Las Vegas Raiders,New York Jets,31,28,440,376,2,3,0,FALSE,13:00:00
+2020,13,12/6/20,Sun,Los Angeles Rams,Arizona Cardinals,38,28,463,232,1,2,0,FALSE,16:05:00
+2020,13,12/6/20,Sun,New York Giants,Seattle Seahawks,17,12,290,327,1,2,0,FALSE,16:05:00
+2020,13,12/6/20,Sun,Philadelphia Eagles,Green Bay Packers,16,30,278,437,1,0,0,FALSE,16:25:00
+2020,13,12/6/20,Sun,New England Patriots,Los Angeles Chargers,45,0,291,258,0,2,0,FALSE,16:25:00
+2020,13,12/6/20,Sun,Denver Broncos,Kansas City Chiefs,16,22,330,447,2,0,12578,TRUE,20:20:00
+2020,13,12/7/20,Mon,Washington Football Team,Pittsburgh Steelers,23,17,318,326,0,1,0,FALSE,17:00:00
+2020,13,12/7/20,Mon,Buffalo Bills,San Francisco 49ers,34,24,449,402,1,2,0,FALSE,20:15:00
+2020,13,12/8/20,Tue,Dallas Cowboys,Baltimore Ravens,17,34,388,401,1,1,0,FALSE,20:05:00
+2020,14,12/10/20,Thu,New England Patriots,Los Angeles Rams,3,24,220,318,1,1,0,FALSE,20:20:00
+2020,14,12/13/20,Sun,Denver Broncos,Carolina Panthers,32,27,365,370,1,0,5768,TRUE,13:00:00
+2020,14,12/13/20,Sun,Houston Texans,Chicago Bears,7,36,263,410,2,0,0,FALSE,13:00:00
+2020,14,12/13/20,Sun,Dallas Cowboys,Cincinnati Bengals,30,7,272,309,0,3,10322,TRUE,13:00:00
+2020,14,12/13/20,Sun,Arizona Cardinals,New York Giants,26,7,390,159,0,3,0,FALSE,13:00:00
+2020,14,12/13/20,Sun,Tennessee Titans,Jacksonville Jaguars,31,10,454,354,1,1,15896,TRUE,13:00:00
+2020,14,12/13/20,Sun,Kansas City Chiefs,Miami Dolphins,33,27,448,367,4,1,13057,TRUE,13:00:00
+2020,14,12/13/20,Sun,Minnesota Vikings,Tampa Bay Buccaneers,14,26,335,303,1,0,16031,TRUE,13:00:00
+2020,14,12/13/20,Sun,Indianapolis Colts,Las Vegas Raiders,44,27,456,424,0,3,0,FALSE,16:05:00
+2020,14,12/13/20,Sun,New York Jets,Seattle Seahawks,3,40,185,410,1,1,0,FALSE,16:05:00
+2020,14,12/13/20,Sun,Atlanta Falcons,Los Angeles Chargers,17,20,319,345,3,1,0,FALSE,16:25:00
+2020,14,12/13/20,Sun,Green Bay Packers,Detroit Lions,31,24,410,293,0,0,0,FALSE,16:25:00
+2020,14,12/13/20,Sun,New Orleans Saints,Philadelphia Eagles,21,24,358,413,2,1,0,FALSE,16:25:00
+2020,14,12/13/20,Sun,Washington Football Team,San Francisco 49ers,23,15,193,344,1,3,0,FALSE,16:25:00
+2020,14,12/13/20,Sun,Pittsburgh Steelers,Buffalo Bills,15,26,224,334,2,2,0,FALSE,20:20:00
+2020,14,12/14/20,Mon,Baltimore Ravens,Cleveland Browns,47,42,385,493,0,1,11974,TRUE,20:15:00
+2020,15,12/17/20,Thu,Los Angeles Chargers,Las Vegas Raiders,30,27,402,449,0,1,0,FALSE,20:20:00
+2020,15,12/19/20,Sat,Buffalo Bills,Denver Broncos,48,19,534,255,1,1,0,FALSE,16:30:00
+2020,15,12/19/20,Sat,Carolina Panthers,Green Bay Packers,16,24,364,291,1,0,0,FALSE,20:15:00
+2020,15,12/20/20,Sun,Tampa Bay Buccaneers,Atlanta Falcons,31,27,416,369,0,0,10703,TRUE,13:00:00
+2020,15,12/20/20,Sun,Chicago Bears,Minnesota Vikings,33,27,397,407,1,1,0,FALSE,13:00:00
+2020,15,12/20/20,Sun,Houston Texans,Indianapolis Colts,20,27,425,350,2,0,9992,TRUE,13:00:00
+2020,15,12/20/20,Sun,San Francisco 49ers,Dallas Cowboys,33,41,458,291,4,0,30092,TRUE,13:00:00
+2020,15,12/20/20,Sun,Detroit Lions,Tennessee Titans,25,46,430,463,3,0,13797,TRUE,13:00:00
+2020,15,12/20/20,Sun,Jacksonville Jaguars,Baltimore Ravens,14,40,267,409,1,1,0,FALSE,13:00:00
+2020,15,12/20/20,Sun,New England Patriots,Miami Dolphins,12,22,303,383,1,1,13354,TRUE,13:00:00
+2020,15,12/20/20,Sun,Seattle Seahawks,Washington Football Team,20,15,302,353,1,2,0,FALSE,13:00:00
+2020,15,12/20/20,Sun,Philadelphia Eagles,Arizona Cardinals,26,33,422,526,0,3,0,FALSE,16:05:00
+2020,15,12/20/20,Sun,New York Jets,Los Angeles Rams,23,20,289,303,0,1,0,FALSE,16:05:00
+2020,15,12/20/20,Sun,Kansas City Chiefs,New Orleans Saints,32,29,411,285,1,1,3000,TRUE,16:25:00
+2020,15,12/20/20,Sun,Cleveland Browns,New York Giants,20,6,392,288,0,0,0,FALSE,20:20:00
+2020,15,12/21/20,Mon,Pittsburgh Steelers,Cincinnati Bengals,17,27,244,230,3,0,10249,TRUE,20:15:00
+2020,16,12/25/20,Fri,Minnesota Vikings,New Orleans Saints,33,52,364,583,0,2,3000,TRUE,16:30:00
+2020,16,12/26/20,Sat,Tampa Bay Buccaneers,Detroit Lions,47,7,588,186,0,2,0,FALSE,13:00:00
+2020,16,12/26/20,Sat,San Francisco 49ers,Arizona Cardinals,20,12,398,350,1,2,0,FALSE,16:30:00
+2020,16,12/26/20,Sat,Miami Dolphins,Las Vegas Raiders,26,25,383,418,0,1,0,FALSE,20:15:00
+2020,16,12/27/20,Sun,Atlanta Falcons,Kansas City Chiefs,14,17,367,395,1,2,13470,TRUE,13:00:00
+2020,16,12/27/20,Sun,Chicago Bears,Jacksonville Jaguars,41,17,391,279,1,2,17445,TRUE,13:00:00
+2020,16,12/27/20,Sun,Cincinnati Bengals,Houston Texans,37,31,540,488,0,1,12344,TRUE,13:00:00
+2020,16,12/27/20,Sun,Cleveland Browns,New York Jets,16,23,299,333,2,0,0,FALSE,13:00:00
+2020,16,12/27/20,Sun,Indianapolis Colts,Pittsburgh Steelers,24,28,365,354,2,0,0,FALSE,13:00:00
+2020,16,12/27/20,Sun,New York Giants,Baltimore Ravens,13,27,269,432,0,1,0,FALSE,13:00:00
+2020,16,12/27/20,Sun,Carolina Panthers,Washington Football Team,20,13,280,386,2,4,0,FALSE,16:05:00
+2020,16,12/27/20,Sun,Denver Broncos,Los Angeles Chargers,16,19,396,316,2,0,0,FALSE,16:05:00
+2020,16,12/27/20,Sun,Philadelphia Eagles,Dallas Cowboys,17,37,477,513,3,1,30131,TRUE,16:25:00
+2020,16,12/27/20,Sun,Los Angeles Rams,Seattle Seahawks,9,20,334,292,1,0,0,FALSE,16:25:00
+2020,16,12/27/20,Sun,Tennessee Titans,Green Bay Packers,14,40,260,448,2,1,0,FALSE,20:20:00
+2020,16,12/28/20,Mon,Buffalo Bills,New England Patriots,38,9,474,201,0,0,0,FALSE,20:15:00
+2020,17,1/3/21,Sun,Atlanta Falcons,Tampa Bay Buccaneers,27,44,385,485,2,1,16009,TRUE,13:00:00
+2020,17,1/3/21,Sun,Miami Dolphins,Buffalo Bills,26,56,454,455,4,2,0,FALSE,13:00:00
+2020,17,1/3/21,Sun,Baltimore Ravens,Cincinnati Bengals,38,3,525,195,1,2,10499,TRUE,13:00:00
+2020,17,1/3/21,Sun,Pittsburgh Steelers,Cleveland Browns,22,24,394,358,1,0,11989,TRUE,13:00:00
+2020,17,1/3/21,Sun,Dallas Cowboys,New York Giants,19,23,307,336,1,2,0,FALSE,13:00:00
+2020,17,1/3/21,Sun,Minnesota Vikings,Detroit Lions,37,35,508,417,0,2,0,FALSE,13:00:00
+2020,17,1/3/21,Sun,New York Jets,New England Patriots,14,28,350,404,2,0,0,FALSE,13:00:00
+2020,17,1/3/21,Sun,New Orleans Saints,Carolina Panthers,33,7,347,320,0,5,1500,TRUE,16:25:00
+2020,17,1/3/21,Sun,Green Bay Packers,Chicago Bears,35,16,316,356,1,2,0,FALSE,16:25:00
+2020,17,1/3/21,Sun,Jacksonville Jaguars,Indianapolis Colts,14,28,283,437,1,1,9976,TRUE,16:25:00
+2020,17,1/3/21,Sun,Arizona Cardinals,Los Angeles Rams,7,18,214,333,1,2,0,FALSE,16:25:00
+2020,17,1/3/21,Sun,Las Vegas Raiders,Denver Broncos,32,31,465,446,4,0,0,FALSE,16:25:00
+2020,17,1/3/21,Sun,Tennessee Titans,Houston Texans,41,38,492,457,1,1,12504,TRUE,16:25:00
+2020,17,1/3/21,Sun,Los Angeles Chargers,Kansas City Chiefs,38,21,416,268,0,1,13240,TRUE,16:25:00
+2020,17,1/3/21,Sun,Seattle Seahawks,San Francisco 49ers,26,23,280,328,0,1,0,FALSE,16:25:00
+2020,17,1/3/21,Sun,Washington Football Team,Philadelphia Eagles,20,14,248,216,2,3,0,FALSE,20:20:00
+2019,1,9/5/19,Thu,Green Bay Packers,Chicago Bears,10,3,213,254,0,1,62435,TRUE,20:20:00
+2019,1,9/8/19,Sun,Atlanta Falcons,Minnesota Vikings,12,28,345,269,3,0,66714,TRUE,13:00:00
+2019,1,9/8/19,Sun,Buffalo Bills,New York Jets,17,16,370,223,4,1,78523,TRUE,13:00:00
+2019,1,9/8/19,Sun,Los Angeles Rams,Carolina Panthers,30,27,349,343,1,3,72005,TRUE,13:00:00
+2019,1,9/8/19,Sun,Tennessee Titans,Cleveland Browns,43,13,339,346,0,3,67431,TRUE,13:00:00
+2019,1,9/8/19,Sun,Kansas City Chiefs,Jacksonville Jaguars,40,26,491,428,0,2,60157,TRUE,13:00:00
+2019,1,9/8/19,Sun,Baltimore Ravens,Miami Dolphins,59,10,643,200,0,3,65012,TRUE,13:00:00
+2019,1,9/8/19,Sun,Washington Football Team,Philadelphia Eagles,27,32,398,436,0,0,69696,TRUE,13:00:00
+2019,1,9/8/19,Sun,Cincinnati Bengals,Seattle Seahawks,20,21,429,232,3,1,68710,TRUE,16:05:00
+2019,1,9/8/19,Sun,Indianapolis Colts,Los Angeles Chargers,24,30,376,435,0,2,25363,TRUE,16:05:00
+2019,1,9/8/19,Sun,Detroit Lions,Arizona Cardinals,27,27,477,387,2,1,60687,TRUE,16:25:00
+2019,1,9/8/19,Sun,New York Giants,Dallas Cowboys,17,35,470,494,2,0,90353,TRUE,16:25:00
+2019,1,9/8/19,Sun,San Francisco 49ers,Tampa Bay Buccaneers,31,17,256,295,2,4,55976,TRUE,16:25:00
+2019,1,9/8/19,Sun,Pittsburgh Steelers,New England Patriots,3,33,308,465,1,0,65878,TRUE,20:20:00
+2019,1,9/9/19,Mon,Houston Texans,New Orleans Saints,28,30,414,510,1,1,73039,TRUE,19:10:00
+2019,1,9/9/19,Mon,Denver Broncos,Oakland Raiders,16,24,344,357,0,0,52359,TRUE,22:20:00
+2019,2,9/12/19,Thu,Tampa Bay Buccaneers,Carolina Panthers,20,14,289,352,0,1,71101,TRUE,20:20:00
+2019,2,9/15/19,Sun,Buffalo Bills,New York Giants,28,14,388,370,0,2,74569,TRUE,13:00:00
+2019,2,9/15/19,Sun,San Francisco 49ers,Cincinnati Bengals,41,17,571,316,1,1,50666,TRUE,13:00:00
+2019,2,9/15/19,Sun,Indianapolis Colts,Tennessee Titans,19,17,288,243,2,0,62849,TRUE,13:00:00
+2019,2,9/15/19,Sun,Arizona Cardinals,Baltimore Ravens,17,23,349,440,0,0,70126,TRUE,13:00:00
+2019,2,9/15/19,Sun,Dallas Cowboys,Washington Football Team,31,21,474,255,1,0,75128,TRUE,13:00:00
+2019,2,9/15/19,Sun,Los Angeles Chargers,Detroit Lions,10,13,424,339,2,2,60158,TRUE,13:00:00
+2019,2,9/15/19,Sun,Minnesota Vikings,Green Bay Packers,16,21,421,335,4,2,78416,TRUE,13:00:00
+2019,2,9/15/19,Sun,Jacksonville Jaguars,Houston Texans,12,13,281,263,1,0,71651,TRUE,13:00:00
+2019,2,9/15/19,Sun,New England Patriots,Miami Dolphins,43,0,379,184,1,4,65513,TRUE,13:00:00
+2019,2,9/15/19,Sun,Seattle Seahawks,Pittsburgh Steelers,28,26,425,261,2,1,65063,TRUE,13:00:00
+2019,2,9/15/19,Sun,Kansas City Chiefs,Oakland Raiders,28,10,467,307,1,2,52748,TRUE,16:05:00
+2019,2,9/15/19,Sun,Chicago Bears,Denver Broncos,16,14,273,372,0,1,76885,TRUE,16:25:00
+2019,2,9/15/19,Sun,New Orleans Saints,Los Angeles Rams,9,27,244,380,1,1,71460,TRUE,16:25:00
+2019,2,9/15/19,Sun,Philadelphia Eagles,Atlanta Falcons,20,24,286,367,3,3,72443,TRUE,20:20:00
+2019,2,9/16/19,Mon,Cleveland Browns,New York Jets,23,3,375,262,1,1,78523,TRUE,20:15:00
+2019,3,9/19/19,Thu,Tennessee Titans,Jacksonville Jaguars,7,20,340,292,1,0,58613,TRUE,20:20:00
+2019,3,9/22/19,Sun,Atlanta Falcons,Indianapolis Colts,24,27,397,379,1,0,60295,TRUE,13:00:00
+2019,3,9/22/19,Sun,Cincinnati Bengals,Buffalo Bills,17,21,306,416,4,2,69448,TRUE,13:00:00
+2019,3,9/22/19,Sun,Miami Dolphins,Dallas Cowboys,6,31,283,476,1,1,90127,TRUE,13:00:00
+2019,3,9/22/19,Sun,Denver Broncos,Green Bay Packers,16,27,310,312,3,0,78078,TRUE,13:00:00
+2019,3,9/22/19,Sun,Detroit Lions,Philadelphia Eagles,27,24,287,373,0,2,69796,TRUE,13:00:00
+2019,3,9/22/19,Sun,Baltimore Ravens,Kansas City Chiefs,28,33,452,503,0,0,73390,TRUE,13:00:00
+2019,3,9/22/19,Sun,Oakland Raiders,Minnesota Vikings,14,34,302,385,1,0,66738,TRUE,13:00:00
+2019,3,9/22/19,Sun,New York Jets,New England Patriots,14,30,105,381,1,2,65878,TRUE,13:00:00
+2019,3,9/22/19,Sun,Carolina Panthers,Arizona Cardinals,38,20,413,248,1,2,60104,TRUE,16:05:00
+2019,3,9/22/19,Sun,New York Giants,Tampa Bay Buccaneers,32,31,384,499,2,1,55070,TRUE,16:05:00
+2019,3,9/22/19,Sun,Houston Texans,Los Angeles Chargers,27,20,376,366,1,1,25349,TRUE,16:25:00
+2019,3,9/22/19,Sun,New Orleans Saints,Seattle Seahawks,33,27,265,514,1,1,69005,TRUE,16:25:00
+2019,3,9/22/19,Sun,Pittsburgh Steelers,San Francisco 49ers,20,24,239,436,2,5,69439,TRUE,16:25:00
+2019,3,9/22/19,Sun,Los Angeles Rams,Cleveland Browns,20,13,344,270,3,1,67431,TRUE,20:20:00
+2019,3,9/23/19,Mon,Chicago Bears,Washington Football Team,31,15,298,356,1,5,67327,TRUE,20:15:00
+2019,4,9/26/19,Thu,Philadelphia Eagles,Green Bay Packers,34,27,336,491,0,2,77509,TRUE,20:20:00
+2019,4,9/29/19,Sun,Tennessee Titans,Atlanta Falcons,24,10,365,422,0,1,72108,TRUE,13:00:00
+2019,4,9/29/19,Sun,New England Patriots,Buffalo Bills,16,10,224,375,1,4,70317,TRUE,13:00:00
+2019,4,9/29/19,Sun,Carolina Panthers,Houston Texans,16,10,297,264,3,2,71699,TRUE,13:00:00
+2019,4,9/29/19,Sun,Cleveland Browns,Baltimore Ravens,40,25,530,395,1,3,70686,TRUE,13:00:00
+2019,4,9/29/19,Sun,Oakland Raiders,Indianapolis Colts,31,24,377,346,1,2,62259,TRUE,13:00:00
+2019,4,9/29/19,Sun,Kansas City Chiefs,Detroit Lions,34,30,438,447,3,2,65188,TRUE,13:00:00
+2019,4,9/29/19,Sun,Los Angeles Chargers,Miami Dolphins,30,10,390,233,0,1,64278,TRUE,13:00:00
+2019,4,9/29/19,Sun,Washington Football Team,New York Giants,3,24,176,389,4,4,74149,TRUE,13:00:00
+2019,4,9/29/19,Sun,Seattle Seahawks,Arizona Cardinals,27,10,340,321,0,1,60500,TRUE,16:05:00
+2019,4,9/29/19,Sun,Tampa Bay Buccaneers,Los Angeles Rams,55,40,464,518,1,4,68117,TRUE,16:05:00
+2019,4,9/29/19,Sun,Minnesota Vikings,Chicago Bears,6,16,222,269,2,0,62131,TRUE,16:25:00
+2019,4,9/29/19,Sun,Jacksonville Jaguars,Denver Broncos,26,24,455,371,0,1,76219,TRUE,16:25:00
+2019,4,9/29/19,Sun,Dallas Cowboys,New Orleans Saints,10,12,257,266,3,1,73086,TRUE,20:20:00
+2019,4,9/30/19,Mon,Cincinnati Bengals,Pittsburgh Steelers,3,27,175,326,2,1,57959,TRUE,20:15:00
+2019,5,10/3/19,Thu,Los Angeles Rams,Seattle Seahawks,29,30,477,429,2,1,68988,TRUE,20:20:00
+2019,5,10/6/19,Sun,New York Jets,Philadelphia Eagles,6,31,128,265,3,1,69796,TRUE,13:00:00
+2019,5,10/6/19,Sun,Atlanta Falcons,Houston Texans,32,53,373,592,1,1,71787,TRUE,13:00:00
+2019,5,10/6/19,Sun,Buffalo Bills,Tennessee Titans,14,7,313,252,1,0,66910,TRUE,13:00:00
+2019,5,10/6/19,Sun,Jacksonville Jaguars,Carolina Panthers,27,34,507,445,3,0,72762,TRUE,13:00:00
+2019,5,10/6/19,Sun,Chicago Bears,Oakland Raiders,21,24,236,398,2,2,60463,TRUE,13:00:00
+2019,5,10/6/19,Sun,Arizona Cardinals,Cincinnati Bengals,26,23,514,370,0,0,46012,TRUE,13:00:00
+2019,5,10/6/19,Sun,Minnesota Vikings,New York Giants,28,10,490,211,1,1,75041,TRUE,13:00:00
+2019,5,10/6/19,Sun,Tampa Bay Buccaneers,New Orleans Saints,24,31,252,457,0,1,73029,TRUE,13:00:00
+2019,5,10/6/19,Sun,New England Patriots,Washington Football Team,33,7,442,223,1,2,76483,TRUE,13:00:00
+2019,5,10/6/19,Sun,Baltimore Ravens,Pittsburgh Steelers,26,23,277,269,3,2,64037,TRUE,13:00:00
+2019,5,10/6/19,Sun,Denver Broncos,Los Angeles Chargers,20,13,350,246,2,3,25357,TRUE,16:05:00
+2019,5,10/6/19,Sun,Green Bay Packers,Dallas Cowboys,34,24,335,563,0,3,93024,TRUE,16:25:00
+2019,5,10/6/19,Sun,Indianapolis Colts,Kansas City Chiefs,19,13,331,324,1,1,73352,TRUE,20:20:00
+2019,5,10/7/19,Mon,Cleveland Browns,San Francisco 49ers,3,31,180,446,4,0,70585,TRUE,20:15:00
+2019,6,10/10/19,Thu,New York Giants,New England Patriots,14,35,213,427,4,2,65878,TRUE,20:20:00
+2019,6,10/13/19,Sun,Carolina Panthers,Tampa Bay Buccaneers,37,26,268,407,1,7,60087,TRUE,9:30:00
+2019,6,10/13/19,Sun,Washington Football Team,Miami Dolphins,17,16,311,271,0,2,59808,TRUE,13:00:00
+2019,6,10/13/19,Sun,Cincinnati Bengals,Baltimore Ravens,17,23,250,497,1,1,70051,TRUE,13:00:00
+2019,6,10/13/19,Sun,Seattle Seahawks,Cleveland Browns,32,28,454,406,1,4,67431,TRUE,13:00:00
+2019,6,10/13/19,Sun,Houston Texans,Kansas City Chiefs,31,24,472,309,3,2,73323,TRUE,13:00:00
+2019,6,10/13/19,Sun,New Orleans Saints,Jacksonville Jaguars,13,6,326,226,0,1,64341,TRUE,13:00:00
+2019,6,10/13/19,Sun,Philadelphia Eagles,Minnesota Vikings,20,38,400,447,3,2,66837,TRUE,13:00:00
+2019,6,10/13/19,Sun,Atlanta Falcons,Arizona Cardinals,33,34,444,442,0,0,60140,TRUE,16:05:00
+2019,6,10/13/19,Sun,San Francisco 49ers,Los Angeles Rams,20,7,331,157,2,1,75695,TRUE,16:05:00
+2019,6,10/13/19,Sun,Dallas Cowboys,New York Jets,22,24,399,382,0,1,78523,TRUE,16:25:00
+2019,6,10/13/19,Sun,Tennessee Titans,Denver Broncos,0,16,204,270,3,1,75815,TRUE,16:25:00
+2019,6,10/13/19,Sun,Pittsburgh Steelers,Los Angeles Chargers,24,17,256,348,1,3,25425,TRUE,20:20:00
+2019,6,10/14/19,Mon,Detroit Lions,Green Bay Packers,22,23,299,447,0,3,76947,TRUE,20:15:00
+2019,7,10/17/19,Thu,Kansas City Chiefs,Denver Broncos,30,6,271,205,0,1,76748,TRUE,20:20:00
+2019,7,10/20/19,Sun,Miami Dolphins,Buffalo Bills,21,31,381,305,2,0,68340,TRUE,13:00:00
+2019,7,10/20/19,Sun,Houston Texans,Indianapolis Colts,23,30,391,383,2,1,59977,TRUE,13:00:00
+2019,7,10/20/19,Sun,Minnesota Vikings,Detroit Lions,42,30,504,433,0,1,60314,TRUE,13:00:00
+2019,7,10/20/19,Sun,San Francisco 49ers,Washington Football Team,9,0,283,154,1,1,61459,TRUE,13:00:00
+2019,7,10/20/19,Sun,Los Angeles Rams,Atlanta Falcons,37,10,381,224,0,3,71856,TRUE,13:00:00
+2019,7,10/20/19,Sun,Jacksonville Jaguars,Cincinnati Bengals,27,17,460,291,0,4,42784,TRUE,13:00:00
+2019,7,10/20/19,Sun,Arizona Cardinals,New York Giants,27,21,245,263,0,3,73577,TRUE,13:00:00
+2019,7,10/20/19,Sun,Oakland Raiders,Green Bay Packers,24,42,484,481,2,0,78160,TRUE,13:00:00
+2019,7,10/20/19,Sun,Los Angeles Chargers,Tennessee Titans,20,23,365,403,1,1,62431,TRUE,16:05:00
+2019,7,10/20/19,Sun,New Orleans Saints,Chicago Bears,36,25,424,252,0,2,62306,TRUE,16:25:00
+2019,7,10/20/19,Sun,Baltimore Ravens,Seattle Seahawks,30,16,340,347,0,2,69012,TRUE,16:25:00
+2019,7,10/20/19,Sun,Philadelphia Eagles,Dallas Cowboys,10,37,283,402,4,1,91213,TRUE,20:20:00
+2019,7,10/21/19,Mon,New England Patriots,New York Jets,33,0,323,154,1,6,78523,TRUE,20:15:00
+2019,8,10/24/19,Thu,Washington Football Team,Minnesota Vikings,9,19,216,434,2,1,66776,TRUE,20:20:00
+2019,8,10/27/19,Sun,Philadelphia Eagles,Buffalo Bills,31,13,371,253,1,1,69435,TRUE,13:00:00
+2019,8,10/27/19,Sun,Los Angeles Chargers,Chicago Bears,17,16,231,388,1,2,61632,TRUE,13:00:00
+2019,8,10/27/19,Sun,Denver Broncos,Indianapolis Colts,13,15,279,318,0,1,61653,TRUE,13:00:00
+2019,8,10/27/19,Sun,New York Giants,Detroit Lions,26,31,370,375,1,2,58509,TRUE,13:00:00
+2019,8,10/27/19,Sun,Seattle Seahawks,Atlanta Falcons,27,20,322,510,0,3,71483,TRUE,13:00:00
+2019,8,10/27/19,Sun,Cincinnati Bengals,Los Angeles Rams,10,24,401,470,0,0,83720,TRUE,13:00:00
+2019,8,10/27/19,Sun,Arizona Cardinals,New Orleans Saints,9,31,237,510,0,1,73064,TRUE,13:00:00
+2019,8,10/27/19,Sun,New York Jets,Jacksonville Jaguars,15,29,213,389,3,1,57833,TRUE,13:00:00
+2019,8,10/27/19,Sun,Tampa Bay Buccaneers,Tennessee Titans,23,27,389,246,4,1,62073,TRUE,13:00:00
+2019,8,10/27/19,Sun,Carolina Panthers,San Francisco 49ers,13,51,230,388,3,1,69083,TRUE,16:05:00
+2019,8,10/27/19,Sun,Cleveland Browns,New England Patriots,13,27,310,318,3,0,65878,TRUE,16:25:00
+2019,8,10/27/19,Sun,Oakland Raiders,Houston Texans,24,27,378,388,0,0,71893,TRUE,16:25:00
+2019,8,10/27/19,Sun,Green Bay Packers,Kansas City Chiefs,31,24,374,337,0,1,73558,TRUE,20:20:00
+2019,8,10/28/19,Mon,Miami Dolphins,Pittsburgh Steelers,14,27,230,394,4,1,59244,TRUE,20:15:00
+2019,9,10/31/19,Thu,San Francisco 49ers,Arizona Cardinals,28,25,411,357,0,0,60986,TRUE,20:20:00
+2019,9,11/3/19,Sun,Houston Texans,Jacksonville Jaguars,26,3,410,356,1,4,84771,TRUE,9:30:00
+2019,9,11/3/19,Sun,Washington Football Team,Buffalo Bills,9,24,243,268,0,0,67685,TRUE,13:00:00
+2019,9,11/3/19,Sun,Tennessee Titans,Carolina Panthers,20,30,431,370,3,1,72540,TRUE,13:00:00
+2019,9,11/3/19,Sun,Chicago Bears,Philadelphia Eagles,14,22,164,373,1,0,69796,TRUE,13:00:00
+2019,9,11/3/19,Sun,Indianapolis Colts,Pittsburgh Steelers,24,26,328,273,3,2,61115,TRUE,13:00:00
+2019,9,11/3/19,Sun,New York Jets,Miami Dolphins,18,26,321,316,1,0,59229,TRUE,13:00:00
+2019,9,11/3/19,Sun,Minnesota Vikings,Kansas City Chiefs,23,26,308,377,0,1,73615,TRUE,13:00:00
+2019,9,11/3/19,Sun,Detroit Lions,Oakland Raiders,24,31,473,450,2,0,53318,TRUE,16:05:00
+2019,9,11/3/19,Sun,Tampa Bay Buccaneers,Seattle Seahawks,34,40,418,492,1,1,68948,TRUE,16:05:00
+2019,9,11/3/19,Sun,Cleveland Browns,Denver Broncos,19,24,351,302,0,1,76743,TRUE,16:25:00
+2019,9,11/3/19,Sun,Green Bay Packers,Los Angeles Chargers,11,26,184,442,0,0,25435,TRUE,16:25:00
+2019,9,11/3/19,Sun,New England Patriots,Baltimore Ravens,20,37,342,372,2,2,71157,TRUE,20:20:00
+2019,9,11/4/19,Mon,Dallas Cowboys,New York Giants,37,18,429,271,2,3,76107,TRUE,20:15:00
+2019,10,11/7/19,Thu,Los Angeles Chargers,Oakland Raiders,24,26,315,278,3,0,51954,TRUE,20:20:00
+2019,10,11/10/19,Sun,Atlanta Falcons,New Orleans Saints,26,9,317,310,1,0,73283,TRUE,13:00:00
+2019,10,11/10/19,Sun,Buffalo Bills,Cleveland Browns,16,19,344,368,0,0,67431,TRUE,13:00:00
+2019,10,11/10/19,Sun,Detroit Lions,Chicago Bears,13,20,357,226,1,0,61758,TRUE,13:00:00
+2019,10,11/10/19,Sun,Baltimore Ravens,Cincinnati Bengals,49,13,379,307,1,3,45918,TRUE,13:00:00
+2019,10,11/10/19,Sun,Arizona Cardinals,Tampa Bay Buccaneers,27,30,417,457,2,3,40038,TRUE,13:00:00
+2019,10,11/10/19,Sun,Kansas City Chiefs,Tennessee Titans,32,35,530,371,1,1,68864,TRUE,13:00:00
+2019,10,11/10/19,Sun,New York Giants,New York Jets,27,34,281,294,2,0,78523,TRUE,13:00:00
+2019,10,11/10/19,Sun,Miami Dolphins,Indianapolis Colts,16,12,229,300,2,3,60510,TRUE,16:05:00
+2019,10,11/10/19,Sun,Carolina Panthers,Green Bay Packers,16,24,401,388,2,0,78090,TRUE,16:25:00
+2019,10,11/10/19,Sun,Los Angeles Rams,Pittsburgh Steelers,12,17,306,273,4,2,63627,TRUE,16:25:00
+2019,10,11/10/19,Sun,Minnesota Vikings,Dallas Cowboys,28,24,364,443,0,1,91188,TRUE,20:20:00
+2019,10,11/11/19,Mon,Seattle Seahawks,San Francisco 49ers,27,24,336,302,4,3,71404,TRUE,20:15:00
+2019,11,11/14/19,Thu,Pittsburgh Steelers,Cleveland Browns,7,21,236,293,4,0,67431,TRUE,20:20:00
+2019,11,11/17/19,Sun,Atlanta Falcons,Carolina Panthers,29,3,349,347,0,4,73106,TRUE,13:00:00
+2019,11,11/17/19,Sun,Buffalo Bills,Miami Dolphins,37,20,424,303,0,1,64187,TRUE,13:00:00
+2019,11,11/17/19,Sun,Jacksonville Jaguars,Indianapolis Colts,13,33,308,389,1,2,61986,TRUE,13:00:00
+2019,11,11/17/19,Sun,Dallas Cowboys,Detroit Lions,35,27,509,312,1,0,61801,TRUE,13:00:00
+2019,11,11/17/19,Sun,Denver Broncos,Minnesota Vikings,23,27,394,321,1,2,66883,TRUE,13:00:00
+2019,11,11/17/19,Sun,Houston Texans,Baltimore Ravens,7,41,232,491,2,0,70731,TRUE,13:00:00
+2019,11,11/17/19,Sun,New Orleans Saints,Tampa Bay Buccaneers,34,17,328,334,0,4,54333,TRUE,13:00:00
+2019,11,11/17/19,Sun,New York Jets,Washington Football Team,34,17,400,225,2,1,56426,TRUE,13:00:00
+2019,11,11/17/19,Sun,Arizona Cardinals,San Francisco 49ers,26,36,266,442,2,2,69419,TRUE,16:05:00
+2019,11,11/17/19,Sun,Cincinnati Bengals,Oakland Raiders,10,17,246,386,2,2,51921,TRUE,16:25:00
+2019,11,11/17/19,Sun,New England Patriots,Philadelphia Eagles,17,10,298,255,0,1,69796,TRUE,16:25:00
+2019,11,11/17/19,Sun,Chicago Bears,Los Angeles Rams,7,17,267,283,1,2,70758,TRUE,20:20:00
+2019,11,11/18/19,Mon,Kansas City Chiefs,Los Angeles Chargers,24,17,310,438,1,4,76252,TRUE,20:15:00
+2019,12,11/21/19,Thu,Indianapolis Colts,Houston Texans,17,20,296,396,0,1,71727,TRUE,20:20:00
+2019,12,11/24/19,Sun,Tampa Bay Buccaneers,Atlanta Falcons,35,22,446,337,2,2,71463,TRUE,13:00:00
+2019,12,11/24/19,Sun,Denver Broncos,Buffalo Bills,3,20,134,424,1,1,67338,TRUE,13:00:00
+2019,12,11/24/19,Sun,Carolina Panthers,New Orleans Saints,31,34,351,418,1,1,73068,TRUE,13:00:00
+2019,12,11/24/19,Sun,New York Giants,Chicago Bears,14,19,243,335,1,2,61581,TRUE,13:00:00
+2019,12,11/24/19,Sun,Pittsburgh Steelers,Cincinnati Bengals,16,10,338,244,1,2,47423,TRUE,13:00:00
+2019,12,11/24/19,Sun,Miami Dolphins,Cleveland Browns,24,41,284,467,2,1,67431,TRUE,13:00:00
+2019,12,11/24/19,Sun,Detroit Lions,Washington Football Team,16,19,364,230,4,2,57754,TRUE,13:00:00
+2019,12,11/24/19,Sun,Oakland Raiders,New York Jets,3,34,208,401,2,1,78523,TRUE,13:00:00
+2019,12,11/24/19,Sun,Seattle Seahawks,Philadelphia Eagles,17,9,348,344,2,5,69796,TRUE,13:00:00
+2019,12,11/24/19,Sun,Jacksonville Jaguars,Tennessee Titans,20,42,369,471,1,2,60926,TRUE,16:05:00
+2019,12,11/24/19,Sun,Dallas Cowboys,New England Patriots,9,13,321,282,1,0,65878,TRUE,16:25:00
+2019,12,11/24/19,Sun,Green Bay Packers,San Francisco 49ers,8,37,198,339,1,0,71500,TRUE,20:20:00
+2019,12,11/25/19,Mon,Baltimore Ravens,Los Angeles Rams,45,6,480,221,0,2,72409,TRUE,20:15:00
+2019,13,11/28/19,Thu,Chicago Bears,Detroit Lions,24,20,419,364,1,1,65412,TRUE,12:30:00
+2019,13,11/28/19,Thu,Buffalo Bills,Dallas Cowboys,26,15,356,426,0,2,90445,TRUE,16:30:00
+2019,13,11/28/19,Thu,New Orleans Saints,Atlanta Falcons,26,18,279,348,0,3,71993,TRUE,20:20:00
+2019,13,12/1/19,Sun,Washington Football Team,Carolina Panthers,29,21,362,278,0,2,71504,TRUE,13:00:00
+2019,13,12/1/19,Sun,New York Jets,Cincinnati Bengals,6,22,271,277,0,0,39804,TRUE,13:00:00
+2019,13,12/1/19,Sun,Cleveland Browns,Pittsburgh Steelers,13,20,279,323,2,1,62157,TRUE,13:00:00
+2019,13,12/1/19,Sun,Tennessee Titans,Indianapolis Colts,31,17,292,391,2,3,60361,TRUE,13:00:00
+2019,13,12/1/19,Sun,Green Bay Packers,New York Giants,31,13,322,335,0,3,75950,TRUE,13:00:00
+2019,13,12/1/19,Sun,Tampa Bay Buccaneers,Jacksonville Jaguars,28,11,315,242,1,4,62633,TRUE,13:00:00
+2019,13,12/1/19,Sun,Philadelphia Eagles,Miami Dolphins,31,37,386,409,1,1,65545,TRUE,13:00:00
+2019,13,12/1/19,Sun,San Francisco 49ers,Baltimore Ravens,17,20,331,283,1,1,71029,TRUE,13:00:00
+2019,13,12/1/19,Sun,Los Angeles Rams,Arizona Cardinals,34,7,549,198,0,1,60944,TRUE,16:05:00
+2019,13,12/1/19,Sun,Los Angeles Chargers,Denver Broncos,20,23,359,218,2,1,74638,TRUE,16:25:00
+2019,13,12/1/19,Sun,Oakland Raiders,Kansas City Chiefs,9,40,332,259,3,0,73548,TRUE,16:25:00
+2019,13,12/1/19,Sun,New England Patriots,Houston Texans,22,28,448,276,1,0,72025,TRUE,20:20:00
+2019,13,12/2/19,Mon,Minnesota Vikings,Seattle Seahawks,30,37,354,444,3,2,69080,TRUE,20:15:00
+2019,14,12/5/19,Thu,Dallas Cowboys,Chicago Bears,24,31,408,382,0,2,61276,TRUE,20:20:00
+2019,14,12/8/19,Sun,Carolina Panthers,Atlanta Falcons,20,40,345,461,4,0,70592,TRUE,13:00:00
+2019,14,12/8/19,Sun,Baltimore Ravens,Buffalo Bills,24,17,257,209,1,1,69134,TRUE,13:00:00
+2019,14,12/8/19,Sun,Cincinnati Bengals,Cleveland Browns,19,27,451,333,1,2,67431,TRUE,13:00:00
+2019,14,12/8/19,Sun,Indianapolis Colts,Tampa Bay Buccaneers,35,38,309,542,1,4,50232,TRUE,13:00:00
+2019,14,12/8/19,Sun,Denver Broncos,Houston Texans,38,24,391,414,1,3,71769,TRUE,13:00:00
+2019,14,12/8/19,Sun,Detroit Lions,Minnesota Vikings,7,20,231,354,2,0,66776,TRUE,13:00:00
+2019,14,12/8/19,Sun,Washington Football Team,Green Bay Packers,15,20,262,341,1,1,77296,TRUE,13:00:00
+2019,14,12/8/19,Sun,Miami Dolphins,New York Jets,21,22,362,374,1,1,78523,TRUE,13:00:00
+2019,14,12/8/19,Sun,San Francisco 49ers,New Orleans Saints,48,46,516,465,1,1,73038,TRUE,13:00:00
+2019,14,12/8/19,Sun,Los Angeles Chargers,Jacksonville Jaguars,45,10,525,252,0,0,57866,TRUE,16:05:00
+2019,14,12/8/19,Sun,Pittsburgh Steelers,Arizona Cardinals,23,17,275,236,2,3,63880,TRUE,16:25:00
+2019,14,12/8/19,Sun,Kansas City Chiefs,New England Patriots,23,16,346,278,2,1,65878,TRUE,16:25:00
+2019,14,12/8/19,Sun,Tennessee Titans,Oakland Raiders,42,21,552,355,1,1,52760,TRUE,16:25:00
+2019,14,12/8/19,Sun,Seattle Seahawks,Los Angeles Rams,12,28,308,455,1,2,71501,TRUE,20:20:00
+2019,14,12/9/19,Mon,New York Giants,Philadelphia Eagles,17,23,255,418,0,1,69796,TRUE,20:15:00
+2019,15,12/12/19,Thu,New York Jets,Baltimore Ravens,21,42,310,430,2,0,70545,TRUE,20:20:00
+2019,15,12/15/19,Sun,Seattle Seahawks,Carolina Panthers,30,24,428,414,1,3,72544,TRUE,13:00:00
+2019,15,12/15/19,Sun,Chicago Bears,Green Bay Packers,13,21,415,292,3,0,78266,TRUE,13:00:00
+2019,15,12/15/19,Sun,New England Patriots,Cincinnati Bengals,34,13,291,315,0,5,57066,TRUE,13:00:00
+2019,15,12/15/19,Sun,Denver Broncos,Kansas City Chiefs,3,23,251,419,1,1,73257,TRUE,13:00:00
+2019,15,12/15/19,Sun,Tampa Bay Buccaneers,Detroit Lions,38,17,495,295,1,3,56515,TRUE,13:00:00
+2019,15,12/15/19,Sun,Houston Texans,Tennessee Titans,24,21,374,432,2,1,65265,TRUE,13:00:00
+2019,15,12/15/19,Sun,Miami Dolphins,New York Giants,20,36,384,412,1,3,72894,TRUE,13:00:00
+2019,15,12/15/19,Sun,Philadelphia Eagles,Washington Football Team,37,27,415,352,1,1,63246,TRUE,13:00:00
+2019,15,12/15/19,Sun,Cleveland Browns,Arizona Cardinals,24,38,393,445,2,1,63345,TRUE,16:05:00
+2019,15,12/15/19,Sun,Jacksonville Jaguars,Oakland Raiders,20,16,262,364,0,0,52788,TRUE,16:05:00
+2019,15,12/15/19,Sun,Minnesota Vikings,Los Angeles Chargers,39,10,344,345,1,7,25446,TRUE,16:05:00
+2019,15,12/15/19,Sun,Atlanta Falcons,San Francisco 49ers,29,22,290,313,1,2,70910,TRUE,16:25:00
+2019,15,12/15/19,Sun,Los Angeles Rams,Dallas Cowboys,21,44,289,475,1,0,90436,TRUE,16:25:00
+2019,15,12/15/19,Sun,Buffalo Bills,Pittsburgh Steelers,17,10,261,229,2,5,64694,TRUE,20:20:00
+2019,15,12/16/19,Mon,Indianapolis Colts,New Orleans Saints,7,34,205,424,0,0,73053,TRUE,20:15:00
+2019,16,12/21/19,Sat,Houston Texans,Tampa Bay Buccaneers,23,20,229,435,2,5,49036,TRUE,13:00:00
+2019,16,12/21/19,Sat,Buffalo Bills,New England Patriots,17,24,268,414,0,1,65878,TRUE,16:30:00
+2019,16,12/21/19,Sat,Los Angeles Rams,San Francisco 49ers,31,34,395,334,1,2,70103,TRUE,20:15:00
+2019,16,12/22/19,Sun,Jacksonville Jaguars,Atlanta Falcons,12,24,288,518,1,2,70873,TRUE,13:00:00
+2019,16,12/22/19,Sun,Carolina Panthers,Indianapolis Colts,6,38,286,324,3,0,61845,TRUE,13:00:00
+2019,16,12/22/19,Sun,Cincinnati Bengals,Miami Dolphins,35,38,430,502,1,1,60968,TRUE,13:00:00
+2019,16,12/22/19,Sun,Baltimore Ravens,Cleveland Browns,31,15,481,241,1,1,67431,TRUE,13:00:00
+2019,16,12/22/19,Sun,New Orleans Saints,Tennessee Titans,38,28,377,397,0,1,66756,TRUE,13:00:00
+2019,16,12/22/19,Sun,New York Giants,Washington Football Team,41,35,552,361,0,0,66083,TRUE,13:00:00
+2019,16,12/22/19,Sun,Pittsburgh Steelers,New York Jets,10,16,260,259,2,1,78523,TRUE,13:00:00
+2019,16,12/22/19,Sun,Detroit Lions,Denver Broncos,17,27,191,348,0,0,74115,TRUE,16:05:00
+2019,16,12/22/19,Sun,Oakland Raiders,Los Angeles Chargers,24,17,366,284,0,0,25380,TRUE,16:05:00
+2019,16,12/22/19,Sun,Arizona Cardinals,Seattle Seahawks,27,13,412,224,0,1,69022,TRUE,16:25:00
+2019,16,12/22/19,Sun,Dallas Cowboys,Philadelphia Eagles,9,17,311,431,1,0,69796,TRUE,16:25:00
+2019,16,12/22/19,Sun,Kansas City Chiefs,Chicago Bears,26,3,350,234,0,0,62213,TRUE,20:20:00
+2019,16,12/23/19,Mon,Green Bay Packers,Minnesota Vikings,23,10,383,139,3,1,67157,TRUE,20:15:00
+2019,17,12/29/19,Sun,Atlanta Falcons,Tampa Bay Buccaneers,28,22,373,329,1,3,50417,TRUE,13:00:00
+2019,17,12/29/19,Sun,New York Jets,Buffalo Bills,13,6,271,309,1,3,69016,TRUE,13:00:00
+2019,17,12/29/19,Sun,New Orleans Saints,Carolina Panthers,42,10,379,329,0,3,72203,TRUE,13:00:00
+2019,17,12/29/19,Sun,Chicago Bears,Minnesota Vikings,21,19,337,300,1,3,66913,TRUE,13:00:00
+2019,17,12/29/19,Sun,Cleveland Browns,Cincinnati Bengals,23,33,313,361,3,1,47759,TRUE,13:00:00
+2019,17,12/29/19,Sun,Green Bay Packers,Detroit Lions,23,20,432,305,1,1,62840,TRUE,13:00:00
+2019,17,12/29/19,Sun,Los Angeles Chargers,Kansas City Chiefs,21,31,366,336,2,1,73680,TRUE,13:00:00
+2019,17,12/29/19,Sun,Miami Dolphins,New England Patriots,27,24,389,352,0,2,65878,TRUE,13:00:00
+2019,17,12/29/19,Sun,Indianapolis Colts,Jacksonville Jaguars,20,38,275,353,2,1,58472,TRUE,16:25:00
+2019,17,12/29/19,Sun,Arizona Cardinals,Los Angeles Rams,24,31,393,424,5,0,68665,TRUE,16:25:00
+2019,17,12/29/19,Sun,Washington Football Team,Dallas Cowboys,16,47,271,517,2,1,90646,TRUE,16:25:00
+2019,17,12/29/19,Sun,Oakland Raiders,Denver Broncos,15,16,477,238,1,1,76334,TRUE,16:25:00
+2019,17,12/29/19,Sun,Tennessee Titans,Houston Texans,35,14,467,301,0,1,71794,TRUE,16:25:00
+2019,17,12/29/19,Sun,Philadelphia Eagles,New York Giants,34,17,400,397,0,2,75029,TRUE,16:25:00
+2019,17,12/29/19,Sun,Pittsburgh Steelers,Baltimore Ravens,10,28,168,304,2,2,70695,TRUE,16:25:00
+2019,17,12/29/19,Sun,San Francisco 49ers,Seattle Seahawks,26,21,398,348,0,0,69162,TRUE,20:20:00
+2018,1,9/6/18,Thu,Atlanta Falcons,Philadelphia Eagles,12,18,299,232,1,2,69696,TRUE,20:20:00
+2018,1,9/9/18,Sun,Buffalo Bills,Baltimore Ravens,3,47,153,369,2,1,70591,TRUE,13:00:00
+2018,1,9/9/18,Sun,Cincinnati Bengals,Indianapolis Colts,34,23,330,380,2,2,58699,TRUE,13:00:00
+2018,1,9/9/18,Sun,Pittsburgh Steelers,Cleveland Browns,21,21,472,327,6,1,67431,TRUE,13:00:00
+2018,1,9/9/18,Sun,Houston Texans,New England Patriots,20,27,325,389,2,3,65878,TRUE,13:00:00
+2018,1,9/9/18,Sun,Jacksonville Jaguars,New York Giants,20,15,305,324,1,2,77992,TRUE,13:00:00
+2018,1,9/9/18,Sun,Tennessee Titans,Miami Dolphins,20,27,336,342,3,2,65184,TRUE,13:00:00
+2018,1,9/9/18,Sun,San Francisco 49ers,Minnesota Vikings,16,24,327,343,4,1,66673,TRUE,13:00:00
+2018,1,9/9/18,Sun,Tampa Bay Buccaneers,New Orleans Saints,48,40,529,475,0,2,73038,TRUE,13:00:00
+2018,1,9/9/18,Sun,Kansas City Chiefs,Los Angeles Chargers,38,28,362,541,0,2,25351,TRUE,16:05:00
+2018,1,9/9/18,Sun,Dallas Cowboys,Carolina Panthers,8,16,232,293,1,1,74532,TRUE,16:25:00
+2018,1,9/9/18,Sun,Washington Football Team,Arizona Cardinals,24,6,429,213,1,2,61613,TRUE,16:25:00
+2018,1,9/9/18,Sun,Seattle Seahawks,Denver Broncos,24,27,306,470,3,3,76761,TRUE,16:25:00
+2018,1,9/9/18,Sun,Chicago Bears,Green Bay Packers,23,24,294,370,1,2,78282,TRUE,20:20:00
+2018,1,9/10/18,Mon,New York Jets,Detroit Lions,48,17,349,339,2,5,61352,TRUE,19:10:00
+2018,1,9/10/18,Mon,Los Angeles Rams,Oakland Raiders,33,13,365,395,0,3,53857,TRUE,22:20:00
+2018,2,9/13/18,Thu,Baltimore Ravens,Cincinnati Bengals,23,34,425,373,3,0,50018,TRUE,20:20:00
+2018,2,9/16/18,Sun,Carolina Panthers,Atlanta Falcons,24,31,439,442,1,1,72528,TRUE,13:00:00
+2018,2,9/16/18,Sun,Los Angeles Chargers,Buffalo Bills,31,20,349,293,0,2,69187,TRUE,13:00:00
+2018,2,9/16/18,Sun,Cleveland Browns,New Orleans Saints,18,21,327,275,1,2,73086,TRUE,13:00:00
+2018,2,9/16/18,Sun,Indianapolis Colts,Washington Football Team,21,9,281,334,2,1,57013,TRUE,13:00:00
+2018,2,9/16/18,Sun,Minnesota Vikings,Green Bay Packers,29,29,480,351,1,0,78461,TRUE,13:00:00
+2018,2,9/16/18,Sun,Houston Texans,Tennessee Titans,17,20,437,283,1,0,62372,TRUE,13:00:00
+2018,2,9/16/18,Sun,Kansas City Chiefs,Pittsburgh Steelers,42,37,449,475,1,0,63956,TRUE,13:00:00
+2018,2,9/16/18,Sun,Miami Dolphins,New York Jets,20,12,257,362,2,3,77982,TRUE,13:00:00
+2018,2,9/16/18,Sun,Philadelphia Eagles,Tampa Bay Buccaneers,21,27,412,436,2,2,56552,TRUE,13:00:00
+2018,2,9/16/18,Sun,Arizona Cardinals,Los Angeles Rams,0,34,137,432,1,1,66515,TRUE,16:05:00
+2018,2,9/16/18,Sun,Detroit Lions,San Francisco 49ers,27,30,427,346,1,0,70164,TRUE,16:05:00
+2018,2,9/16/18,Sun,Oakland Raiders,Denver Broncos,19,20,373,385,0,1,76696,TRUE,16:25:00
+2018,2,9/16/18,Sun,New England Patriots,Jacksonville Jaguars,20,31,302,480,1,2,68527,TRUE,16:25:00
+2018,2,9/16/18,Sun,New York Giants,Dallas Cowboys,13,20,255,298,1,0,90512,TRUE,20:20:00
+2018,2,9/17/18,Mon,Seattle Seahawks,Chicago Bears,17,24,276,271,2,2,57960,TRUE,20:15:00
+2018,3,9/20/18,Thu,New York Jets,Cleveland Browns,17,21,268,323,3,0,67431,TRUE,20:20:00
+2018,3,9/23/18,Sun,New Orleans Saints,Atlanta Falcons,43,37,534,407,0,0,74457,TRUE,13:00:00
+2018,3,9/23/18,Sun,Buffalo Bills,Minnesota Vikings,27,6,292,292,0,3,66800,TRUE,13:00:00
+2018,3,9/23/18,Sun,Cincinnati Bengals,Carolina Panthers,21,31,396,377,4,0,72161,TRUE,13:00:00
+2018,3,9/23/18,Sun,Indianapolis Colts,Philadelphia Eagles,16,20,209,379,0,2,69696,TRUE,13:00:00
+2018,3,9/23/18,Sun,Denver Broncos,Baltimore Ravens,14,27,293,342,1,0,70156,TRUE,13:00:00
+2018,3,9/23/18,Sun,Green Bay Packers,Washington Football Team,17,31,340,386,1,1,59827,TRUE,13:00:00
+2018,3,9/23/18,Sun,New York Giants,Houston Texans,27,22,379,427,0,2,71838,TRUE,13:00:00
+2018,3,9/23/18,Sun,Tennessee Titans,Jacksonville Jaguars,9,6,233,232,0,1,64015,TRUE,13:00:00
+2018,3,9/23/18,Sun,San Francisco 49ers,Kansas City Chiefs,27,38,406,384,0,0,76023,TRUE,13:00:00
+2018,3,9/23/18,Sun,Oakland Raiders,Miami Dolphins,20,28,434,373,2,0,65667,TRUE,13:00:00
+2018,3,9/23/18,Sun,Los Angeles Chargers,Los Angeles Rams,23,35,356,521,2,2,68947,TRUE,16:05:00
+2018,3,9/23/18,Sun,Chicago Bears,Arizona Cardinals,16,14,316,221,2,4,62163,TRUE,16:25:00
+2018,3,9/23/18,Sun,Dallas Cowboys,Seattle Seahawks,13,24,303,295,3,0,69047,TRUE,16:25:00
+2018,3,9/23/18,Sun,New England Patriots,Detroit Lions,10,26,209,414,1,1,61769,TRUE,20:20:00
+2018,3,9/24/18,Mon,Pittsburgh Steelers,Tampa Bay Buccaneers,30,27,413,455,1,4,62571,TRUE,20:15:00
+2018,4,9/27/18,Thu,Minnesota Vikings,Los Angeles Rams,31,38,446,556,1,0,72027,TRUE,20:20:00
+2018,4,9/30/18,Sun,Cincinnati Bengals,Atlanta Falcons,37,36,407,495,1,0,71985,TRUE,13:00:00
+2018,4,9/30/18,Sun,Buffalo Bills,Green Bay Packers,0,22,145,423,3,2,78312,TRUE,13:00:00
+2018,4,9/30/18,Sun,Tampa Bay Buccaneers,Chicago Bears,10,48,311,483,3,0,61893,TRUE,13:00:00
+2018,4,9/30/18,Sun,Houston Texans,Indianapolis Colts,37,34,466,478,1,2,57716,TRUE,13:00:00
+2018,4,9/30/18,Sun,Detroit Lions,Dallas Cowboys,24,26,382,414,0,0,90155,TRUE,13:00:00
+2018,4,9/30/18,Sun,New York Jets,Jacksonville Jaguars,12,31,178,503,0,3,65353,TRUE,13:00:00
+2018,4,9/30/18,Sun,Miami Dolphins,New England Patriots,7,38,172,449,2,2,65878,TRUE,13:00:00
+2018,4,9/30/18,Sun,Philadelphia Eagles,Tennessee Titans,23,26,432,397,1,1,69013,TRUE,13:00:00
+2018,4,9/30/18,Sun,Cleveland Browns,Oakland Raiders,42,45,487,565,4,2,53387,TRUE,16:05:00
+2018,4,9/30/18,Sun,Seattle Seahawks,Arizona Cardinals,20,17,331,263,0,1,61845,TRUE,16:05:00
+2018,4,9/30/18,Sun,New Orleans Saints,New York Giants,33,18,389,299,0,2,78213,TRUE,16:25:00
+2018,4,9/30/18,Sun,San Francisco 49ers,Los Angeles Chargers,27,29,364,368,2,1,25397,TRUE,16:25:00
+2018,4,9/30/18,Sun,Baltimore Ravens,Pittsburgh Steelers,26,14,451,284,1,2,62030,TRUE,20:20:00
+2018,4,10/1/18,Mon,Kansas City Chiefs,Denver Broncos,27,23,446,385,0,1,76656,TRUE,20:15:00
+2018,5,10/4/18,Thu,Indianapolis Colts,New England Patriots,24,38,439,438,3,2,65878,TRUE,20:20:00
+2018,5,10/7/18,Sun,New York Giants,Carolina Panthers,31,33,432,350,3,2,74221,TRUE,13:00:00
+2018,5,10/7/18,Sun,Atlanta Falcons,Pittsburgh Steelers,17,41,324,381,1,1,64781,TRUE,13:00:00
+2018,5,10/7/18,Sun,Tennessee Titans,Buffalo Bills,12,13,221,223,3,1,68202,TRUE,13:00:00
+2018,5,10/7/18,Sun,Miami Dolphins,Cincinnati Bengals,17,27,297,332,3,1,52708,TRUE,13:00:00
+2018,5,10/7/18,Sun,Baltimore Ravens,Cleveland Browns,9,12,410,416,2,1,67431,TRUE,13:00:00
+2018,5,10/7/18,Sun,Denver Broncos,New York Jets,16,34,436,512,1,2,77982,TRUE,13:00:00
+2018,5,10/7/18,Sun,Green Bay Packers,Detroit Lions,23,31,521,264,3,0,63405,TRUE,13:00:00
+2018,5,10/7/18,Sun,Jacksonville Jaguars,Kansas City Chiefs,14,30,502,424,5,2,75289,TRUE,13:00:00
+2018,5,10/7/18,Sun,Oakland Raiders,Los Angeles Chargers,10,26,289,412,2,0,25362,TRUE,16:05:00
+2018,5,10/7/18,Sun,Arizona Cardinals,San Francisco 49ers,28,18,220,447,0,5,68337,TRUE,16:25:00
+2018,5,10/7/18,Sun,Minnesota Vikings,Philadelphia Eagles,23,21,375,364,1,2,69696,TRUE,16:25:00
+2018,5,10/7/18,Sun,Los Angeles Rams,Seattle Seahawks,33,31,468,373,2,0,68893,TRUE,16:25:00
+2018,5,10/7/18,Sun,Dallas Cowboys,Houston Texans,16,19,292,462,2,2,72008,TRUE,20:20:00
+2018,5,10/8/18,Mon,Washington Football Team,New Orleans Saints,19,43,283,447,2,1,73028,TRUE,20:15:00
+2018,6,10/11/18,Thu,Philadelphia Eagles,New York Giants,34,13,379,401,0,1,77167,TRUE,20:20:00
+2018,6,10/14/18,Sun,Carolina Panthers,Washington Football Team,17,23,350,288,3,0,60482,TRUE,13:00:00
+2018,6,10/14/18,Sun,Chicago Bears,Miami Dolphins,28,31,467,541,3,3,65791,TRUE,13:00:00
+2018,6,10/14/18,Sun,Tampa Bay Buccaneers,Atlanta Falcons,29,34,510,417,2,0,72665,TRUE,13:00:00
+2018,6,10/14/18,Sun,Buffalo Bills,Houston Texans,13,20,229,216,3,3,71638,TRUE,13:00:00
+2018,6,10/14/18,Sun,Pittsburgh Steelers,Cincinnati Bengals,28,21,481,275,0,0,60594,TRUE,13:00:00
+2018,6,10/14/18,Sun,Los Angeles Chargers,Cleveland Browns,38,14,449,317,1,2,67431,TRUE,13:00:00
+2018,6,10/14/18,Sun,Indianapolis Colts,New York Jets,34,42,428,374,4,2,77982,TRUE,13:00:00
+2018,6,10/14/18,Sun,Arizona Cardinals,Minnesota Vikings,17,27,268,411,2,2,66801,TRUE,13:00:00
+2018,6,10/14/18,Sun,Seattle Seahawks,Oakland Raiders,27,3,369,185,1,2,84922,TRUE,13:00:00
+2018,6,10/14/18,Sun,Los Angeles Rams,Denver Broncos,23,20,444,357,1,1,76109,TRUE,16:05:00
+2018,6,10/14/18,Sun,Jacksonville Jaguars,Dallas Cowboys,7,40,204,378,2,0,90767,TRUE,16:25:00
+2018,6,10/14/18,Sun,Baltimore Ravens,Tennessee Titans,21,0,361,106,1,0,64441,TRUE,16:25:00
+2018,6,10/14/18,Sun,Kansas City Chiefs,New England Patriots,40,43,446,500,2,1,65878,TRUE,20:20:00
+2018,6,10/15/18,Mon,San Francisco 49ers,Green Bay Packers,30,33,401,521,3,0,77642,TRUE,20:15:00
+2018,7,10/18/18,Thu,Denver Broncos,Arizona Cardinals,45,10,309,223,1,5,62359,TRUE,20:20:00
+2018,7,10/21/18,Sun,Tennessee Titans,Los Angeles Chargers,19,20,390,344,1,0,84301,TRUE,9:30:00
+2018,7,10/21/18,Sun,Carolina Panthers,Philadelphia Eagles,21,17,371,342,0,1,69696,TRUE,13:00:00
+2018,7,10/21/18,Sun,New England Patriots,Chicago Bears,38,31,381,453,3,2,62389,TRUE,13:00:00
+2018,7,10/21/18,Sun,Detroit Lions,Miami Dolphins,32,21,457,322,0,0,65265,TRUE,13:00:00
+2018,7,10/21/18,Sun,Buffalo Bills,Indianapolis Colts,5,37,303,376,5,0,56848,TRUE,13:00:00
+2018,7,10/21/18,Sun,Cleveland Browns,Tampa Bay Buccaneers,23,26,305,456,1,4,53682,TRUE,13:00:00
+2018,7,10/21/18,Sun,Houston Texans,Jacksonville Jaguars,20,7,272,259,0,3,66534,TRUE,13:00:00
+2018,7,10/21/18,Sun,Minnesota Vikings,New York Jets,37,17,316,263,0,4,77982,TRUE,13:00:00
+2018,7,10/21/18,Sun,New Orleans Saints,Baltimore Ravens,24,23,339,351,1,0,70639,TRUE,16:05:00
+2018,7,10/21/18,Sun,Dallas Cowboys,Washington Football Team,17,20,323,305,2,0,66301,TRUE,16:25:00
+2018,7,10/21/18,Sun,Los Angeles Rams,San Francisco 49ers,39,10,339,228,0,4,66597,TRUE,16:25:00
+2018,7,10/21/18,Sun,Cincinnati Bengals,Kansas City Chiefs,10,45,239,551,1,1,75676,TRUE,20:20:00
+2018,7,10/22/18,Mon,New York Giants,Atlanta Falcons,20,23,433,423,0,1,72756,TRUE,20:15:00
+2018,8,10/25/18,Thu,Miami Dolphins,Houston Texans,23,42,370,427,1,0,71726,TRUE,20:20:00
+2018,8,10/28/18,Sun,Philadelphia Eagles,Jacksonville Jaguars,24,18,395,335,2,1,85870,TRUE,9:30:00
+2018,8,10/28/18,Sun,Baltimore Ravens,Carolina Panthers,21,36,325,386,3,0,73843,TRUE,13:00:00
+2018,8,10/28/18,Sun,New York Jets,Chicago Bears,10,24,207,395,0,0,61397,TRUE,13:00:00
+2018,8,10/28/18,Sun,Seattle Seahawks,Detroit Lions,28,14,413,331,0,3,65237,TRUE,13:00:00
+2018,8,10/28/18,Sun,Tampa Bay Buccaneers,Cincinnati Bengals,34,37,576,402,4,0,45134,TRUE,13:00:00
+2018,8,10/28/18,Sun,Cleveland Browns,Pittsburgh Steelers,18,33,237,421,1,2,63780,TRUE,13:00:00
+2018,8,10/28/18,Sun,Denver Broncos,Kansas City Chiefs,23,30,411,340,2,1,77103,TRUE,13:00:00
+2018,8,10/28/18,Sun,Washington Football Team,New York Giants,20,13,360,303,1,2,77537,TRUE,13:00:00
+2018,8,10/28/18,Sun,Indianapolis Colts,Oakland Raiders,42,28,461,347,0,1,54372,TRUE,16:05:00
+2018,8,10/28/18,Sun,Green Bay Packers,Los Angeles Rams,27,29,359,416,1,0,75822,TRUE,16:25:00
+2018,8,10/28/18,Sun,San Francisco 49ers,Arizona Cardinals,15,18,267,321,0,2,61923,TRUE,16:25:00
+2018,8,10/28/18,Sun,New Orleans Saints,Minnesota Vikings,30,20,270,423,1,2,66801,TRUE,20:20:00
+2018,8,10/29/18,Mon,New England Patriots,Buffalo Bills,25,6,387,333,0,2,70109,TRUE,20:15:00
+2018,9,11/1/18,Thu,Oakland Raiders,San Francisco 49ers,3,34,242,405,0,0,69592,TRUE,20:20:00
+2018,9,11/4/18,Sun,Atlanta Falcons,Washington Football Team,38,14,491,366,1,1,62386,TRUE,13:00:00
+2018,9,11/4/18,Sun,Tampa Bay Buccaneers,Carolina Panthers,28,42,301,407,2,0,73513,TRUE,13:00:00
+2018,9,11/4/18,Sun,Detroit Lions,Minnesota Vikings,9,24,209,283,1,2,66825,TRUE,13:00:00
+2018,9,11/4/18,Sun,Pittsburgh Steelers,Baltimore Ravens,23,16,395,265,0,0,70997,TRUE,13:00:00
+2018,9,11/4/18,Sun,Chicago Bears,Buffalo Bills,41,9,190,264,1,4,68749,TRUE,13:00:00
+2018,9,11/4/18,Sun,Kansas City Chiefs,Cleveland Browns,37,21,499,388,1,1,67431,TRUE,13:00:00
+2018,9,11/4/18,Sun,New York Jets,Miami Dolphins,6,13,282,168,4,0,65533,TRUE,13:00:00
+2018,9,11/4/18,Sun,Los Angeles Chargers,Seattle Seahawks,25,17,375,356,0,1,68989,TRUE,16:05:00
+2018,9,11/4/18,Sun,Houston Texans,Denver Broncos,19,17,290,348,0,1,76270,TRUE,16:05:00
+2018,9,11/4/18,Sun,Los Angeles Rams,New Orleans Saints,35,45,483,487,1,1,73086,TRUE,16:25:00
+2018,9,11/4/18,Sun,Green Bay Packers,New England Patriots,17,31,367,433,1,0,65878,TRUE,20:20:00
+2018,9,11/5/18,Mon,Tennessee Titans,Dallas Cowboys,28,14,340,297,2,2,90466,TRUE,20:15:00
+2018,10,11/8/18,Thu,Carolina Panthers,Pittsburgh Steelers,21,52,242,457,2,0,62881,TRUE,20:20:00
+2018,10,11/11/18,Sun,Atlanta Falcons,Cleveland Browns,16,28,382,427,2,1,62144,TRUE,13:00:00
+2018,10,11/11/18,Sun,Detroit Lions,Chicago Bears,22,34,305,402,3,0,61393,TRUE,13:00:00
+2018,10,11/11/18,Sun,New Orleans Saints,Cincinnati Bengals,51,14,509,284,0,2,52492,TRUE,13:00:00
+2018,10,11/11/18,Sun,Jacksonville Jaguars,Indianapolis Colts,26,29,415,366,1,1,57473,TRUE,13:00:00
+2018,10,11/11/18,Sun,Arizona Cardinals,Kansas City Chiefs,14,26,260,330,2,0,76712,TRUE,13:00:00
+2018,10,11/11/18,Sun,Washington Football Team,Tampa Bay Buccaneers,16,3,286,501,0,4,52667,TRUE,13:00:00
+2018,10,11/11/18,Sun,Buffalo Bills,New York Jets,41,10,451,199,0,2,77982,TRUE,13:00:00
+2018,10,11/11/18,Sun,New England Patriots,Tennessee Titans,10,34,284,385,0,0,69363,TRUE,13:00:00
+2018,10,11/11/18,Sun,Los Angeles Chargers,Oakland Raiders,20,6,335,317,1,1,54750,TRUE,16:05:00
+2018,10,11/11/18,Sun,Miami Dolphins,Green Bay Packers,12,31,294,377,2,1,78076,TRUE,16:25:00
+2018,10,11/11/18,Sun,Seattle Seahawks,Los Angeles Rams,31,36,414,456,1,0,72755,TRUE,16:25:00
+2018,10,11/11/18,Sun,Dallas Cowboys,Philadelphia Eagles,27,20,410,421,0,1,69696,TRUE,20:20:00
+2018,10,11/12/18,Mon,New York Giants,San Francisco 49ers,27,23,277,374,0,2,69409,TRUE,20:15:00
+2018,11,11/15/18,Thu,Green Bay Packers,Seattle Seahawks,24,27,359,378,0,1,69007,TRUE,20:20:00
+2018,11,11/18/18,Sun,Dallas Cowboys,Atlanta Falcons,22,19,323,354,0,1,74447,TRUE,13:00:00
+2018,11,11/18/18,Sun,Carolina Panthers,Detroit Lions,19,20,387,309,1,0,61999,TRUE,13:00:00
+2018,11,11/18/18,Sun,Cincinnati Bengals,Baltimore Ravens,21,24,255,403,0,1,70077,TRUE,13:00:00
+2018,11,11/18/18,Sun,Tennessee Titans,Indianapolis Colts,10,38,267,397,2,0,57401,TRUE,13:00:00
+2018,11,11/18/18,Sun,Houston Texans,Washington Football Team,23,21,320,278,3,2,61593,TRUE,13:00:00
+2018,11,11/18/18,Sun,Pittsburgh Steelers,Jacksonville Jaguars,20,16,323,243,3,1,67683,TRUE,13:00:00
+2018,11,11/18/18,Sun,Tampa Bay Buccaneers,New York Giants,35,38,510,359,4,0,75863,TRUE,13:00:00
+2018,11,11/18/18,Sun,Oakland Raiders,Arizona Cardinals,23,21,325,282,0,2,62435,TRUE,16:05:00
+2018,11,11/18/18,Sun,Denver Broncos,Los Angeles Chargers,23,22,325,479,0,2,25462,TRUE,16:05:00
+2018,11,11/18/18,Sun,Philadelphia Eagles,New Orleans Saints,7,48,196,546,3,0,73042,TRUE,16:25:00
+2018,11,11/18/18,Sun,Minnesota Vikings,Chicago Bears,20,25,268,308,3,3,61651,TRUE,20:20:00
+2018,11,11/19/18,Mon,Kansas City Chiefs,Los Angeles Rams,51,54,546,455,5,2,77002,TRUE,20:15:00
+2018,12,11/22/18,Thu,Chicago Bears,Detroit Lions,23,16,264,333,1,2,65684,TRUE,12:30:00
+2018,12,11/22/18,Thu,Washington Football Team,Dallas Cowboys,23,31,331,404,3,0,92076,TRUE,16:30:00
+2018,12,11/22/18,Thu,Atlanta Falcons,New Orleans Saints,17,31,366,312,4,1,73017,TRUE,20:20:00
+2018,12,11/25/18,Sun,Jacksonville Jaguars,Buffalo Bills,21,24,333,327,2,0,57799,TRUE,13:00:00
+2018,12,11/25/18,Sun,Seattle Seahawks,Carolina Panthers,30,27,397,476,0,1,74002,TRUE,13:00:00
+2018,12,11/25/18,Sun,Cleveland Browns,Cincinnati Bengals,35,20,342,372,0,2,56122,TRUE,13:00:00
+2018,12,11/25/18,Sun,New England Patriots,New York Jets,27,13,498,338,0,1,77982,TRUE,13:00:00
+2018,12,11/25/18,Sun,New York Giants,Philadelphia Eagles,22,25,402,341,1,0,69696,TRUE,13:00:00
+2018,12,11/25/18,Sun,Oakland Raiders,Baltimore Ravens,17,34,249,416,1,2,70035,TRUE,13:00:00
+2018,12,11/25/18,Sun,San Francisco 49ers,Tampa Bay Buccaneers,9,27,342,412,2,0,50436,TRUE,13:00:00
+2018,12,11/25/18,Sun,Arizona Cardinals,Los Angeles Chargers,10,45,149,414,1,1,25343,TRUE,16:05:00
+2018,12,11/25/18,Sun,Miami Dolphins,Indianapolis Colts,24,27,314,455,1,3,57069,TRUE,16:25:00
+2018,12,11/25/18,Sun,Pittsburgh Steelers,Denver Broncos,17,24,527,308,4,0,76536,TRUE,16:25:00
+2018,12,11/25/18,Sun,Green Bay Packers,Minnesota Vikings,17,24,254,416,1,0,66872,TRUE,20:20:00
+2018,12,11/26/18,Mon,Tennessee Titans,Houston Texans,17,34,365,462,1,0,71826,TRUE,20:15:00
+2018,13,11/29/18,Thu,New Orleans Saints,Dallas Cowboys,10,13,176,308,1,2,93004,TRUE,20:20:00
+2018,13,12/2/18,Sun,Baltimore Ravens,Atlanta Falcons,26,16,366,131,1,1,72262,TRUE,13:00:00
+2018,13,12/2/18,Sun,Buffalo Bills,Miami Dolphins,17,21,415,175,3,1,65155,TRUE,13:00:00
+2018,13,12/2/18,Sun,Carolina Panthers,Tampa Bay Buccaneers,17,24,444,315,4,1,52568,TRUE,13:00:00
+2018,13,12/2/18,Sun,Chicago Bears,New York Giants,27,30,376,338,3,1,76465,TRUE,13:00:00
+2018,13,12/2/18,Sun,Denver Broncos,Cincinnati Bengals,24,10,361,313,1,3,44392,TRUE,13:00:00
+2018,13,12/2/18,Sun,Cleveland Browns,Houston Texans,13,29,428,384,4,0,71741,TRUE,13:00:00
+2018,13,12/2/18,Sun,Indianapolis Colts,Jacksonville Jaguars,0,6,265,211,2,1,67030,TRUE,13:00:00
+2018,13,12/2/18,Sun,Arizona Cardinals,Green Bay Packers,20,17,315,325,0,0,77234,TRUE,13:00:00
+2018,13,12/2/18,Sun,Los Angeles Rams,Detroit Lions,30,16,344,310,2,2,60974,TRUE,13:00:00
+2018,13,12/2/18,Sun,Kansas City Chiefs,Oakland Raiders,40,33,469,442,1,3,54255,TRUE,16:05:00
+2018,13,12/2/18,Sun,New York Jets,Tennessee Titans,22,26,280,403,1,1,60904,TRUE,16:05:00
+2018,13,12/2/18,Sun,Minnesota Vikings,New England Patriots,10,24,278,471,2,1,65878,TRUE,16:25:00
+2018,13,12/2/18,Sun,San Francisco 49ers,Seattle Seahawks,16,43,452,331,3,0,69009,TRUE,16:25:00
+2018,13,12/2/18,Sun,Los Angeles Chargers,Pittsburgh Steelers,33,30,371,336,0,1,61069,TRUE,20:20:00
+2018,13,12/3/18,Mon,Washington Football Team,Philadelphia Eagles,13,28,235,436,1,1,69696,TRUE,20:15:00
+2018,14,12/6/18,Thu,Jacksonville Jaguars,Tennessee Titans,9,30,255,426,1,1,60344,TRUE,20:20:00
+2018,14,12/9/18,Sun,Atlanta Falcons,Green Bay Packers,20,34,344,300,2,0,77329,TRUE,13:00:00
+2018,14,12/9/18,Sun,New York Jets,Buffalo Bills,27,23,248,368,2,3,59119,TRUE,13:00:00
+2018,14,12/9/18,Sun,Carolina Panthers,Cleveland Browns,20,26,393,348,1,2,59392,TRUE,13:00:00
+2018,14,12/9/18,Sun,Indianapolis Colts,Houston Texans,24,21,436,315,1,0,71814,TRUE,13:00:00
+2018,14,12/9/18,Sun,Baltimore Ravens,Kansas City Chiefs,24,27,321,442,1,1,74336,TRUE,13:00:00
+2018,14,12/9/18,Sun,New England Patriots,Miami Dolphins,33,34,421,412,0,0,66087,TRUE,13:00:00
+2018,14,12/9/18,Sun,New Orleans Saints,Tampa Bay Buccaneers,28,14,298,279,2,1,53495,TRUE,13:00:00
+2018,14,12/9/18,Sun,New York Giants,Washington Football Team,40,16,402,288,1,3,57437,TRUE,13:00:00
+2018,14,12/9/18,Sun,Cincinnati Bengals,Los Angeles Chargers,21,26,295,288,0,0,25358,TRUE,16:05:00
+2018,14,12/9/18,Sun,Denver Broncos,San Francisco 49ers,14,20,274,389,0,1,69449,TRUE,16:05:00
+2018,14,12/9/18,Sun,Detroit Lions,Arizona Cardinals,17,3,218,279,1,1,62014,TRUE,16:25:00
+2018,14,12/9/18,Sun,Philadelphia Eagles,Dallas Cowboys,23,29,256,576,1,3,93127,TRUE,16:25:00
+2018,14,12/9/18,Sun,Pittsburgh Steelers,Oakland Raiders,21,24,340,354,1,1,53960,TRUE,16:25:00
+2018,14,12/9/18,Sun,Los Angeles Rams,Chicago Bears,6,15,214,294,4,3,61695,TRUE,20:20:00
+2018,14,12/10/18,Mon,Minnesota Vikings,Seattle Seahawks,7,21,276,274,1,1,69007,TRUE,20:15:00
+2018,15,12/13/18,Thu,Los Angeles Chargers,Kansas City Chiefs,29,28,407,294,2,0,75091,TRUE,20:20:00
+2018,15,12/15/18,Sat,Houston Texans,New York Jets,29,22,286,318,0,1,77982,TRUE,16:30:00
+2018,15,12/15/18,Sat,Cleveland Browns,Denver Broncos,17,16,309,270,2,2,76596,TRUE,20:20:00
+2018,15,12/16/18,Sun,Arizona Cardinals,Atlanta Falcons,14,40,253,435,3,0,72084,TRUE,13:00:00
+2018,15,12/16/18,Sun,Detroit Lions,Buffalo Bills,13,14,313,312,0,0,59110,TRUE,13:00:00
+2018,15,12/16/18,Sun,Green Bay Packers,Chicago Bears,17,24,323,332,1,1,62372,TRUE,13:00:00
+2018,15,12/16/18,Sun,Oakland Raiders,Cincinnati Bengals,16,30,297,294,2,1,44568,TRUE,13:00:00
+2018,15,12/16/18,Sun,Dallas Cowboys,Indianapolis Colts,0,23,292,370,1,1,66654,TRUE,13:00:00
+2018,15,12/16/18,Sun,Washington Football Team,Jacksonville Jaguars,16,13,245,192,0,2,67577,TRUE,13:00:00
+2018,15,12/16/18,Sun,Miami Dolphins,Minnesota Vikings,17,41,193,418,0,1,66841,TRUE,13:00:00
+2018,15,12/16/18,Sun,Tennessee Titans,New York Giants,17,0,301,260,0,2,74538,TRUE,13:00:00
+2018,15,12/16/18,Sun,Tampa Bay Buccaneers,Baltimore Ravens,12,20,241,370,1,2,70031,TRUE,13:00:00
+2018,15,12/16/18,Sun,Seattle Seahawks,San Francisco 49ers,23,26,385,351,0,1,68836,TRUE,16:05:00
+2018,15,12/16/18,Sun,New England Patriots,Pittsburgh Steelers,10,17,368,376,1,2,65280,TRUE,16:25:00
+2018,15,12/16/18,Sun,Philadelphia Eagles,Los Angeles Rams,30,23,381,407,1,3,74210,TRUE,20:20:00
+2018,15,12/17/18,Mon,New Orleans Saints,Carolina Panthers,12,9,346,247,2,2,74188,TRUE,20:15:00
+2018,16,12/22/18,Sat,Washington Football Team,Tennessee Titans,16,25,292,291,2,0,60746,TRUE,16:30:00
+2018,16,12/22/18,Sat,Baltimore Ravens,Los Angeles Chargers,22,10,361,198,1,3,25571,TRUE,20:20:00
+2018,16,12/23/18,Sun,Atlanta Falcons,Carolina Panthers,24,10,427,436,2,4,73722,TRUE,13:00:00
+2018,16,12/23/18,Sun,Buffalo Bills,New England Patriots,12,24,289,390,3,3,65878,TRUE,13:00:00
+2018,16,12/23/18,Sun,Cincinnati Bengals,Cleveland Browns,18,26,209,493,0,0,67431,TRUE,13:00:00
+2018,16,12/23/18,Sun,New York Giants,Indianapolis Colts,27,28,392,402,1,1,61738,TRUE,13:00:00
+2018,16,12/23/18,Sun,Tampa Bay Buccaneers,Dallas Cowboys,20,27,383,232,2,0,92851,TRUE,13:00:00
+2018,16,12/23/18,Sun,Minnesota Vikings,Detroit Lions,27,9,340,223,0,0,61641,TRUE,13:00:00
+2018,16,12/23/18,Sun,Green Bay Packers,New York Jets,44,38,540,370,1,0,77982,TRUE,13:00:00
+2018,16,12/23/18,Sun,Houston Texans,Philadelphia Eagles,30,32,371,519,1,3,69696,TRUE,13:00:00
+2018,16,12/23/18,Sun,Jacksonville Jaguars,Miami Dolphins,17,7,244,183,1,2,65798,TRUE,13:00:00
+2018,16,12/23/18,Sun,Chicago Bears,San Francisco 49ers,14,9,325,279,2,1,70806,TRUE,16:05:00
+2018,16,12/23/18,Sun,Los Angeles Rams,Arizona Cardinals,31,9,461,263,1,0,61759,TRUE,16:05:00
+2018,16,12/23/18,Sun,Pittsburgh Steelers,New Orleans Saints,28,31,429,370,2,1,73086,TRUE,16:25:00
+2018,16,12/23/18,Sun,Kansas City Chiefs,Seattle Seahawks,31,38,419,464,2,0,69067,TRUE,20:20:00
+2018,16,12/24/18,Mon,Denver Broncos,Oakland Raiders,14,27,300,273,2,0,53850,TRUE,20:15:00
+2018,17,12/30/18,Sun,Atlanta Falcons,Tampa Bay Buccaneers,34,32,489,433,1,1,52884,TRUE,13:00:00
+2018,17,12/30/18,Sun,Miami Dolphins,Buffalo Bills,17,42,225,381,4,1,67420,TRUE,13:00:00
+2018,17,12/30/18,Sun,Carolina Panthers,New Orleans Saints,33,14,374,294,0,1,73028,TRUE,13:00:00
+2018,17,12/30/18,Sun,Dallas Cowboys,New York Giants,36,35,419,441,1,2,77750,TRUE,13:00:00
+2018,17,12/30/18,Sun,Detroit Lions,Green Bay Packers,31,0,402,175,0,1,77341,TRUE,13:00:00
+2018,17,12/30/18,Sun,Jacksonville Jaguars,Houston Texans,3,20,119,342,2,1,71848,TRUE,13:00:00
+2018,17,12/30/18,Sun,New York Jets,New England Patriots,3,38,239,375,3,0,65878,TRUE,13:00:00
+2018,17,12/30/18,Sun,Chicago Bears,Minnesota Vikings,24,10,332,164,0,0,66878,TRUE,16:25:00
+2018,17,12/30/18,Sun,Cincinnati Bengals,Pittsburgh Steelers,13,16,196,343,0,1,63874,TRUE,16:25:00
+2018,17,12/30/18,Sun,Cleveland Browns,Baltimore Ravens,24,26,426,463,3,1,70925,TRUE,16:25:00
+2018,17,12/30/18,Sun,Arizona Cardinals,Seattle Seahawks,24,27,198,291,2,1,68990,TRUE,16:25:00
+2018,17,12/30/18,Sun,Los Angeles Chargers,Denver Broncos,23,9,276,370,4,4,75947,TRUE,16:25:00
+2018,17,12/30/18,Sun,Oakland Raiders,Kansas City Chiefs,3,35,292,409,4,1,77550,TRUE,16:25:00
+2018,17,12/30/18,Sun,Philadelphia Eagles,Washington Football Team,24,0,360,89,1,1,63188,TRUE,16:25:00
+2018,17,12/30/18,Sun,San Francisco 49ers,Los Angeles Rams,32,48,391,377,4,0,72161,TRUE,16:25:00
+2018,17,12/30/18,Sun,Indianapolis Colts,Tennessee Titans,33,17,436,258,2,3,68978,TRUE,20:20:00
+2022,1,9/8/22,Thu,Buffalo Bills,Los Angeles Rams,31,10,413,243,4,3,73846,TRUE,20:20:00
+2022,1,9/11/22,Sun,New Orleans Saints,Atlanta Falcons,27,26,385,416,1,2,70078,TRUE,13:00:00
+2022,1,9/11/22,Sun,Cleveland Browns,Carolina Panthers,26,24,355,261,0,1,72205,TRUE,13:00:00
+2022,1,9/11/22,Sun,San Francisco 49ers,Chicago Bears,10,19,331,204,2,1,62159,TRUE,13:00:00
+2022,1,9/11/22,Sun,Pittsburgh Steelers,Cincinnati Bengals,23,20,267,432,0,5,65841,TRUE,13:00:00
+2022,1,9/11/22,Sun,Indianapolis Colts,Houston Texans,20,20,517,299,2,1,69415,TRUE,13:00:00
+2022,1,9/11/22,Sun,Philadelphia Eagles,Detroit Lions,38,35,455,386,0,1,64537,TRUE,13:00:00
+2022,1,9/11/22,Sun,Jacksonville Jaguars,Washington Commanders,22,28,383,390,1,3,58192,TRUE,13:00:00
+2022,1,9/11/22,Sun,New England Patriots,Miami Dolphins,7,20,271,307,3,0,65786,TRUE,13:00:00
+2022,1,9/11/22,Sun,Baltimore Ravens,New York Jets,24,9,274,380,1,2,78827,TRUE,13:00:00
+2022,1,9/11/22,Sun,Kansas City Chiefs,Arizona Cardinals,44,21,488,282,1,0,63697,TRUE,16:25:00
+2022,1,9/11/22,Sun,Green Bay Packers,Minnesota Vikings,7,23,338,395,2,0,66959,TRUE,16:25:00
+2022,1,9/11/22,Sun,New York Giants,Tennessee Titans,21,20,394,359,2,1,67805,TRUE,16:25:00
+2022,1,9/11/22,Sun,Las Vegas Raiders,Los Angeles Chargers,19,24,320,355,3,0,70240,TRUE,16:25:00
+2022,1,9/11/22,Sun,Tampa Bay Buccaneers,Dallas Cowboys,19,3,347,244,1,1,93797,TRUE,20:20:00
+2022,1,9/12/22,Mon,Denver Broncos,Seattle Seahawks,16,17,433,253,2,1,68965,TRUE,20:20:00
+2022,2,9/15/22,Thu,Los Angeles Chargers,Kansas City Chiefs,24,27,401,319,1,0,73461,TRUE,20:15:00
+2022,2,9/18/22,Sun,Carolina Panthers,New York Giants,16,19,275,265,2,0,73843,TRUE,13:00:00
+2022,2,9/18/22,Sun,New York Jets,Cleveland Browns,31,30,402,405,1,1,67431,TRUE,13:00:00
+2022,2,9/18/22,Sun,Indianapolis Colts,Jacksonville Jaguars,0,24,218,331,3,0,58360,TRUE,13:00:00
+2022,2,9/18/22,Sun,Washington Commanders,Detroit Lions,27,36,396,425,1,0,57687,TRUE,13:00:00
+2022,2,9/18/22,Sun,Miami Dolphins,Baltimore Ravens,42,38,547,473,2,0,70582,TRUE,13:00:00
+2022,2,9/18/22,Sun,Tampa Bay Buccaneers,New Orleans Saints,20,10,260,308,1,5,70400,TRUE,13:00:00
+2022,2,9/18/22,Sun,New England Patriots,Pittsburgh Steelers,17,14,376,243,1,2,67307,TRUE,13:00:00
+2022,2,9/18/22,Sun,Atlanta Falcons,Los Angeles Rams,27,31,261,337,3,3,71802,TRUE,16:05:00
+2022,2,9/18/22,Sun,Seattle Seahawks,San Francisco 49ers,7,27,216,373,3,0,71597,TRUE,16:05:00
+2022,2,9/18/22,Sun,Cincinnati Bengals,Dallas Cowboys,17,20,254,337,0,1,92944,TRUE,16:25:00
+2022,2,9/18/22,Sun,Arizona Cardinals,Las Vegas Raiders,29,23,413,324,1,1,61707,TRUE,16:25:00
+2022,2,9/18/22,Sun,Houston Texans,Denver Broncos,9,16,234,350,0,1,76191,TRUE,16:25:00
+2022,2,9/18/22,Sun,Chicago Bears,Green Bay Packers,10,27,228,414,1,1,78350,TRUE,20:20:00
+2022,2,9/19/22,Mon,Tennessee Titans,Buffalo Bills,7,41,187,414,4,0,70683,TRUE,19:15:00
+2022,2,9/19/22,Mon,Minnesota Vikings,Philadelphia Eagles,7,24,264,486,3,1,69879,TRUE,20:30:00
+2022,3,9/22/22,Thu,Pittsburgh Steelers,Cleveland Browns,17,29,308,376,1,0,67431,TRUE,20:15:00
+2022,3,9/25/22,Sun,Buffalo Bills,Miami Dolphins,19,21,497,212,1,0,66206,TRUE,13:00:00
+2022,3,9/25/22,Sun,New Orleans Saints,Carolina Panthers,14,22,426,293,3,0,70496,TRUE,13:00:00
+2022,3,9/25/22,Sun,Houston Texans,Chicago Bears,20,23,329,363,2,2,60592,TRUE,13:00:00
+2022,3,9/25/22,Sun,Cincinnati Bengals,New York Jets,27,12,330,328,1,4,73708,TRUE,13:00:00
+2022,3,9/25/22,Sun,Kansas City Chiefs,Indianapolis Colts,17,20,315,259,2,1,65975,TRUE,13:00:00
+2022,3,9/25/22,Sun,Detroit Lions,Minnesota Vikings,24,28,416,373,1,1,66638,TRUE,13:00:00
+2022,3,9/25/22,Sun,Baltimore Ravens,New England Patriots,37,26,394,447,2,4,65878,TRUE,13:00:00
+2022,3,9/25/22,Sun,Las Vegas Raiders,Tennessee Titans,22,24,396,361,1,1,68649,TRUE,13:00:00
+2022,3,9/25/22,Sun,Philadelphia Eagles,Washington Commanders,24,8,400,240,0,1,64426,TRUE,13:00:00
+2022,3,9/25/22,Sun,Jacksonville Jaguars,Los Angeles Chargers,38,10,413,312,0,2,67964,TRUE,16:05:00
+2022,3,9/25/22,Sun,Atlanta Falcons,Seattle Seahawks,27,23,386,420,2,1,68773,TRUE,16:25:00
+2022,3,9/25/22,Sun,Los Angeles Rams,Arizona Cardinals,20,12,339,365,1,0,63243,TRUE,16:25:00
+2022,3,9/25/22,Sun,Green Bay Packers,Tampa Bay Buccaneers,14,12,315,285,2,2,69197,TRUE,16:25:00
+2022,3,9/25/22,Sun,San Francisco 49ers,Denver Broncos,10,11,267,261,3,0,77021,TRUE,20:20:00
+2022,3,9/26/22,Mon,Dallas Cowboys,New York Giants,23,16,391,336,0,1,79445,TRUE,20:15:00
+2022,4,9/29/22,Thu,Miami Dolphins,Cincinnati Bengals,15,27,378,371,2,0,67260,TRUE,20:15:00
+2022,4,10/2/22,Sun,Minnesota Vikings,New Orleans Saints,28,25,344,338,1,2,60639,TRUE,9:30:00
+2022,4,10/2/22,Sun,Cleveland Browns,Atlanta Falcons,20,23,403,333,2,1,69435,TRUE,13:00:00
+2022,4,10/2/22,Sun,Buffalo Bills,Baltimore Ravens,23,20,326,296,2,2,70494,TRUE,13:00:00
+2022,4,10/2/22,Sun,Chicago Bears,New York Giants,12,20,304,333,3,2,74044,TRUE,13:00:00
+2022,4,10/2/22,Sun,Tennessee Titans,Indianapolis Colts,24,17,243,365,0,3,65781,TRUE,13:00:00
+2022,4,10/2/22,Sun,Washington Commanders,Dallas Cowboys,10,25,297,279,2,0,92946,TRUE,13:00:00
+2022,4,10/2/22,Sun,Seattle Seahawks,Detroit Lions,48,45,555,520,1,2,63920,TRUE,13:00:00
+2022,4,10/2/22,Sun,Los Angeles Chargers,Houston Texans,34,24,419,346,1,2,69071,TRUE,13:00:00
+2022,4,10/2/22,Sun,Jacksonville Jaguars,Philadelphia Eagles,21,29,219,401,5,1,69879,TRUE,13:00:00
+2022,4,10/2/22,Sun,New York Jets,Pittsburgh Steelers,24,20,348,297,2,4,66578,TRUE,13:00:00
+2022,4,10/2/22,Sun,Arizona Cardinals,Carolina Panthers,26,16,338,220,1,3,69810,TRUE,16:05:00
+2022,4,10/2/22,Sun,Denver Broncos,Las Vegas Raiders,23,32,299,385,1,0,62332,TRUE,16:25:00
+2022,4,10/2/22,Sun,New England Patriots,Green Bay Packers,24,27,271,443,1,2,78317,TRUE,16:25:00
+2022,4,10/2/22,Sun,Kansas City Chiefs,Tampa Bay Buccaneers,41,31,417,376,1,2,68348,TRUE,20:20:00
+2022,4,10/3/22,Mon,Los Angeles Rams,San Francisco 49ers,9,24,257,327,2,0,71597,TRUE,20:15:00
+2022,5,10/6/22,Thu,Indianapolis Colts,Denver Broncos,12,9,306,375,2,2,76667,TRUE,20:15:00
+2022,5,10/9/22,Sun,New York Giants,Green Bay Packers,27,22,338,301,0,0,61024,TRUE,9:30:00
+2022,5,10/9/22,Sun,Atlanta Falcons,Tampa Bay Buccaneers,15,21,261,420,0,0,68299,TRUE,13:00:00
+2022,5,10/9/22,Sun,Pittsburgh Steelers,Buffalo Bills,3,38,364,552,2,2,70764,TRUE,13:00:00
+2022,5,10/9/22,Sun,Chicago Bears,Minnesota Vikings,22,29,271,429,1,1,66929,TRUE,13:00:00
+2022,5,10/9/22,Sun,Los Angeles Chargers,Cleveland Browns,30,28,465,443,0,1,67431,TRUE,13:00:00
+2022,5,10/9/22,Sun,Detroit Lions,New England Patriots,0,29,312,364,2,1,65878,TRUE,13:00:00
+2022,5,10/9/22,Sun,Houston Texans,Jacksonville Jaguars,13,6,248,422,0,2,60018,TRUE,13:00:00
+2022,5,10/9/22,Sun,Miami Dolphins,New York Jets,17,40,295,322,2,0,82500,TRUE,13:00:00
+2022,5,10/9/22,Sun,Seattle Seahawks,New Orleans Saints,32,39,396,438,1,2,70003,TRUE,13:00:00
+2022,5,10/9/22,Sun,Tennessee Titans,Washington Commanders,21,17,241,385,0,1,51836,TRUE,13:00:00
+2022,5,10/9/22,Sun,San Francisco 49ers,Carolina Panthers,37,15,397,308,1,1,72321,TRUE,16:05:00
+2022,5,10/9/22,Sun,Philadelphia Eagles,Arizona Cardinals,20,17,357,363,0,1,63919,TRUE,16:25:00
+2022,5,10/9/22,Sun,Dallas Cowboys,Los Angeles Rams,22,10,239,323,0,3,74154,TRUE,16:25:00
+2022,5,10/9/22,Sun,Cincinnati Bengals,Baltimore Ravens,17,19,291,325,1,1,70548,TRUE,20:20:00
+2022,5,10/10/22,Mon,Las Vegas Raiders,Kansas City Chiefs,29,30,378,368,0,0,73523,TRUE,20:15:00
+2022,6,10/13/22,Thu,Washington Commanders,Chicago Bears,12,7,214,391,0,2,61873,TRUE,20:15:00
+2022,6,10/16/22,Sun,San Francisco 49ers,Atlanta Falcons,14,28,346,289,3,0,69813,TRUE,13:00:00
+2022,6,10/16/22,Sun,Cincinnati Bengals,New Orleans Saints,30,26,348,399,1,0,70004,TRUE,13:00:00
+2022,6,10/16/22,Sun,New England Patriots,Cleveland Browns,38,15,399,328,1,4,67431,TRUE,13:00:00
+2022,6,10/16/22,Sun,Jacksonville Jaguars,Indianapolis Colts,27,34,379,434,1,0,65749,TRUE,13:00:00
+2022,6,10/16/22,Sun,New York Jets,Green Bay Packers,27,10,278,278,0,1,78343,TRUE,13:00:00
+2022,6,10/16/22,Sun,Minnesota Vikings,Miami Dolphins,24,16,234,458,0,3,66100,TRUE,13:00:00
+2022,6,10/16/22,Sun,Baltimore Ravens,New York Giants,20,24,406,238,2,1,78019,TRUE,13:00:00
+2022,6,10/16/22,Sun,Tampa Bay Buccaneers,Pittsburgh Steelers,18,20,304,270,0,0,67307,TRUE,13:00:00
+2022,6,10/16/22,Sun,Carolina Panthers,Los Angeles Rams,10,24,203,360,1,1,71482,TRUE,16:05:00
+2022,6,10/16/22,Sun,Arizona Cardinals,Seattle Seahawks,9,19,315,296,2,1,68867,TRUE,16:05:00
+2022,6,10/16/22,Sun,Buffalo Bills,Kansas City Chiefs,24,20,443,387,1,2,73586,TRUE,16:25:00
+2022,6,10/16/22,Sun,Dallas Cowboys,Philadelphia Eagles,17,26,315,268,3,0,69879,TRUE,20:20:00
+2022,6,10/17/22,Mon,Denver Broncos,Los Angeles Chargers,16,19,258,297,1,1,70240,TRUE,20:15:00
+2022,7,10/20/22,Thu,New Orleans Saints,Arizona Cardinals,34,42,494,326,3,0,63290,TRUE,20:15:00
+2022,7,10/23/22,Sun,Atlanta Falcons,Cincinnati Bengals,17,35,214,537,0,0,66158,TRUE,13:00:00
+2022,7,10/23/22,Sun,Tampa Bay Buccaneers,Carolina Panthers,3,21,322,343,0,0,71941,TRUE,13:00:00
+2022,7,10/23/22,Sun,Cleveland Browns,Baltimore Ravens,20,23,336,254,2,1,70461,TRUE,13:00:00
+2022,7,10/23/22,Sun,Indianapolis Colts,Tennessee Titans,10,19,292,254,3,1,69459,TRUE,13:00:00
+2022,7,10/23/22,Sun,Detroit Lions,Dallas Cowboys,6,24,312,330,5,1,93487,TRUE,13:00:00
+2022,7,10/23/22,Sun,Green Bay Packers,Washington Commanders,21,23,232,364,1,1,60427,TRUE,13:00:00
+2022,7,10/23/22,Sun,New York Giants,Jacksonville Jaguars,23,17,436,452,0,1,65664,TRUE,13:00:00
+2022,7,10/23/22,Sun,Houston Texans,Las Vegas Raiders,20,38,404,400,1,0,61228,TRUE,16:05:00
+2022,7,10/23/22,Sun,New York Jets,Denver Broncos,16,9,260,324,0,1,76624,TRUE,16:05:00
+2022,7,10/23/22,Sun,Kansas City Chiefs,San Francisco 49ers,44,23,529,444,2,3,71746,TRUE,16:25:00
+2022,7,10/23/22,Sun,Seattle Seahawks,Los Angeles Chargers,37,23,404,329,2,2,70240,TRUE,16:25:00
+2022,7,10/23/22,Sun,Pittsburgh Steelers,Miami Dolphins,10,16,341,372,3,0,66224,TRUE,20:20:00
+2022,7,10/24/22,Mon,Chicago Bears,New England Patriots,33,14,390,260,1,4,65878,TRUE,20:15:00
+2022,8,10/27/22,Thu,Baltimore Ravens,Tampa Bay Buccaneers,27,22,453,349,0,1,68912,TRUE,20:15:00
+2022,8,10/30/22,Sun,Denver Broncos,Jacksonville Jaguars,21,17,331,305,1,2,86215,TRUE,9:30:00
+2022,8,10/30/22,Sun,Miami Dolphins,Detroit Lions,31,27,476,393,1,0,61447,TRUE,13:00:00
+2022,8,10/30/22,Sun,Pittsburgh Steelers,Philadelphia Eagles,13,35,302,401,2,0,69879,TRUE,13:00:00
+2022,8,10/30/22,Sun,Carolina Panthers,Atlanta Falcons,34,37,478,406,1,2,68996,TRUE,13:00:00
+2022,8,10/30/22,Sun,Chicago Bears,Dallas Cowboys,29,49,371,442,1,1,93767,TRUE,13:00:00
+2022,8,10/30/22,Sun,Arizona Cardinals,Minnesota Vikings,26,34,375,381,3,1,66742,TRUE,13:00:00
+2022,8,10/30/22,Sun,Las Vegas Raiders,New Orleans Saints,0,24,183,367,1,0,70009,TRUE,13:00:00
+2022,8,10/30/22,Sun,New England Patriots,New York Jets,22,17,288,387,1,3,82823,TRUE,13:00:00
+2022,8,10/30/22,Sun,Tennessee Titans,Houston Texans,17,10,354,161,2,1,68467,TRUE,16:05:00
+2022,8,10/30/22,Sun,San Francisco 49ers,Los Angeles Rams,31,14,368,223,0,0,73505,TRUE,16:25:00
+2022,8,10/30/22,Sun,Washington Commanders,Indianapolis Colts,17,16,362,324,1,2,65515,TRUE,16:25:00
+2022,8,10/30/22,Sun,New York Giants,Seattle Seahawks,13,27,225,277,2,1,68921,TRUE,16:25:00
+2022,8,10/30/22,Sun,Green Bay Packers,Buffalo Bills,17,27,398,369,1,2,70863,TRUE,20:20:00
+2022,8,10/31/22,Mon,Cincinnati Bengals,Cleveland Browns,13,32,229,440,2,2,67431,TRUE,20:15:00
+2022,9,11/3/22,Thu,Philadelphia Eagles,Houston Texans,29,17,360,303,1,2,68831,TRUE,20:15:00
+2022,9,11/6/22,Sun,Buffalo Bills,New York Jets,17,20,317,310,2,1,83135,TRUE,13:00:00
+2022,9,11/6/22,Sun,Green Bay Packers,Detroit Lions,9,15,389,254,3,1,63379,TRUE,13:00:00
+2022,9,11/6/22,Sun,Minnesota Vikings,Washington Commanders,20,17,301,263,1,1,58651,TRUE,13:00:00
+2022,9,11/6/22,Sun,Los Angeles Chargers,Atlanta Falcons,20,17,336,315,2,2,69299,TRUE,13:00:00
+2022,9,11/6/22,Sun,Carolina Panthers,Cincinnati Bengals,21,42,228,464,3,0,66160,TRUE,13:00:00
+2022,9,11/6/22,Sun,Miami Dolphins,Chicago Bears,35,32,379,368,0,0,62377,TRUE,13:00:00
+2022,9,11/6/22,Sun,Indianapolis Colts,New England Patriots,3,26,121,203,1,1,65878,TRUE,13:00:00
+2022,9,11/6/22,Sun,Las Vegas Raiders,Jacksonville Jaguars,20,27,321,403,1,1,62758,TRUE,13:00:00
+2022,9,11/6/22,Sun,Seattle Seahawks,Arizona Cardinals,31,21,421,262,1,1,63982,TRUE,16:05:00
+2022,9,11/6/22,Sun,Los Angeles Rams,Tampa Bay Buccaneers,13,16,206,323,0,0,69019,TRUE,16:25:00
+2022,9,11/6/22,Sun,Tennessee Titans,Kansas City Chiefs,17,20,229,499,0,1,73475,TRUE,20:20:00
+2022,9,11/7/22,Mon,Baltimore Ravens,New Orleans Saints,27,13,319,243,0,1,70010,TRUE,20:15:00
+2022,10,11/10/22,Thu,Atlanta Falcons,Carolina Panthers,15,25,291,333,1,0,72029,TRUE,20:15:00
+2022,10,11/13/22,Sun,Seattle Seahawks,Tampa Bay Buccaneers,16,21,283,419,1,2,69811,TRUE,9:30:00
+2022,10,11/13/22,Sun,Minnesota Vikings,Buffalo Bills,33,30,481,486,2,4,70844,TRUE,13:00:00
+2022,10,11/13/22,Sun,Cleveland Browns,Miami Dolphins,17,39,297,491,1,0,66563,TRUE,13:00:00
+2022,10,11/13/22,Sun,Denver Broncos,Tennessee Titans,10,17,313,307,1,1,69240,TRUE,13:00:00
+2022,10,11/13/22,Sun,Houston Texans,New York Giants,16,24,387,367,2,0,71615,TRUE,13:00:00
+2022,10,11/13/22,Sun,Detroit Lions,Chicago Bears,31,30,323,408,0,1,61817,TRUE,13:00:00
+2022,10,11/13/22,Sun,Jacksonville Jaguars,Kansas City Chiefs,17,27,315,486,0,3,73493,TRUE,13:00:00
+2022,10,11/13/22,Sun,New Orleans Saints,Pittsburgh Steelers,10,20,186,379,2,0,66544,TRUE,13:00:00
+2022,10,11/13/22,Sun,Indianapolis Colts,Las Vegas Raiders,25,20,415,309,1,0,62197,TRUE,16:05:00
+2022,10,11/13/22,Sun,Dallas Cowboys,Green Bay Packers,28,31,421,415,2,2,78433,TRUE,16:25:00
+2022,10,11/13/22,Sun,Arizona Cardinals,Los Angeles Rams,27,17,298,256,0,2,71752,TRUE,16:25:00
+2022,10,11/13/22,Sun,Los Angeles Chargers,San Francisco 49ers,16,22,238,387,1,1,71709,TRUE,20:20:00
+2022,10,11/14/22,Mon,Washington Commanders,Philadelphia Eagles,32,21,330,264,2,4,69879,TRUE,20:15:00
+2022,11,11/17/22,Thu,Tennessee Titans,Green Bay Packers,27,17,408,271,1,0,77506,TRUE,20:15:00
+2022,11,11/20/22,Sun,Cleveland Browns,Buffalo Bills,23,31,396,357,1,0,52146,TRUE,13:00:00
+2022,11,11/20/22,Sun,Detroit Lions,New York Giants,31,18,325,413,0,3,76267,TRUE,13:00:00
+2022,11,11/20/22,Sun,Washington Commanders,Houston Texans,23,10,344,148,0,2,65865,TRUE,13:00:00
+2022,11,11/20/22,Sun,New York Jets,New England Patriots,3,10,103,297,0,0,65878,TRUE,13:00:00
+2022,11,11/20/22,Sun,Chicago Bears,Atlanta Falcons,24,27,288,280,1,2,69757,TRUE,13:00:00
+2022,11,11/20/22,Sun,Carolina Panthers,Baltimore Ravens,3,13,205,308,3,1,70677,TRUE,13:00:00
+2022,11,11/20/22,Sun,Philadelphia Eagles,Indianapolis Colts,17,16,314,284,2,1,66241,TRUE,13:00:00
+2022,11,11/20/22,Sun,Los Angeles Rams,New Orleans Saints,20,27,336,323,0,0,70025,TRUE,13:00:00
+2022,11,11/20/22,Sun,Las Vegas Raiders,Denver Broncos,22,16,407,320,0,0,76056,TRUE,16:05:00
+2022,11,11/20/22,Sun,Cincinnati Bengals,Pittsburgh Steelers,37,30,408,351,2,0,66401,TRUE,16:25:00
+2022,11,11/20/22,Sun,Dallas Cowboys,Minnesota Vikings,40,3,458,183,0,1,65304,TRUE,16:25:00
+2022,11,11/20/22,Sun,Kansas City Chiefs,Los Angeles Chargers,30,27,485,365,1,2,70240,TRUE,20:20:00
+2022,11,11/21/22,Mon,San Francisco 49ers,Arizona Cardinals,38,10,387,314,0,2,78427,TRUE,20:15:00
+2022,12,11/24/22,Thu,Buffalo Bills,Detroit Lions,28,25,401,326,1,2,66553,TRUE,12:30:00
+2022,12,11/24/22,Thu,New York Giants,Dallas Cowboys,20,28,300,430,0,2,93568,TRUE,16:30:00
+2022,12,11/24/22,Thu,New England Patriots,Minnesota Vikings,26,33,409,358,0,1,66918,TRUE,20:20:00
+2022,12,11/27/22,Sun,Cincinnati Bengals,Tennessee Titans,20,16,374,344,0,0,69441,TRUE,13:00:00
+2022,12,11/27/22,Sun,Tampa Bay Buccaneers,Cleveland Browns,17,23,325,367,0,1,67431,TRUE,13:00:00
+2022,12,11/27/22,Sun,Houston Texans,Miami Dolphins,15,30,210,339,3,1,66205,TRUE,13:00:00
+2022,12,11/27/22,Sun,Baltimore Ravens,Jacksonville Jaguars,27,28,415,332,2,1,59560,TRUE,13:00:00
+2022,12,11/27/22,Sun,Atlanta Falcons,Washington Commanders,13,19,332,314,1,1,53864,TRUE,13:00:00
+2022,12,11/27/22,Sun,Denver Broncos,Carolina Panthers,10,23,246,349,2,1,70644,TRUE,13:00:00
+2022,12,11/27/22,Sun,Chicago Bears,New York Jets,10,31,292,466,1,0,77963,TRUE,13:00:00
+2022,12,11/27/22,Sun,Las Vegas Raiders,Seattle Seahawks,40,34,576,372,2,2,68849,TRUE,16:05:00
+2022,12,11/27/22,Sun,Los Angeles Chargers,Arizona Cardinals,25,24,311,366,0,2,63628,TRUE,16:05:00
+2022,12,11/27/22,Sun,Los Angeles Rams,Kansas City Chiefs,10,26,198,437,2,2,73557,TRUE,16:25:00
+2022,12,11/27/22,Sun,New Orleans Saints,San Francisco 49ers,0,13,260,317,2,0,71275,TRUE,16:25:00
+2022,12,11/27/22,Sun,Green Bay Packers,Philadelphia Eagles,33,40,342,500,2,1,69879,TRUE,20:20:00
+2022,12,11/28/22,Mon,Pittsburgh Steelers,Indianapolis Colts,24,17,323,290,0,2,65982,TRUE,20:15:00
+2022,13,12/1/22,Thu,Buffalo Bills,New England Patriots,24,10,355,242,1,0,65878,TRUE,20:15:00
+2022,13,12/4/22,Sun,Cleveland Browns,Houston Texans,27,14,304,283,2,4,66523,TRUE,13:00:00
+2022,13,12/4/22,Sun,Denver Broncos,Baltimore Ravens,9,10,272,285,0,2,70443,TRUE,13:00:00
+2022,13,12/4/22,Sun,Jacksonville Jaguars,Detroit Lions,14,40,266,437,1,0,60743,TRUE,13:00:00
+2022,13,12/4/22,Sun,New York Jets,Minnesota Vikings,22,27,486,287,2,0,66973,TRUE,13:00:00
+2022,13,12/4/22,Sun,Washington Commanders,New York Giants,20,20,411,316,1,1,76128,TRUE,13:00:00
+2022,13,12/4/22,Sun,Tennessee Titans,Philadelphia Eagles,10,35,209,453,0,0,69879,TRUE,13:00:00
+2022,13,12/4/22,Sun,Pittsburgh Steelers,Atlanta Falcons,19,16,351,306,0,1,70325,TRUE,13:00:00
+2022,13,12/4/22,Sun,Green Bay Packers,Chicago Bears,28,19,357,409,0,3,61233,TRUE,13:00:00
+2022,13,12/4/22,Sun,Miami Dolphins,San Francisco 49ers,17,33,308,351,4,1,71732,TRUE,16:05:00
+2022,13,12/4/22,Sun,Seattle Seahawks,Los Angeles Rams,27,23,438,319,2,2,71802,TRUE,16:05:00
+2022,13,12/4/22,Sun,Kansas City Chiefs,Cincinnati Bengals,24,27,349,431,1,0,66243,TRUE,16:25:00
+2022,13,12/4/22,Sun,Los Angeles Chargers,Las Vegas Raiders,20,27,386,404,1,2,62123,TRUE,16:25:00
+2022,13,12/4/22,Sun,Indianapolis Colts,Dallas Cowboys,19,54,309,385,5,1,93086,TRUE,20:20:00
+2022,13,12/5/22,Mon,New Orleans Saints,Tampa Bay Buccaneers,16,17,298,350,0,2,68709,TRUE,20:15:00
+2022,14,12/8/22,Thu,Las Vegas Raiders,Los Angeles Rams,16,17,302,282,2,1,74738,TRUE,20:15:00
+2022,14,12/11/22,Sun,New York Jets,Buffalo Bills,12,20,309,232,2,0,70603,TRUE,13:00:00
+2022,14,12/11/22,Sun,Cleveland Browns,Cincinnati Bengals,10,23,344,363,1,1,66222,TRUE,13:00:00
+2022,14,12/11/22,Sun,Houston Texans,Dallas Cowboys,23,27,327,404,2,3,93843,TRUE,13:00:00
+2022,14,12/11/22,Sun,Minnesota Vikings,Detroit Lions,23,34,416,464,2,0,66374,TRUE,13:00:00
+2022,14,12/11/22,Sun,Jacksonville Jaguars,Tennessee Titans,36,22,428,364,0,4,68409,TRUE,13:00:00
+2022,14,12/11/22,Sun,Philadelphia Eagles,New York Giants,48,22,437,304,0,1,81506,TRUE,13:00:00
+2022,14,12/11/22,Sun,Baltimore Ravens,Pittsburgh Steelers,16,14,309,329,0,3,66326,TRUE,13:00:00
+2022,14,12/11/22,Sun,Kansas City Chiefs,Denver Broncos,34,28,431,320,3,2,76072,TRUE,16:20:00
+2022,14,12/11/22,Sun,Carolina Panthers,Seattle Seahawks,30,24,328,287,0,2,68672,TRUE,16:25:00
+2022,14,12/11/22,Sun,Tampa Bay Buccaneers,San Francisco 49ers,7,35,322,404,3,1,71725,TRUE,16:25:00
+2022,14,12/11/22,Sun,Miami Dolphins,Los Angeles Chargers,17,23,219,432,0,0,70240,TRUE,20:20:00
+2022,14,12/12/22,Mon,New England Patriots,Arizona Cardinals,27,13,328,323,1,2,63251,TRUE,20:15:00
+2022,15,12/15/22,Thu,San Francisco 49ers,Seattle Seahawks,21,13,381,277,0,1,68957,TRUE,20:15:00
+2022,15,12/17/22,Sat,Indianapolis Colts,Minnesota Vikings,36,39,341,518,1,3,66801,TRUE,13:00:00
+2022,15,12/17/22,Sat,Baltimore Ravens,Cleveland Browns,3,13,324,283,2,0,67431,TRUE,16:30:00
+2022,15,12/17/22,Sat,Miami Dolphins,Buffalo Bills,29,32,405,446,0,1,70794,TRUE,20:15:00
+2022,15,12/18/22,Sun,Atlanta Falcons,New Orleans Saints,18,21,320,348,1,1,70041,TRUE,13:00:00
+2022,15,12/18/22,Sun,Pittsburgh Steelers,Carolina Panthers,24,16,325,209,0,0,73548,TRUE,13:00:00
+2022,15,12/18/22,Sun,Philadelphia Eagles,Chicago Bears,25,20,421,248,3,1,48423,TRUE,13:00:00
+2022,15,12/18/22,Sun,Dallas Cowboys,Jacksonville Jaguars,34,40,397,503,2,3,69050,TRUE,13:00:00
+2022,15,12/18/22,Sun,Detroit Lions,New York Jets,20,17,359,337,0,1,75076,TRUE,13:00:00
+2022,15,12/18/22,Sun,Kansas City Chiefs,Houston Texans,30,24,502,219,2,1,70541,TRUE,13:00:00
+2022,15,12/18/22,Sun,Arizona Cardinals,Denver Broncos,15,24,240,324,3,2,75179,TRUE,16:05:00
+2022,15,12/18/22,Sun,Cincinnati Bengals,Tampa Bay Buccaneers,34,23,237,396,1,4,69305,TRUE,16:25:00
+2022,15,12/18/22,Sun,Tennessee Titans,Los Angeles Chargers,14,17,284,365,1,2,70240,TRUE,16:25:00
+2022,15,12/18/22,Sun,New York Giants,Washington Commanders,20,12,288,387,0,2,61917,TRUE,20:15:00
+2022,15,12/18/22,Sun,New England Patriots,Las Vegas Raiders,24,30,318,308,1,1,62273,TRUE,20:20:00
+2022,15,12/19/22,Mon,Los Angeles Rams,Green Bay Packers,12,24,156,345,1,2,77269,TRUE,20:15:00
+2022,16,12/22/22,Thu,Jacksonville Jaguars,New York Jets,19,3,365,227,1,2,70043,TRUE,20:15:00
+2022,16,12/24/22,Sat,Atlanta Falcons,Baltimore Ravens,9,17,327,299,1,0,70467,TRUE,13:00:00
+2022,16,12/24/22,Sat,Buffalo Bills,Chicago Bears,35,13,426,209,3,2,59929,TRUE,13:00:00
+2022,16,12/24/22,Sat,Detroit Lions,Carolina Panthers,23,37,381,570,1,0,69173,TRUE,13:00:00
+2022,16,12/24/22,Sat,Cincinnati Bengals,New England Patriots,22,18,442,285,3,1,65878,TRUE,13:00:00
+2022,16,12/24/22,Sat,New Orleans Saints,Cleveland Browns,17,10,244,249,1,1,67431,TRUE,13:00:00
+2022,16,12/24/22,Sat,Houston Texans,Tennessee Titans,19,14,285,272,1,3,66634,TRUE,13:00:00
+2022,16,12/24/22,Sat,Seattle Seahawks,Kansas City Chiefs,10,24,333,297,1,0,73331,TRUE,13:00:00
+2022,16,12/24/22,Sat,New York Giants,Minnesota Vikings,24,27,445,353,2,0,66919,TRUE,13:00:00
+2022,16,12/24/22,Sat,Washington Commanders,San Francisco 49ers,20,37,349,371,2,1,71642,TRUE,16:05:00
+2022,16,12/24/22,Sat,Philadelphia Eagles,Dallas Cowboys,34,40,442,419,4,1,93754,TRUE,16:25:00
+2022,16,12/24/22,Sat,Las Vegas Raiders,Pittsburgh Steelers,10,13,201,350,3,1,64761,TRUE,20:15:00
+2022,16,12/25/22,Sun,Green Bay Packers,Miami Dolphins,26,20,301,376,1,4,66328,TRUE,13:00:00
+2022,16,12/25/22,Sun,Denver Broncos,Los Angeles Rams,14,51,323,388,4,0,71525,TRUE,16:30:00
+2022,16,12/25/22,Sun,Tampa Bay Buccaneers,Arizona Cardinals,19,16,396,325,2,3,63393,TRUE,20:20:00
+2022,16,12/26/22,Mon,Los Angeles Chargers,Indianapolis Colts,20,3,314,173,2,3,65576,TRUE,20:15:00
+2022,17,12/29/22,Thu,Dallas Cowboys,Tennessee Titans,27,13,361,317,3,2,69292,TRUE,20:15:00
+2022,17,1/1/23,Sun,Arizona Cardinals,Atlanta Falcons,19,20,339,298,0,1,69269,TRUE,13:00:00
+2022,17,1/1/23,Sun,Carolina Panthers,Tampa Bay Buccaneers,24,30,400,478,3,1,69298,TRUE,13:00:00
+2022,17,1/1/23,Sun,Chicago Bears,Detroit Lions,10,41,230,504,2,0,66169,TRUE,13:00:00
+2022,17,1/1/23,Sun,Cleveland Browns,Washington Commanders,24,10,301,260,0,3,50827,TRUE,13:00:00
+2022,17,1/1/23,Sun,Indianapolis Colts,New York Giants,10,38,252,394,1,1,77399,TRUE,13:00:00
+2022,17,1/1/23,Sun,Denver Broncos,Kansas City Chiefs,24,27,307,374,2,2,73571,TRUE,13:00:00
+2022,17,1/1/23,Sun,Jacksonville Jaguars,Houston Texans,31,3,337,277,2,1,64581,TRUE,13:00:00
+2022,17,1/1/23,Sun,Miami Dolphins,New England Patriots,21,23,333,249,2,0,65878,TRUE,13:00:00
+2022,17,1/1/23,Sun,New Orleans Saints,Philadelphia Eagles,20,10,313,313,1,1,69796,TRUE,13:00:00
+2022,17,1/1/23,Sun,Pittsburgh Steelers,Baltimore Ravens,16,13,351,240,0,1,71042,TRUE,13:00:00
+2022,17,1/1/23,Sun,New York Jets,Seattle Seahawks,6,23,279,346,3,0,68827,TRUE,16:05:00
+2022,17,1/1/23,Sun,San Francisco 49ers,Las Vegas Raiders,37,34,454,500,1,2,62367,TRUE,16:05:00
+2022,17,1/1/23,Sun,Minnesota Vikings,Green Bay Packers,17,41,346,315,4,0,78190,TRUE,16:25:00
+2022,17,1/1/23,Sun,Los Angeles Rams,Los Angeles Chargers,10,31,277,431,1,0,70240,TRUE,16:25:00
+2022,18,1/7/23,Sat,Kansas City Chiefs,Las Vegas Raiders,31,13,349,279,0,2,62136,TRUE,16:30:00
+2022,18,1/7/23,Sat,Tennessee Titans,Jacksonville Jaguars,16,20,312,222,2,1,70050,TRUE,20:15:00
+2022,18,1/8/23,Sun,New England Patriots,Buffalo Bills,23,35,341,327,3,3,70753,TRUE,13:00:00
+2022,18,1/8/23,Sun,Baltimore Ravens,Cincinnati Bengals,16,27,386,257,4,1,65849,TRUE,13:00:00
+2022,18,1/8/23,Sun,Tampa Bay Buccaneers,Atlanta Falcons,17,30,222,382,1,1,69276,TRUE,13:00:00
+2022,18,1/8/23,Sun,Carolina Panthers,New Orleans Saints,10,7,203,304,2,1,70118,TRUE,13:00:00
+2022,18,1/8/23,Sun,Minnesota Vikings,Chicago Bears,29,13,482,259,2,2,60007,TRUE,13:00:00
+2022,18,1/8/23,Sun,Cleveland Browns,Pittsburgh Steelers,14,28,307,333,2,1,65019,TRUE,13:00:00
+2022,18,1/8/23,Sun,Houston Texans,Indianapolis Colts,32,31,360,398,3,3,63655,TRUE,13:00:00
+2022,18,1/8/23,Sun,New York Jets,Miami Dolphins,6,11,187,302,0,0,66429,TRUE,13:00:00
+2022,18,1/8/23,Sun,Arizona Cardinals,San Francisco 49ers,13,38,255,311,4,0,71638,TRUE,16:25:00
+2022,18,1/8/23,Sun,Dallas Cowboys,Washington Commanders,6,26,182,309,2,1,62814,TRUE,16:25:00
+2022,18,1/8/23,Sun,Los Angeles Chargers,Denver Broncos,28,31,352,471,2,2,74035,TRUE,16:25:00
+2022,18,1/8/23,Sun,New York Giants,Philadelphia Eagles,16,22,284,342,0,1,69879,TRUE,16:25:00
+2022,18,1/8/23,Sun,Los Angeles Rams,Seattle Seahawks,16,19,269,402,1,2,68660,TRUE,16:25:00
+2022,18,1/8/23,Sun,Detroit Lions,Green Bay Packers,20,16,323,291,0,2,78191,TRUE,20:20:00

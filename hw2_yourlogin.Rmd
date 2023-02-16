@@ -1,0 +1,164 @@
+---
+title: "Homework 2"
+author: 'Name: PUT YOUR NAME HERE'
+date: "Due Friday, February 24, 2023"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+You should rename this file so that you replace **yourlogin** with the username you use for Moodle/email/etc. For example, my file would be called **hw2_rvankrevelen.Rmd**. It's important to follow these guidelines exactly because I will be using an R package that automatically reads in your script, and it needs to be able to match files to students. If you have questions, just ask!
+
+---
+
+# Part A - NFL Home Field Advantage (35 points total)
+
+<br>
+
+For this assignment, you will be using a dataset called **hw2 - nfl.csv**. It contains information on every regular season NFL game over the past five seasons. Variables include information about when the game was played, which teams were involved, how the home and visiting team did, and how many fans were at the game. You will not use all of the variables. If there are any variables you have questions about, just ask Dr. V!
+
+<br>
+
+1. (3 points) Generate code that will read the **hw2 - nfl.csv** file into R. You should name your data frame `nfl_data`. (Note: Put your data in the same folder as your .Rmd file on your computer. Then set the working directory to the source file location. This will make it so the file path only includes the name of the file, not any other folders that other people won't have on their computers.)
+
+```{r}
+# Replace this comment with your code to read in the data
+```
+
+<br>
+
+
+2. (4 points) Several of the variable names are long and include things like spaces that make them difficult to work with. Write code to rename the following columns:
+
+- Change `Visiting Team Points` to `PTS_V`
+- Change `Home Team Points` to `PTS_H`
+- Change `Fans Present?` to `Fans`
+
+```{r}
+# Replace this comment with your code to rename the columns
+```
+
+<br>
+
+
+3. (3 points) The dataset includes more variables than we need. Subset the data to only include columns for `Season`, `Week`, `PTS_V`, `PTS_H`, and `Fans`. After you do this, include a line of code that prints the names of the remaining variables.
+
+```{r}
+# Replace this comment with your code to subset the data
+```
+
+<br>
+
+
+4. (4 points) Create a new variable called `PTS_Margin` that takes the points the home team scored minus the points the visiting team scored. Then create a new logical variable called `Home_Won` that is `TRUE` if the home team won the game and `FALSE` if the visiting team won.
+
+```{r}
+# Replace this comment with your code to create the new variables
+```
+
+<br>
+
+
+5. (4 points) Write code to find the largest number of points a home team won by and the largest number of points a visiting team won by. Report your answers below.
+
+```{r}
+# Replace this comment with your code to find largest victories for home/visitor
+```
+
+- Biggest home team win was by _____ points.
+- Biggest visiting team win was by ____ points.
+
+<br>
+
+
+6. (4 points) Write code to arrange the data by `PTS_Margin` from highest to lowest. Then print the five highest values. Which seasons did these games occur in?
+
+```{r}
+# Replace this comment with your code to arrange data and print top 5
+```
+
+**Answer:**
+
+<br>
+
+
+7. (4 points) Write code to find the average points margin for each of the five NFL seasons in the data. Make sure a table of your results is printed in your file. (Note: Your output should be a single table with a value for each year, not the results of five separate lines of code.)
+
+```{r}
+# Replace this comment with your code to find averages for each season
+```
+
+<br>
+
+
+8. (4 points) Let's follow up on your previous result by creating side-by-side boxplots that display the points margin distribution for each season. (Bonus: Can you use `geom_vline()` or `geom_hline()` to add a line across your graph where `PTS_Margin` = 0?)
+
+```{r}
+# Replace this comment with your code to create a boxplot
+```
+
+<br>
+
+
+9. (5 points) Create a bar graph that displays the number of games played in each season. Map the color of the bars to the variable `Fans`. Include a couple sentences below with two things you notice when displaying the data this way.
+
+```{r}
+# Replace this comment with your code to create a bar graph
+```
+
+**Answer:** 
+
+<br>
+
+
+---
+
+# Part B - Fans and Home Field Advantage (13 points total)
+
+10. (3 points) Create a subset of your data called `nfl_2020` that only includes data from the 2020 NFL season.
+
+```{r}
+# Replace this comment with your code to subset the data
+```
+
+<br>
+
+
+11. (5 points) Make a scatterplot showing the relationship between Week (x-axis) and `PTS_Margin` (y-axis). Add a simple linear regression line to the graph. Does there appear to be much of a relationship between how much a home team wins by and the week in the season? Explain your reasoning for your answer.
+
+```{r}
+# Replace this comment with your code to create a scatterplot
+```
+
+**Answer:**
+
+<br>
+
+
+12. (5 points) Come up with a graph you could use to explore whether or not the home team does better when there are fans at the game. Then write a couple sentences explaining how your graph helps you answer this question.
+
+```{r}
+# Replace this comment with your code for your graph
+```
+
+**Answer:**
+
+<br>
+
+---
+
+# Part C - Reflection (2 points)
+
+13. (2 points) We are almost up to our first exam. What's one thing you feel confident about heading into the exam **and** what's one thing you feel you need to review more before the exam?
+
+**Answer**:
+
+<br>
+
+
+**Before you finish. Knit your document and make sure that all your answers are there.**

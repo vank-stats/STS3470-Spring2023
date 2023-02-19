@@ -1,0 +1,107 @@
+---
+title: "Adding Themes to ggplot2 Graphs"
+author: 'STS3470: Dr. VanKrevelen'
+date: "Tuesday, February 21, 2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Below is an example of a graph we made during Notes 4. We will learn several ways to make this look nicer, but one easy thing to do is to add a theme to your graph.
+
+```{r}
+library(ggplot2)
+g <- ggplot(mtcars, aes(x = mpg)) +
+  geom_histogram(binwidth = 5, fill = "maroon", color = "gold")
+```
+
+## Built-in ggplot2 themes
+
+Notice that the default graph has a grayish background with white lines. There are several alternatives that are built into R (e.g. `theme_classic()`, `theme_bw()`, `theme_dark()`). Below are examples of each of those in order (using the `patchwork` package to combine them into one image).
+
+```{r}
+library(patchwork)
+g1 <- g + theme_classic() + labs(title = "theme_classic")
+g2 <- g + theme_bw() + labs(title = "theme_bw")
+g3 <- g + theme_dark() + labs(title = "theme_dark")
+g1 + g2 + g3
+```
+
+You can find examples of all the built-in `ggplot2` themes [here](https://ggplot2.tidyverse.org/reference/ggtheme.html).
+
+However, as with many things in R, people have created lots of other themes that we can also use.
+
+## The `ggthemes` package
+
+The `ggthemes` package includes a variety of themes. Some of these mimic specific publications (e.g. The Economist or The Wall Street Journal) or other graphing tools (e.g. Excel or Google Docs). You can see them all [here](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/).
+
+Below are a few examples (again using `patchwork` to combine them into one image). I removed the bar colors since they clash a bit with some of the themes.
+
+```{r}
+g <- ggplot(mtcars, aes(x = mpg)) + 
+  geom_histogram(binwidth = 5, color = "white")
+
+library(ggthemes)
+g4 <- g + theme_economist() + labs(title = "The Economist Theme")
+g5 <- g + theme_wsj() + labs(title = "WSJ Theme")
+g6 <- g + theme_excel() + labs(title = "Microsoft Excel Theme")
+g7 <- g + theme_gdocs() + labs(title = "Google Docs Theme")
+(g4 + g5) / (g6 + g7)
+```
+
+
+## The `tvthemes` package
+
+There is also a package called `tvthemes` that makes graph themes in the styles of shows like The Simpsons, Spongebob Squarepants, Avatar: The Last Airbender, Parks & Recreation, and more. You can learn more [here](https://ryo-n7.github.io/2019-05-16-introducing-tvthemes-package/).
+
+```{r}
+library(tvthemes)
+g8 <- g + theme_simpsons() + labs(title = "The Simpsons Theme")
+g9 <- g + theme_spongeBob() + labs(title = "Spongebob Theme")
+g10 <- g + theme_avatar() + labs(title = "Avatar: The Last Airbender Theme")
+g11 <- g + theme_parksAndRec() + labs(title = "Parks & Rec Theme")
+(g8 + g9) / (g10 + g11)
+```
+
+
+## Creating your own theme
+
+You can also create your own theme using the `theme()` function. The picture below (link [here](https://henrywang.nl/ggplot2-theme-elements-demonstration/)) shows you how to change each element of your graph. The [themes chapter](https://ggplot2-book.org/polishing.html) of this ggplot2 textbook is also a nice resource.
+
+Below is an example of a custom theme for a graph on Math/Stats Department majors since 2011.
+
+```{r, warning = FALSE}
+# The tidyr library is used to convert my data from "wide format" (a column
+#   for each major) to "long format" (major is a variable)
+library(tidyr)
+
+math_stat <- data.frame(Year = 2022:2011,
+                        Statistics = c(48, 53, 56, 57, 54, 56, 
+                                  43, 47, 34, 32, 34, 24),
+                        Math = c(26, 21, 26, 33, 31, 32, 
+                                 46, 39, 44, 56, 55, 63),
+                        Applied_Math = c(27, 34, 25, 23, 32, 37, 
+                                         27, 18, 12, 9, 5, 4),
+                        Data_Analytics = c(11, rep(NA, 11))) %>%
+  pivot_longer(cols = -Year, names_to = "Major", values_to = "Students")
+
+ggplot(math_stat, aes(x = Year, y = Students, color = Major)) +
+  geom_line(size = 2) +
+  geom_point() +
+  labs(title = "Elon MTH/STS Department Majors", x = "Year (Fall Semester)",
+       y = "Number of Majors") +
+  scale_x_continuous(breaks = seq(2012, 2022, 2)) +
+  theme(plot.background = element_rect(fill = "firebrick4"),
+        panel.background = element_rect(fill = "white"),
+        panel.grid = element_line(color = "lightgray"),
+        plot.title = element_text(color = "goldenrod1", size = 18, 
+                                  face = "bold", family = "Courier"),
+        axis.title = element_text(color = "goldenrod1", size = 14),
+        axis.text = element_text(color = "goldenrod1"),
+        axis.ticks = element_line(color = "goldenrod1"),
+        legend.background = element_rect(fill = "darkgray"),
+        plot.margin = margin(20, 20, 20, 20))
+```
+

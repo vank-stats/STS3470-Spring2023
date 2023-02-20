@@ -1,0 +1,169 @@
+---
+title: 'Activity 5'
+author: "Dr. VanKrevelen -- STS3470 (Spring 2023)"
+date: 'Updated: `r Sys.Date()`'
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Directions:** Use this .RMD script to record your code / output / answers. Alternatively, you can start a .R script and handwrite your answers on a printed copy of the activity.
+
+Remember that with a .RMD file, you can run individual code chunks by clicking the green triangle button in the top right of the chunk or by putting your cursor on a line and hitting Cmd+Return (Mac) or Ctrl+Return (PC) like you would in a .R script. When you use the Knit button, it will run all the code in order in a fresh R session and produce your knitted file.
+
+Have questions? Find a classmate or Dr. V to ask!
+
+
+1. Run the following code. What is the purpose of the second line, and how does the third line help us check that it worked?
+
+```{r}
+data("ToothGrowth")
+ToothGrowth$dose2 <- factor(ToothGrowth$dose)
+str(ToothGrowth)
+```
+
+**Answer:**
+
+
+
+<br>
+<br>
+
+2. Run the code below. Why doesn't it produce a graph for us yet?
+
+```{r, out.width = "60%", fig.align = "center"}
+library(ggplot2)
+g <- ggplot(ToothGrowth, aes(x = supp, y = len))
+g
+```
+
+**Answer:**
+
+
+
+<br>
+<br>
+
+3. The code below explores how the `color` and `fill` arguments differ in `geom_boxplot()`. What role is each playing in our graph?
+
+```{r, out.width = "60%", fig.align = "center"}
+g + geom_boxplot(color = 'orange', fill = 'lightblue')
+```
+
+**Answer:**
+
+
+
+<br>
+<br>
+
+4. What is different between when you assign your categorical variable to the `fill` aesthetic versus when you assign a vector of colors (outside of `aes()`)?
+
+```{r, out.width = "60%", fig.align = "center"}
+g + geom_boxplot(aes(fill = supp))
+g + geom_boxplot(fill = c('aquamarine', 'darkorange3'))
+```
+
+
+**Answer:**
+
+
+
+<br>
+<br>
+
+5. We can tell R not to show legends if we don't need them (like in the first example in the previous question). What does the default value for the `show.legend` argument appear to be?
+
+```{r, out.width = "60%", fig.align = "center"}
+g + geom_boxplot(aes(fill = supp), show.legend = FALSE)
+```
+
+
+**Answer:**
+
+
+
+<br>
+
+6. In the previous case, we didn't really need a legend because we assigned the same variable to `x` and to `fill.` What happens when we assign a new variable to `fill`?
+
+```{r, out.width = "60%", fig.align = "center"}
+g + geom_boxplot(aes(fill = dose2))
+```
+
+**Answer:**
+
+
+
+<br>
+<br>
+
+7. Try creating a new boxplot that puts `dose` on the x-axis (and `len` on the y-axis). What warning message do you get and why do we get this message?
+
+```{r, out.width = "60%", fig.align = "center"}
+
+```
+
+**Answer:**
+
+
+
+<br>
+<br>
+
+8. Now do the same thing but put `dose2` on the x-axis instead of `dose`. Why does this fix the issue before?
+
+```{r, out.width = "60%", fig.align = "center"}
+
+```
+
+**Answer:**
+
+
+
+<br>
+<br>
+
+9. Try running the code below. What does the `geom_jitter()` function appear to do? What do you think the `height` and `weight` arguments mean? (Hint: Check the help menu and/or experiment with them.)
+
+```{r, out.width = "60%", fig.align = "center"}
+g + geom_boxplot() +
+  geom_jitter(height = 0, width = 0.1)
+```
+
+**Answer:**
+
+
+
+<br>
+<br>
+
+10. What did the new `geom_boxplot()` arguments below do?
+
+```{r, out.width = "60%", fig.align = "center"}
+ggplot(ToothGrowth, aes(x = supp, y = len, fill = dose2)) +
+  geom_boxplot(outlier.color = 'red', outlier.shape = 4, outlier.size = 4)
+```
+
+**Answer:**
+
+
+
+<br>
+<br>
+
+11. Take another dataset we've worked with this semester and practice using `geom_boxplot()` and/or `geom_jitter()`. Practice using the arguments we've seen here and consider also looking up other possible options. Record any notes below.
+
+```{r, out.width = "60%", fig.align = "center"}
+
+```
+
+**Notes:**
+
+
+
+<br>
+<br>

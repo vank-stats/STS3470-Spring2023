@@ -4,27 +4,54 @@
 
 library(ggplot2)
 
-# Histogram of mpg in mtcars data
+
+### Graphs from intro
+
+ggplot(mtcars, aes(x = mpg)) + 
+  geom_density(fill = "lightblue")
+ggplot(mtcars, aes(x = hp, y = mpg, shape = factor(am))) + 
+  geom_point() + 
+  theme_bw() +
+  labs(x = "Horsepower", y = "Miles per gallon", shape = "Transmission")
+ggplot(mtcars, aes(x = factor(cyl), y = wt)) + 
+  geom_boxplot(fill = "maroon") + 
+  theme_classic()
+ggplot(mtcars, aes(x = factor(cyl), fill = factor(am))) + 
+  geom_bar() + 
+  labs(x = "Number of Cylinders", y = "Cars", fill = "Transmission") +
+  scale_fill_viridis_d(labels = c("Automatic", "Manual"), option = "E")
+
+
+
+
+
+### Histograms
+
+# Histogram of mpg in mtcars data - tells us to change bins/binwidth
 
 ggplot(mtcars, aes(x = mpg)) +
   geom_histogram()
+
 
 # Histogram with 10 bins instead of 30 (the default)
 
 ggplot(mtcars, aes(x = mpg)) +
   geom_histogram(bins = 10)
 
+
 # Histogram with each bin 5 mpg wide
 
 ggplot(mtcars, aes(x = mpg)) +
   geom_histogram(binwidth = 5)
 
-# Add lines between bars to distinguish them
+
+# Add lines between bars to distinguish them using color
 
 ggplot(mtcars, aes(x = mpg)) +
   geom_histogram(binwidth = 5, color = "blue")
 
-# Change color of the bars
+
+# Change color of the bars using fill
 
 ggplot(mtcars, aes(x = mpg)) +
   geom_histogram(binwidth = 5, fill = "maroon", color = "gold")
@@ -38,10 +65,16 @@ ggplot(diamonds, aes(x = carat)) +
 
 
 
-# Side-by-side boxplots
+
+### Side-by-side boxplots
+
+# Boxplots of carat by cut type (horizontal boxes)
 
 ggplot(diamonds, aes(x = carat, y = cut)) +
   geom_boxplot()
+
+
+# Swap x and y to get vertical boxes
 
 ggplot(diamonds, aes(y = carat, x = cut)) +
   geom_boxplot()
@@ -52,6 +85,9 @@ ggplot(diamonds, aes(y = carat, x = cut)) +
 ggplot(diamonds, aes(x = color, y = price)) +
   geom_boxplot()
 
+
+# Use scale_y_log10() to convert price to a log base 10 scale
+
 ggplot(diamonds, aes(x = color, y = price)) +
   geom_boxplot() +
   scale_y_log10()
@@ -59,42 +95,52 @@ ggplot(diamonds, aes(x = color, y = price)) +
 
 
 
-# Scatterplots
+
+### Scatterplots
 
 # mtcars data --> scatterplot of weight vs. mpg
+# geom_smooth() is adding a simple linear regression line
 
 ggplot(mtcars, aes(x = wt, y = mpg)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE)
 
 
-# Practice
+# Change se to TRUE to display shaded standard error around line
+
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = TRUE)
+
+
+# Practice - Scatterplot of carat vs. price for diamonds
 
 ggplot(diamonds, aes(x = carat, y = price)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE)
 
-# Bonus - red points
+# Bonus - Turn the points red (not in aes() because we aren't mapping a variable)
 
 ggplot(diamonds, aes(x = carat, y = price)) +
   geom_point(color = "red") +
   geom_smooth(method = "lm", se = TRUE)
 
-# Bonus - point color depends on cut
 
-# Gives me points/lines of different colors (by cut)
-
-ggplot(diamonds, aes(x = carat, y = price, color = cut)) +
-  geom_point() +
-  geom_smooth(method = "lm", se = TRUE)
-
-# Gives me points of different color (by cut) with only one line
+# Bonus - point color depends on cut (inside aes() because cut is mapped to color)
 
 ggplot(diamonds, aes(x = carat, y = price)) +
   geom_point(aes(color = cut)) +
   geom_smooth(method = "lm", se = TRUE)
 
-# Points a little transparent (use alpha, 0 means totally see through, 1 is normal)
+
+# If we want separate lines for each cut, move color arg to ggplot()
+
+ggplot(diamonds, aes(x = carat, y = price, color = cut)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = TRUE)
+
+
+# Use alpha to make points transparent (0 means totally see through, 1 is normal)
 
 ggplot(diamonds, aes(x = carat, y = price)) +
   geom_point(aes(color = cut), alpha = 0.2) +
@@ -103,15 +149,16 @@ ggplot(diamonds, aes(x = carat, y = price)) +
 
 
 
-# Bar graphs
 
-# Raw data using geom_bar()
+### Bar graphs
+
+# Raw data using geom_bar() - bar graph of diamond cut
 
 ggplot(diamonds, aes(x = cut)) +
   geom_bar()
 
 
-# Trying to use geom_bar() with summarized data
+# Trying to use geom_bar() with summarized data - shows all bars same height
 
 elon_22 <- data.frame(College = c("A&S", "Comm", "Edu", "Bus", "Health"),
                       Majors = c(2967, 1380, 291, 1948, 107))
@@ -120,15 +167,57 @@ ggplot(elon_22, aes(x = College)) +
   geom_bar()
 
 
-# Summarized data using geom_col()
+# Need to use geom_col() with summarized data. Map count variable to y.
 
 ggplot(elon_22, aes(x = College, y = Majors)) +
   geom_col()
 
 
+# Bonus - Add color to the bars
+
+# Option 1, all bars the same color
+
+ggplot(elon_22, aes(x = College, y = Majors)) +
+  geom_col(fill = "aquamarine")
 
 
-# Troubleshooting
+# Option 2, separate color for each college
+
+ggplot(elon_22, aes(x = College, y = Majors, fill = College)) +
+  geom_col()
+
+
+# Option 3 - adding in new variable for color (using diamonds data)
+# Notice how it stacks the other variable within the first.
+
+ggplot(diamonds, aes(x = cut, fill = clarity)) +
+  geom_bar()
+
+
+
+
+
+### Troubleshooting section
+
+# R is treating am as continuous, gives us a color scale
+
+ggplot(mtcars, aes(x = wt, y = mpg, color = am)) +
+  geom_point()
+
+
+# We want separate colors for our two categories, use factor() function
 
 ggplot(mtcars, aes(x = wt, y = mpg, color = factor(am))) +
   geom_point()
+
+
+# If both variables are considered numeric, side-by-side boxplots don't work
+
+ggplot(mtcars, aes(x = am, y = mpg)) +
+  geom_boxplot()
+
+
+# Again, we can use factor() to convert am to categorical
+
+ggplot(mtcars, aes(x = factor(am), y = mpg)) +
+  geom_boxplot()

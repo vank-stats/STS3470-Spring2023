@@ -1,0 +1,191 @@
+---
+title: "Fun R Thing - Week 5 - gganimate"
+author: "By Jackie Jovanovic"
+output: html_document
+date: 'STS3470 - Spring 2023'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<style>
+
+body{
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+</style>
+
+
+<center>
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
+
+gganimate is tool used to animate visualizations created with **ggplot2**.  
+
+</div>
+</center>
+
+The documentation for **gganimate** can be found [here](https://gganimate.com/index.html). Below is a brief overview of some key concepts and functions:
+
+- *transitions* : used to say how the plot data should be distributed throughout the frames
+  - `transition_states()`: takes a discrete variable and animates between the different states
+  - `transition_time()`: takes a continuous variable and transitions through distinct states in time
+  - `transition_reveal()`: allows data to gradually appear based on a given dimension
+- *tweening* : the process of generating images that go between key frames
+  - *easing* : how to progress from one value to another
+  - `ease_aes()`: defines the velocity with which aesthetics change during an animation
+    - defaults to `'linear'` but there are many different functions, check out [this page](https://gganimate.com/reference/ease_aes.html) for further details
+  - *enter* and *exit* : used for modifying the aesthetics of appearing and disappearing data
+    - `enter_fade()` and `exit_fade()` are two examples of the several [functions](https://gganimate.com/reference/enter_exit.html)
+- *rendering* : grants control of rendering the animation (this does not need to be used unless you want to create an object to save the animation or if you want to customize the rendering)
+  - `animate()`: for printing an animation object
+  - `anim_save()`: save a file of the animation
+
+To explore animations, we will use data from the **Lahman** package.
+
+Make sure to install the package **gganimate** and **gifski** packages if you have not previously done so.
+
+```{r load_packages, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(gganimate)
+library(gifski)
+library(Lahman)
+```
+
+
+## Line Graph
+
+First, we will create some summary statistics about salary to use in the plot.
+
+```{r}
+avgsals <- Salaries %>% 
+  group_by(yearID) %>% 
+  summarise(average = mean(salary),
+            lowest = min(salary),
+            highest = max(salary)) %>% 
+  pivot_longer(cols = average:highest,
+               names_to = "level",
+               values_to = "pay")
+avgsals <- as.data.frame(avgsals)
+```
+
+`pivot_longer()` alters the form of a data frame by increasing the number of rows and decreasing the number of columns. Essentially it "lengthens" the data. So instead of 'average', 'lowest', and 'highest' each having their own column (before pivoting), they share one column called 'level'. This will be helpful for building the graph below.  
+
+```{r, fig.align='center', fig.width=8,message=FALSE, warning=FALSE}
+avgsals %>% 
+  ggplot() +
+  geom_line(aes(x = yearID, y = pay, color = level), size = 1) +
+  labs(title = "Salary Changes", x = "Year", y = "Salary", color = "Salary Level") +
+  scale_y_continuous(labels = scales::comma) +
+  scale_color_hue(h = c(180, 290)) +
+  theme_bw() +
+  transition_reveal(yearID)
+```
+
+This animation used the `transition_reveal()` function to slowly build up lines.
+
+
+## Bar Graph
+
+The **Teams** table contains data from several leagues. This chunk is selecting the 30 Major League Baseball teams, but just their stats from the 2021 season. 
+
+```{r}
+majors_teams <- Teams %>% 
+  arrange(desc(yearID)) %>% 
+  head(30)
+```
+
+In order to look at only MLB teams the `filter()` function must be used.
+The first argument is saying filter the **Teams** data frame to observations with a `teamID` that matches one of the `teamID`s in the **majors_team** data set.
+
+```{r, fig.align='center', fig.width=8}
+ordered <- Teams %>%
+  filter(teamID %in% majors_teams$teamID, yearID >= 2012) %>%
+  group_by(yearID) %>%
+  mutate(yearRank = rank(W, ties.method = "random")) %>%
+  ggplot(aes(x = W, y = as.factor(yearRank), group = teamID, fill = teamID)) +
+    geom_col() +
+    theme_bw() +
+    geom_text(aes(x = 0, label = paste(teamID, " ")), hjust = 0.8, size = 3) +
+    theme(legend.position = "none", axis.text.y = element_blank()) +
+    transition_states(yearID) +
+    labs(title = "{closest_state}", x = "Wins", y ="") +
+    ease_aes('cubic-in-out')
+animate(ordered, fps = 7)
+```
+
+Unlike the earlier salary plot, this graph looks at each year individually instead of adding on to previous years. This is because of the `transition_states()` function. Note that the title also changes. In order for the title to update with the plot, there needs to be directions inside of { }. Since this particular chunk uses `transition_states()`, the title argument is `"{closest_state}"`. The default transition rate was a bit fast. Saving the graph as an object allows you to alter the rendering with the `animate()` function. The [argument](https://gganimate.com/reference/animate.html) `fps` adjusts the frames per second to make it slower (in this case).  
+
+
+## Scatter Plot
+
+There is no table in the **Lahman** database that contains a player's position *AND* their batting statistics, so we will have to make one.  
+First filter **battingStats** to MLB teams in and after the year 2012. Do the same for **Fielding**, and additionally filter out pitchers. The graph we will create is about batting average of different positions, so only fielders should be included. To avoid repetitive information while joining, select the variables `playerID`, `yearID`, and `POS`. Next merge the two data frames to make a single object that contains both position and batting statistics. 
+
+```{r, message=FALSE, warning=FALSE}
+majors_players <- battingStats() %>% 
+  filter(teamID %in% majors_teams$teamID, yearID >= 2012)
+get_pos <- Fielding %>% 
+  filter(teamID %in% majors_teams$teamID, yearID >= 2012, POS != "P") %>% 
+  dplyr::select(playerID, yearID, POS)
+
+combo <- majors_players %>% 
+  inner_join(get_pos)
+```
+
+For the sake of rendering time we will only graph the years 2016, 2017, 2018, 2019, 2020, and 2021.
+
+```{r, fig.align='center', fig.width=8}
+combo %>% 
+  filter(!is.na(BA), yearID >= 2016) %>% 
+  ggplot(aes(x = G, y = BA, color = POS)) +
+  geom_point(alpha = 0.5) +
+  facet_wrap(~yearID) +
+  theme_bw() +
+  theme(legend.position = "none") +
+  transition_states(POS, state_length = 1) +
+  labs(title = "{closest_state}", x = "Games", y = "Batting Average") +
+  ease_aes('sine-in-out') + 
+  enter_fade() + 
+  exit_fade()
+```
+
+The `exit` and `enter` functions allow for a smooth transition between the different positions. 
+
+
+## Saving Animations
+
+Create an object for the plot you would like to save:
+```{r, eval=FALSE}
+salaries_plot <- avgsals %>% 
+  ggplot() +
+  geom_line(aes(x = yearID, y = pay, color = level), size = 1) +
+  labs(title = "Salary Changes", x = "Year", y = "Salary", color = "Salary Level") +
+  scale_y_continuous(labels = scales::comma) +
+  scale_color_hue(h = c(180, 290)) +
+  theme_bw() +
+  transition_reveal(yearID)
+```
+
+Run it with `animate()`:
+```{r, eval=FALSE}
+animate(salaries_plot, renderer = gifski_renderer())
+```
+
+Save it using `anim_save()`:
+```{r, eval=FALSE}
+anim_save("salaries_plot.gif")
+```
+
+Make sure when naming file to be save you use `.gif` at the end. This is what makes the graph animated. `anim_save()` defaults to the last rendered animation, so it will save whatever plot was created the last time `animate()` was run. If you would like to specify a location to save the file use the `path` argument. It will automatically save to the working directory if not otherwise specified. 
+

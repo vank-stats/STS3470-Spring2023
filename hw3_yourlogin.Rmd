@@ -1,0 +1,171 @@
+---
+title: "Homework 3"
+author: 'Name: PUT YOUR NAME HERE'
+date: "Due Tuesday, March 28, 2023"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+You should rename this file so that you replace **yourlogin** with the username you use for Moodle/email/etc. For example, my file would be called **hw3_rvankrevelen.Rmd**. It's important to follow these guidelines exactly because I will be using an R package that automatically reads in your script, and it needs to be able to match files to students. If you have questions, just ask!
+
+Use the space below to load any R packages that you use in this file. I've started with `ggplot2` and `dplyr`.
+
+```{r}
+library(ggplot2)
+library(dplyr) # used for %>% and summarizing data by groups
+library(tidyr) # used for replace_na() function
+```
+
+---
+
+# Part A - Recreating graphs from a paper on hedgehog lifespans (48 points)
+
+<br>
+
+For this assignment, you will be using a dataset called **hw3 - hedgehogs.csv**. It contains information on hedgehogs that were collected in Denmark and analyzed to determine how old they live and when/how they die. You will not need to use all of the variables. If you have questions about any of them, just ask Dr. V! (The full paper is [here](https://www.mdpi.com/2076-2615/13/4/626#) if you're interested.)
+
+<br>
+
+1. (3 points) Generate code that will read the **hw3 - hedgehogs.csv** file into R. You should name your data frame `hedgehogs`. (Note: Put your data in the same folder as your .Rmd file on your computer. Then set the working directory to the source file location. This will make it so the file path only includes the name of the file, not any other folders that other people won't have on their computers.) 
+
+```{r}
+# Replace this comment with your code to read in the data
+
+```
+
+<br>
+
+
+2. (3 points) Add a logical variable to your `hedgehogs` data frame called `TrafficDeath` that is `TRUE` if the `Cause` variable is "Roadkill" and `FALSE` otherwise. Create a table displaying the number of `TRUE` and `FALSE` values in your newly created variable.
+
+```{r}
+# Replace this comment with your code to read in the data
+
+```
+
+<br>
+
+
+3. (3 points) Create a subset of the data that removes hedgehogs where `Sex` is unknown. Call your subset `hedgehogs_sexknown`. Create a table displaying the count of the `Sex` variable in your new data frame.
+
+```{r}
+# Replace this comment with your code to read in the data
+
+```
+
+
+4. (9 points) [A picture from the paper](https://pub.mdpi-res.com/animals/animals-13-00626/article_deploy/html/images/animals-13-00626-g003.png?1676269713) includes three graphs. I've included code that will create a summary of your data called `hedgehog_sum`. Write code using this data to create graph A. You should create an object that the graph is stored as (for later) and print the graph in your knitted file. Below are some things to consider:
+
+- You will need to use a new geom (`geom_line()`) along with a geom we have used before.
+- You will need to apply the same theme they used
+- You will need to use the title they used (A - Deaths by sex and month)
+- Their graph has a legend but no text above the legend
+- You will need to adjust the y axis limits and the values displayed along the x-axis
+
+**Note: You should change `eval` to `TRUE` when you run this. However, it won't work until you've created the `hedgehogs_sexknown` data frame.**
+
+```{r, eval = FALSE}
+hedgehog_sum <- hedgehogs_sexknown %>%
+  summarize(Number = n(), .by = c(Month, Sex)) %>%
+  add_row(Month = 1:3, Sex = "Female") %>%
+  complete(Month, Sex) %>% 
+  replace_na(list(Number = 0)) %>%
+  arrange(Sex, Month)
+
+# Replace this comment with the rest of your code
+
+
+```
+
+<br>
+
+
+5. (9 points) [A picture from the paper](https://pub.mdpi-res.com/animals/animals-13-00626/article_deploy/html/images/animals-13-00626-g003.png?1676269713) includes three graphs. Write code to create graph B (the stacked bar graph) using the `hedgehogs_sexknown` data frame. You should create an object that the graph is stored as (for later) and print the graph in your knitted file. Below are some things to consider:
+
+- You will need to apply the same theme they used
+- You will need to use the title they used
+- The legend name has a space in it that the variable doesn't have and the y-axis label is capitalized
+- The colors used are not the default colors (you don't need to match them exactly, but try to at least have a darker green and darker orange like they have)
+
+```{r}
+# Replace this comment with your code
+
+```
+
+<br>
+
+
+6. (9 points) [A picture from the paper](https://pub.mdpi-res.com/animals/animals-13-00626/article_deploy/html/images/animals-13-00626-g003.png?1676269713) includes three graphs. I've included code that will create a summary of your data called `hedgehog_sum2`. Write code using this data to create graph C. You should create an object that the graph is stored as (for later) and print the graph in your knitted file. Below are some things to consider:
+
+- You will need to apply the same theme they used
+- You will need to use the title they used
+- There is no legend included. Look at the geom_xxxx() functions to see how you might achieve this.
+- The legend name has a space in it that the variable doesn't have (and the y-axis label is capitalized)
+- Note: For this graph it's ok if the two boxes say FALSE and TRUE instead of Non-traffic death and Traffic death
+
+**Note: You should change `eval` to `TRUE` when you run this. However, it won't work until you've created the `hedgehogs_sexknown` data frame.**
+
+```{r, eval = FALSE}
+hedgehog_sum2 <- hedgehogs_sexknown %>%
+  summarize(count = n(), .by = c(Month, Sex, TrafficDeath)) %>%
+  add_row(Month = 1:3, Sex = "Female", TrafficDeath = TRUE) %>%
+  complete(Month, Sex, TrafficDeath) %>% 
+  replace_na(list(count = 0)) %>%
+  arrange(Sex, Month, TrafficDeath)
+
+# Replace this comment with the rest of your code
+
+
+```
+
+<br>
+
+
+7. (3 points) The picture from the paper puts all three graphs into a single image. Use an R package from class to take your three graphs and combine them in the same way.
+
+```{r}
+# Replace this comment with your code
+
+```
+
+<br>
+
+
+8. (9 points) [Another graph](https://pub.mdpi-res.com/animals/animals-13-00626/article_deploy/html/images/animals-13-00626-g005.png?1676269721) in the paper plots the `iHO` variable (x) versus the `Age` variable (y). The graph includes a dashed simple linear regression line for those two variables along with its shaded standard error. The points are color-coded based on the `Sex` of the hedgehog. Write code using the `hedgehogs` data frame to recreate this graph. You should create an object that the graph is stored as (for later) and print the graph in your knitted file. Below are some things to consider:
+
+- You will need to apply the same theme they used
+- The x and y axis labels are changed
+- The line is NOT based on the sex variable at all but the points are
+- The line is dashed and black in color
+- The points are slightly bigger than the default and are slightly transparent
+- The point colors are not the default (Note: You can get the greenish blue color using "#00BFC4" and the reddish color using "#F8766D". "gray" is fine for the third color)
+- No legend is included with the graph
+- Note: Due to a couple missing values, it's possible the points on your graph won't look exactly the same. That's ok as long as you've addressed the items above.
+
+```{r}
+# Replace this comment with your code
+
+```
+
+<br>
+
+
+
+---
+
+# Part B - Reflection (2 points)
+
+9. What's something you learned while working on the project that stood out to you and why did it stand out? This could be something about your R package, something about the process of working with real data in R, or something else.
+
+**Answer**:
+
+<br>
+
+
+**Before you finish. Knit your document and make sure that all your answers are there.**

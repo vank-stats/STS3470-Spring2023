@@ -1,0 +1,136 @@
+---
+title: "TV and Book Text Packages"
+author: 'STS3470: Dr. VanKrevelen'
+date: "Tuesday, March 28, 2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# schrute
+
+While there are plenty of "serious" R packages, you'll find plenty of others too that you may not expect. For example, the `schrute` package contains the scripts for every episode of the TV show The Office (American version). The code below loads the package and lists the variables along with the first five rows of the data for select variables.
+
+```{r}
+library(schrute)
+names(theoffice)
+head(theoffice[, c(2, 3, 7, 8)], n = 5)
+```
+
+Someone might use this data to plot episode ratings over time...
+
+```{r, message = FALSE}
+library(ggplot2)
+library(dplyr)
+
+episode_summary <- theoffice %>%
+  summarize(Rating = mean(imdb_rating), .by = c(season, episode))
+
+ggplot(episode_summary, aes(x = episode, y = Rating, color = factor(season))) +
+  geom_point(show.legend = FALSE) +
+  geom_line(show.legend = FALSE) +
+  theme_bw() +
+  facet_wrap(vars(season)) +
+  labs(title = "The Office IMDB Ratings by Season",
+       x = "Episode",
+       y = "IMDB Average Rating")
+```
+
+or which characters spoke the most...
+
+```{r}
+speaking_summary <- theoffice %>%
+  summarize(Lines = n(), .by = character) %>%
+  filter(Lines > 500)
+ggplot(speaking_summary, aes(x = Lines, y = reorder(character, Lines))) +
+  geom_col(fill = "orange") +
+  labs(title = "Who spoke the most on The Office?",
+       subtitle = "Minimum of 500 lines spoken",
+       y = "Character") +
+  theme_dark()
+```
+
+or to see who talked about beets most often...
+
+```{r}
+library(stringr)
+
+theoffice %>%
+  mutate(beets = str_count(text, "beet")) %>%
+  summarize(MentionedBeets = sum(beets), .by = character) %>%
+  filter(MentionedBeets > 0) %>%
+  arrange(desc(MentionedBeets))
+```
+
+---
+
+# friends
+
+A very similar package exists for the TV show Friends. The `friends` data frame includes only information about lines from the show.
+
+```{r}
+library(friends)
+names(friends)
+head(friends, n = 5)
+```
+
+We could use this to see who said "friends" most on the show.
+
+```{r}
+friends %>%
+  mutate(says_friends = str_count(text, "friends")) %>%
+  summarize(friends_count = sum(says_friends), .by = speaker) %>%
+  filter(friends_count > 6) %>%
+  arrange(desc(friends_count))
+```
+
+Information about each episode is in a separate data frame called `friends_info`.
+
+```{r}
+names(friends_info)
+head(friends_info, n = 5)
+```
+
+We could re-create our episode rating graph from The Office with this data.
+
+```{r}
+ggplot(friends_info, aes(x = episode, y = imdb_rating, color = factor(season))) +
+  geom_point(show.legend = FALSE) +
+  geom_line(show.legend = FALSE) +
+  theme_bw() +
+  facet_wrap(vars(season)) +
+  labs(title = "Friends IMDB Episode Ratings by Season",
+       y = "IMDB Average Rating",
+       x = "Episode Number")
+```
+
+
+---
+
+# janeaustenr
+
+If you prefer books, there is an R package of the text from all of Jane Austen's novels. This package includes a function called `austen_books()` that will load text from six of her novels into a single object. There are also data frames for the individual books called `emma`, `mansfieldpark`, `northangerabbey`, `persuasion`, `prideprejudice`, and `sensesensibility`.
+
+Below you can see examples of two of these.
+
+```{r}
+library(janeaustenr)
+
+austen <- austen_books()
+head(austen)
+
+head(prideprejudice)
+```
+
+Suppose I'm curious how often Jane Austen mentions love in each of her six novels.
+
+```{r}
+love <- austen %>%
+  mutate(mentions_love = str_count(text, "love")) %>%
+  summarize(love_count = sum(mentions_love), .by = book) %>%
+  arrange(desc(love_count))
+love
+```
+

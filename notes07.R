@@ -6,6 +6,7 @@
 # there have been 100 sixes by roll 500, the cumulative mean is 100 / 500 = 0.2.
 
 library(ggplot2)
+library(dplyr)
 set.seed(20230321)
 
 rolls <- sample(1:6, size = 10000, replace = TRUE)
@@ -21,7 +22,7 @@ ggplot(data = NULL, aes(x = 1:10000, y = prop_six)) +
 
 
 
-# Example graphs of different distributions
+# Example graphs of different distributions in the notes
 
 # Normal distribution graphs - patchwork used to put them in one image
 
@@ -86,6 +87,34 @@ g1 + g2
 
 
 
+
+# Working with probabilities in R section
+
+# Examples in notes
+pnorm(-1)
+pt(-1, 10)
+
+# Practice solutions
+pf(1, 5, 10)
+pf(-1, 5, 10)
+
+# Examples solutions
+pt(1.28, 24)
+pt(1.28, 24, lower.tail = FALSE)
+
+# More T-Dist Probability Examples
+pt(2, 12)
+pt(-0.5, 5, lower.tail = FALSE)
+1 - pt(1.28, 999)
+
+# Why does this matter? Solutions
+pnorm(-1.1)
+1 - pf(2.8, 3, 20)
+pchisq(10.2, 4, lower.tail = FALSE)
+
+
+
+
 # T Distribution Simulation - What happens if you change some values?
 
 mu <- 50
@@ -94,6 +123,7 @@ n <- 10
 reps <- 5000
 
 set.seed(12345)
+mymat <- matrix(rnorm(reps * n, mu, sigma), ncol = n)
 
 library(dplyr) # for the mutate() function
 
@@ -102,6 +132,7 @@ samples <- data.frame(sample = 1:reps,
                       s = apply(mymat, 1, sd))
 samples <- mutate(samples, myts = (xbar - mu) / (s / sqrt(n)))
 
+library(ggplot2)
 g <- ggplot(samples, aes(x = myts)) +
   geom_histogram(aes(y = after_stat(density)), color = "white", binwidth = 0.25)
 g
@@ -111,6 +142,9 @@ g + geom_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1),
   geom_function(fun = dt, n = 101, args = list(df = n - 1), color = "blue", 
                 linetype = 2) +
   labs(subtitle = "Red line is normal dist and dashed blue line is t(n - 1)")
+
+
+
 
 library(patchwork) # to put our graphs side by side
 

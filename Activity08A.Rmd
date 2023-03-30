@@ -1,0 +1,145 @@
+---
+title: 'Activity 8A - Using t.test() for paired and two-sample tests'
+author: "Dr. VanKrevelen -- STS3470 (Spring 2023)"
+date: 'Updated: `r Sys.Date()`'
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Directions:** Use this .RMD script to record your code / output / answers.
+
+Remember that with a .RMD file, you can run individual code chunks by clicking the green triangle button in the top right of the chunk or by putting your cursor on a line and hitting Cmd+Return (Mac) or Ctrl+Return (PC) like you would in a .R script. When you use the Knit button, it will run all the code in order in a fresh R session and produce your knitted file.
+
+Have questions? Find a classmate or Dr. V to ask!
+
+
+
+# Part A - Paired sample tests
+
+1. Load the built in `sleep` data frame into your environment and then view the data to see how it is structured. Use the help menu to learn what the variables represent.
+
+
+```{r}
+
+
+```
+
+**Question**: What variables are in this data frame? What does each one mean?
+
+**Answer:**
+
+<br>
+
+**Question:** How often does each person show up in the data?
+
+**Answer:**
+
+<br>
+<br>
+
+
+2. When the data contains a variable linking your paired observations, can use the paired = TRUE argument in `t.test()`. Run the code below (change EVAL to TRUE first) and see what the output looks like.
+
+```{r, eval = FALSE}
+t.test(extra ~ group, paired = TRUE, data = sleep)
+```
+
+**Question:** How do we tell R which variable we are measuring and which variable contains our two categories we are comparing?
+
+**Answer:**
+
+<br>
+
+**Question:** How do you think R knows which values are paired together? Can you see a possible problem we could run into if we run a paired t-test like this?
+
+**Answer:**
+
+<br>
+<br>
+
+
+3. The code below shuffles the order of our observations, but it is still the same data. Do you get the same results when you run t.test()? Why or why not?
+
+```{r, eval = FALSE}
+library(dplyr)
+new_sleep <- sample_n(sleep, size = 20)
+t.test(extra ~ group, paired = TRUE, data = new_sleep)
+```
+
+**Answer:**
+
+<br>
+<br>
+
+
+4. It's usually better if we can be explicit about our comparisons to reduce the chances of making mistakes. That means we may want to calculate the differences for each pair ourselves and then put that into the `t.test()` function. How does the structure of `mysleep` differ from the structure of `sleep`?
+
+```{r, eval = FALSE}
+library(tidyr)
+mysleep <- pivot_wider(sleep, id_cols = ID, names_from = group, 
+                       names_prefix = "extra", values_from = extra)
+mysleep <- mutate(mysleep, diff = extra1 - extra2)
+```
+
+**Answer:**
+
+<br>
+<br>
+
+
+5. You may recall from previous classes, that now we can treat the `diff` variable like a one sample t-test (but interpret the results like a two-samples test). Write code that uses `t.test()` to conduct an appropriate test for the `diff` variable. (Hint: Your results should match what we got in question 2.)
+
+```{r}
+
+```
+
+**Question:** How does the header of the output differ from question 2 and why is this?
+
+**Answer:**
+
+<br>
+<br>
+
+
+6. Let's put all of this together.
+
+a) What was our parameter of interest in this example? Write it out in words.
+
+**Answer:**
+
+<br>
+
+b) What were our null and alternative hypotheses? Why didn't we have to specify these for R?
+
+**Answer:**
+
+<br>
+
+c) What was the test statistic and what was our p-value? How could you verify the p-value using functions from Notes 7?
+
+**Answer:**
+
+<br>
+
+d) Use the p-value to write an appropriate conclusion for this hypothesis test.
+
+**Answer:**
+
+<br>
+
+e) What was the confidence interval? Write an appropriate interpretation of the interval in context. (Note: You should not include negative numbers in your interpretation. Instead, think about what information the negative sign is giving you.)
+
+**Answer:**
+
+<br>
+
+f) What would change if we had calculated diff as extra2 minus extra1? What would stay the same?
+
+**Answer:**
+
+<br>
+

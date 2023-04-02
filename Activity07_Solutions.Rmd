@@ -1,0 +1,330 @@
+---
+title: "Activity 7 - Exploring the Central Limit Theorem"
+author: "Dr. VanKrevelen -- STS3470 (Spring 2023)"
+date: 'Updated: `r Sys.Date()`'
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Directions:** Use this .RMD script to record your code / output / answers.
+
+Remember that with a .RMD file, you can run individual code chunks by clicking the green triangle button in the top right of the chunk or by putting your cursor on a line and hitting Cmd+Return (Mac) or Ctrl+Return (PC) like you would in a .R script. When you use the Knit button, it will run all the code in order in a fresh R session and produce your knitted file.
+
+Have questions? Find a classmate or Dr. V to ask!
+
+# Part A - The Central Limit Theorem
+
+1. Generate a matrix of 1000 rows and 10 columns where each cell contains a value from a normal random variable with a mean of 50 and a standard deviation of 4. Call your matrix `mymatrix`. (Note: To check if it worked, see if the mean and sd of your matrix are close to 50 and 4)
+
+
+```{r}
+set.seed(232303)
+mymatrix <- matrix(data = rnorm(1000 * 10, mean = 50, sd = 4), 
+                   nrow = 1000, ncol = 10)
+mean(mymatrix)
+sd(mymatrix)
+```
+
+**Mean =** `r round(mean(mymatrix), 2)`
+
+**SD =** `r round(sd(mymatrix), 2)`
+
+
+<br>
+<br>
+
+
+2. I've written code below that will calculate the mean of each row of your matrix. You may want to view the help file for the `apply()` function to see if you can figure out how this code works. After that, add code that creates a histogram of your sample means (called `xbar` in our data frame). (Note: You will need to change `eval = FALSE` to `eval = TRUE` for this code to run when you knit your document.) 
+
+```{r, eval = TRUE}
+mymeans <- data.frame(row = 1:1000)
+mymeans$xbar <- apply(mymatrix, 1, mean)
+
+library(ggplot2)
+ggplot(mymeans, aes(x = xbar)) +
+  geom_histogram(binwidth = 0.5, color = "white") +
+  theme_classic()
+```
+
+a) Where is your graph of sample means centered?
+
+**Answer:** 50
+
+<br>
+
+b) What shape does your distribution of sample means have?
+
+**Answer:** Normal / bell-shaped distribution
+
+<br>
+
+c) How does the spread of the sample means differ from the original population you simulated them from?
+
+**Answer:** The spread of the distribution of *sample means* is less than the spread of the population we sampled from. For example, my values on this graph go from about 46 to 54. This would be a range of only one standard deviation in each direction from the mean.
+
+<br>
+<br>
+
+
+3. The code below plots our 1,000 sample means along with our original population (solid blue line) and a normal distribution with mean 50 but a standard deviation of only 4 over square root of 10 (dashed red line). Which distribution matches our distribution of *sample means* better? (Again, you will need to change `eval` to be `TRUE` for this to show up in your knitted file.)
+
+```{r, eval = TRUE}
+ggplot(mymeans, aes(x = xbar)) + 
+  geom_histogram(aes(y = after_stat(density)), color = "white", binwidth = 0.5) + 
+  geom_function(fun = dnorm, n = 101, args = list(mean = 50, sd = 4), 
+                color = "blue") + 
+  geom_function(fun = dnorm, n = 101, args = list(mean = 50, sd = 4 / sqrt(10)), 
+                color = "red", linetype = 2)
+```
+
+**Answer:** The dashed red line with a mean of 50 and a standard deviation of $\frac{4}{\sqrt{10}}$ matches our distribution of sample means much better than the blue solid line for our original population.
+
+
+<br>
+<br>
+
+
+4. Let's try making a QQ Plot to compare our distribution of sample means to a $N(50, \frac{4}{\sqrt{10}})$ distribution. What do you notice? Does our distribution of sample means seem to follow this distribution?
+
+```{r, eval = TRUE}
+ggplot(mymeans, aes(sample = xbar)) + 
+  geom_qq(distribution = qnorm, 
+          dparams = list(mean = 4, sd = 4 / sqrt(10))) +
+  geom_qq_line(distribution = qnorm, 
+               dparams = list(mean = 4, sd = 4 / sqrt(10))) +
+  labs(title = "Comparing sample means to Normal(50, 10/sqrt(4)) dist.",
+       subtitle = "Samples of 10 from Normal(50, 10) dist.")
+```
+
+**Answer:** We see that the points for our sample means follow the 45 degree line pretty well. This tells us that our distribution of sample means seems to follow a normal distribution with a mean of 50 and a standard deviation of 4 over the square root of 10 pretty well.
+
+
+<br>
+<br>
+
+
+**Note**: We just saw that when we take a bunch of random samples from a normal distribution, the distribution of *sample means* is also normal with the same mean but with a smaller standard deviation. Does this work for other distributions?? Let's try it out!
+
+<br>
+<br>
+
+
+5. Use the `rchisq()` function to generate a matrix of 1000 rows and 30 columns where each cell contains a value from a Chi-Squared distribution with between 2 and 10 degrees of freedom (similar to how we created our matrix of values from a normal distribution in question 1). Call your matrix `mymatrix2`. (Note: A Chi-squared distribution has a mean equal to its df and a standard deviation equal to sqrt(2 * df). Use this information to check that you properly generated your values.)
+
+```{r}
+set.seed(232303)
+mymatrix2 <- matrix(data = rchisq(1000 * 30, df = 8), 
+                   nrow = 1000, ncol = 30)
+mean(mymatrix2)
+sd(mymatrix2)
+
+```
+
+**Mean =** `r round(mean(mymatrix2), 2)`
+
+**SD = ** `r round(sd(mymatrix2), 2)`
+
+<br>
+<br>
+
+
+6. Use the example in question 2 to create a data frame that includes the sample mean for each row of your matrix (each sample of 30 values). Call your data frame `mymeans2`. Create a histogram of those sample means.
+
+```{r}
+mymeans2 <- data.frame(row = 1:1000)
+mymeans2$xbar <- apply(mymatrix2, 1, mean)
+
+library(ggplot2)
+ggplot(mymeans2, aes(x = xbar)) +
+  geom_histogram(binwidth = 0.5, color = "white")
+```
+
+a) Where is your graph of sample means centered? Is it close to the degrees of freedom?
+
+**Answer:** Around 8 (the mean of the population)
+
+<br>
+
+b) What shape does your distribution of sample means have? Is it more similar to your population (Chi-Squared) or a Normal distribution?
+
+**Answer:** Normal (bell-shaped)
+
+<br>
+
+c) Is the standard deviation of your sample means closer to the standard deviation of the population (sqrt(2 * df)) or to sqrt(2 * df) / sqrt(30)? Why do you think this is?
+
+**Answer:** A standard deviation of 4 (the pop. st. dev.) is way too large for this graph. It is likely closer to 4 / sqrt(30) = 0.73.
+
+<br>
+<br>
+
+
+7. Change the first line of the code below to assign df the value you used for the degrees of freedom in your Chi-Squared distribution. Then run the code (changing `eval` to `TRUE`). How well does the normal distribution curve match your graph of sample means?
+
+```{r, eval = TRUE}
+df <- 8
+ggplot(mymeans2, aes(x = xbar)) + 
+  geom_histogram(aes(y = after_stat(density)), color = "white", bins = 15) + 
+  geom_function(fun = dnorm, n = 101, color = "red",
+                args = list(mean = df, sd = sqrt(2 * df / 30)))
+```
+
+**Answer:** The red curve looks like a pretty good fit for the histogram of sample means. In other words, sample means from a $\chi^2$ distribution with 8 d.f. follow a normal distribution with a mean of 8 and a standard deviation of $\sqrt{\frac{2 * 8}{30}}$
+
+<br>
+<br>
+
+
+8. Lastly, let's use a QQ plot to compare our sample means to a normal distribution.
+
+```{r, eval = TRUE}
+ggplot(mymeans2, aes(sample = xbar)) + 
+  geom_qq(distribution = qnorm) +
+  geom_qq_line(distribution = qnorm) +
+  labs(title = "Are sample means from Chi-Squared distributions normally distributed?",
+       subtitle = paste0("Samples of 30 from a Chi-Squared(", df, ") distribution"))
+```
+
+
+**Note:** We have seen two cases where the distribution of sample means followed a normal distribution. In one case our population was normally distributed, and in the other case it was not.
+
+---
+
+# Part B - Practice finding p-values / areas under distributions
+
+This part contains several problems for you to practice using functions related to distributions in R. For each problem, you are strongly encouraged to sketch a picture to verify that your answer makes sense. You could also use a tool like StatKey or SAS to verify your answers.
+
+**Notation**: In statistics, the notation P(Z > 1.28) means "probability that a random value from a Z distribution is above 1.28". In other words, you are being asked to find the area above 1.28 on a Z distribution. You may see Z replaced by other distributions like T, F, $\chi^2$, or other normal distributions.
+
+1) Write R code to find P(Z > 1.28) and fill in the answer below.
+
+```{r}
+pnorm(1.28, lower.tail = FALSE)
+```
+
+**P(Z > 1.28) =** 0.1003
+
+<br>
+
+
+2) Write R code to find P(Z > -1.28) and fill in the answer below.
+
+```{r}
+pnorm(-1.28, lower.tail = FALSE)
+```
+
+**P(Z > -1.28) =** 0.8997
+
+<br>
+
+
+3) Earlier in Notes 07, we found $P(T_{999} > 1.28) = 0.1004$. How does this compare to your answer from question 1 and what does this demonstrate about the relationship between the Z and T distributions?
+
+**Answer:** The two values are the same out to three decimal places. This suggests a $T_{999}$ distribution is almost identical to a standard normal distribution. This is because T distributions look more and more like a standard normal distribution as the degrees of freedom increase to infinite.
+
+<br>
+
+
+4) Randomly sample 1000 values from a $T$ distribution with 999 d.f. and use a QQ plot to compare them to a standard normal distribution (see code from earlier in Notes 7). How does this graph help support your answer to the previous question?
+
+```{r}
+# Option 1 - Turn 1000 values into a data frame
+
+tvalues <- data.frame(tvals = rt(1000, 999))
+
+ggplot(tvalues, aes(sample = tvals)) + 
+  geom_qq(distribution = qnorm) +
+  geom_qq_line(distribution = qnorm)
+
+
+# Option 2 - Tell ggplot I don't have a data frame
+
+tvals <- rt(1000, 999)
+
+ggplot(NULL, aes(sample = tvals)) + 
+  geom_qq(distribution = qnorm) +
+  geom_qq_line(distribution = qnorm)
+
+```
+
+**Answer:** In each case, the points fall very close to the line on the graph. This suggests that values from a $T_{999}$ distribution look very similar to values from a normal distribution.
+
+<br>
+
+
+5) Write R code to find P(X > 1.8) where X has a normal distribution with mean 1.5 and standard deviation 0.3. Fill in the answer below.
+
+```{r}
+pnorm(1.8, mean = 1.5, sd = 0.3, lower.tail = FALSE)
+```
+
+**P(X > 1.8) =** 0.1587
+
+<br>
+
+
+6) Write R code to find P(0.9 < X < 1.8) where X has a normal distribution with mean 1.5 and standard deviation 0.3. Fill in the answer below. (Hint: You will need to use a function more than once and put your results together.)
+
+```{r}
+below1_8 <- pnorm(1.8, 1.5, 0.3)
+below0_9 <- pnorm(0.9, 1.5, 0.3)
+between <- below1_8 - below0_9
+between
+```
+
+**P(0.9 < X < 1.8) =** 0.8186
+
+<br>
+
+
+7) Write R code to find $P(F_{12, 6} < 1.3)$ and fill in the answer below.
+
+```{r}
+pf(1.3, 12, 6)
+```
+
+**$P(F_{12, 6} < 1.3)$ =** 0.6084
+
+<br>
+
+
+8) Write R code to find $P(F_{12, 6} > 1.3)$ and fill in the answer below.
+
+```{r}
+pf(1.3, 12, 6, lower.tail = FALSE)
+```
+
+**$P(F_{12, 6} > 1.3)$ =** 0.3916
+
+<br>
+
+
+9) Write R code to find the value that we should replace the ? with to make this a true statement: $P(T_{12} < ?) = 0.975$. Report your answer below.
+
+```{r}
+qt(0.975, 12)
+```
+
+**$P(T_{12} < 2.179) = 0.975$**
+
+The value 2.179 has an area of 0.975 below it in a $T$ distribution with 12 d.f.
+
+<br>
+
+
+10) Write R code to find the value that we should replace the ? with to make this a true statement: $P(Z > ?) = 0.05$. Report your answer below.
+
+```{r}
+qnorm(0.05, lower.tail = FALSE)
+```
+
+**$P(Z > 1.645) = 0.05$**
+
+The value 1.645 has an area of 0.05 above it in a standard normal distribution.
+
+<br>

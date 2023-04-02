@@ -1,5 +1,5 @@
 ---
-title: 'Activity 8A - Using t.test() for paired and two-sample tests'
+title: 'Activity 8A - Using `t.test()` for paired tests'
 author: "Dr. VanKrevelen -- STS3470 (Spring 2023)"
 date: 'Updated: `r Sys.Date()`'
 output:
@@ -42,7 +42,7 @@ Have questions? Find a classmate or Dr. V to ask!
 <br>
 
 
-2. When the data contains a variable linking your paired observations, can use the paired = TRUE argument in `t.test()`. Run the code below (change EVAL to TRUE first) and see what the output looks like.
+2. When the data contains a variable linking your paired observations, can use the paired = TRUE argument in `t.test()`. Run the code below (change to `EVAL = TRUE` first) and see what the output looks like.
 
 ```{r, eval = FALSE}
 t.test(extra ~ group, paired = TRUE, data = sleep)
@@ -62,7 +62,7 @@ t.test(extra ~ group, paired = TRUE, data = sleep)
 <br>
 
 
-3. The code below shuffles the order of our observations, but it is still the same data. Do you get the same results when you run t.test()? Why or why not?
+3. The code below shuffles the order of our observations, but it is still the same data. Do you get the same results when you run `t.test()`? Why or why not?
 
 ```{r, eval = FALSE}
 library(dplyr)

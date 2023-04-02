@@ -1,0 +1,172 @@
+---
+title: 'Activity 8B - Using `t.test()` for two-sample tests'
+author: "Dr. VanKrevelen -- STS3470 (Spring 2023)"
+date: 'Updated: `r Sys.Date()`'
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Directions:** Use this .RMD script to record your code / output / answers.
+
+Remember that with a .RMD file, you can run individual code chunks by clicking the green triangle button in the top right of the chunk or by putting your cursor on a line and hitting Cmd+Return (Mac) or Ctrl+Return (PC) like you would in a .R script. When you use the Knit button, it will run all the code in order in a fresh R session and produce your knitted file.
+
+Have questions? Find a classmate or Dr. V to ask!
+
+
+
+# Part B - Two-independent samples tests
+
+In a course like STS2120, you would have learned about the Student's t-test which has the following test statistic:
+
+$$t = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}}$$
+
+where
+
+$$s_p = \sqrt{\frac{(n_1 - 1) s_1^2 + (n_2 - 1) s_2^2}{n_1 + n_2 - 2}}$$
+
+This test requires the condition / assumption that both populations have the same variance. When it was not reasonable to make this assumption, we transformed our data (e.g. using a natural log). However, there is another version of this test that does not require equal population variances.
+
+The Welch's two independent sample t-test has a test statistic of:
+
+$$t = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}$$
+
+The degrees of freedom for this test has a complicated formula (i.e. they are not $n_1 + n_2 - 2$). For the Welch's test:
+
+$$df \approx \frac{(\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2})^2}{\frac{s_1^4}{n_1^2 (n_1 - 1)}+\frac{s_2^4}{n_2^2 (n_2 - 1)}}$$
+
+
+1. The code below loads the hedgehog data from homework 3 and creates a subset that removes hedgehogs where sex was unknown. Write code to find the sample mean age for male and female hedgehogs. What do you think will be the result of a test comparing the population means? What else might you want to check?
+
+```{r, message = FALSE}
+library(dplyr)
+hedgehogs <- read.csv("https://raw.githubusercontent.com/vank-stats/STS3470-Spring2023/main/hw3%20-%20hedgehogs.csv")
+hedgehogs_sexknown <- filter(hedgehogs, Sex != "Unknown")
+
+# Replace this comment with your code
+```
+
+**Answer:**
+
+<br>
+
+
+2. We can use formula notation to carry out a two-sample hypothesis test. Run the code below (remove `eval = FALSE`). Do you think this is the version of the test that assumes variances are equal or not? How do you know?
+
+```{r, eval = FALSE}
+t.test(Age ~ Sex, data = hedgehogs_sexknown)
+```
+
+**Answer:**
+
+<br>
+
+
+3. What were the null and alternative hypotheses for the test above? What was your p-value and your conclusion (using a significance level of $\alpha = 0.05$)?
+
+**Hypotheses:**
+
+**p-value =**
+
+**Conclusion:**
+
+<br>
+
+
+4. Take the code above and update it to assume the two population variances are equal. What is your p-value for this test? What is your conclusion (using a significance level of $\alpha = 0.05$)?
+
+```{r}
+# Replace this with your code
+```
+
+**p-value =**
+
+**Conclusion:**
+
+<br>
+
+
+5. Which test do you think is more appropriate here and why?
+
+**Answer:**
+
+<br>
+
+
+6. This also shows us the limitations of solely using a p-value with a strict cutoff for statistical inference. What are the 95% confidence intervals for the two approaches?
+
+**CI assuming equal variances:**
+
+**CI assuming not assuming equal variances:**
+
+<br>
+
+
+7. You can also use the `t.test()` function with two vectors. We will explore this with a simulation below. I've written code that simulates data from two populations that have the same population mean. There are options to change the sample sizes and standard deviations (or variances) of the two populations. Use this to answer the questions below.
+
+```{r}
+set.seed(6493) # set seed to allow duplication of results
+
+# Choose values for two groups
+n1 <- 100
+n2 <- 20
+sd1 <- 5
+sd2 <- 15
+
+# Generate samples from two populations
+x1 <- rnorm(n1, 100, sd1)
+x2 <- rnorm(n2, 100, sd2)
+
+# Run Student's and Welch's t-tests
+t.test(x1, x2, var.equal = TRUE)
+t.test(x1, x2, var.equal = FALSE)
+```
+
+a) The initial values for the simulation give you unequal samples (100 and 20) from populations with different variances (5^2 and 15^2). What do you notice about your p-values for your two tests?
+
+**Answer:**
+
+<br>
+
+
+b) Try swapping the two standard deviations (so sd1 = 15 and sd2 = 5). Re-run the simulation. What happens to the two p-values now?
+
+**Answer:**
+
+<br>
+
+
+c) What happens if you use a standard deviation of 15 for both populations?
+
+**Answer:**
+
+<br>
+
+
+d) What happens if we use the original standard deviations (sd1 = 5 and sd2 = 15) but we make both samples have sample sizes of 100?
+
+**Answer:**
+
+<br>
+
+
+e) What do you think is the takeaway here? In other words, it's clear that which type of test we use impacts our results more in some situations than it does in others.
+
+**Answer:**
+
+<br>
+
+
+8. In Activity 08A, you analyzed the `sleep` data as a paired data example. What would happen if we (incorrectly) treated that data as a two-independent samples example? Below is the correct code. Add a line that runs a two-independent samples test and compare your results. As part of your comparison, consider *why* the results change in this way.
+
+```{r}
+t.test(extra ~ group, paired = TRUE, data = sleep)
+
+# Replace this with your code
+```
+
+**Answer:**
+

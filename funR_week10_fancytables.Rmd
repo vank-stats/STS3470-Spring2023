@@ -1,0 +1,63 @@
+---
+title: "Fancy tables with kable and kableExtra"
+author: 'STS3470: Dr. VanKrevelen'
+date: "Tuesday, April 4, 2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+In many cases you may want to display data in a table for a reader, but the default options aren't great. For starters, the output is displayed with ## at the start of each line.
+
+```{r}
+women
+```
+
+The `kableExtra` package can help!
+
+```{r}
+library(kableExtra)
+kbl(women)
+```
+
+The default option still doesn't look great... However, there are a series of functions called `kable_xxxx()` where xxxx can be styling, paper, classic, classic2, minimal, etc. Below are a few examples. Notice that you can also add captions in the `kbl()` function.
+
+```{r}
+kbl(women, caption = "A table using styling") %>%
+  kable_styling()
+
+kbl(women, caption = "This one has a paper theme") %>%
+  kable_paper()
+
+kbl(women, caption = "And a classic theme") %>%
+  kable_classic()
+```
+
+You may find that it looks weird with so much blank space. We can use the `full_width = FALSE` argument with any of these functions. We can also add `bootstrap_options` argument with a "striped" (shade every other cell) and/or hover (shade cells your cursor is over)  option.
+
+```{r}
+kbl(women) %>%
+  kable_classic("hover", full_width = FALSE)
+```
+
+We can choose where to position the table and make changes to things like font size. We can add `column_spec()` functions to change things like column colors.
+
+```{r}
+kbl(women) %>%
+  kable_classic("striped", full_width = FALSE, font_size = 16) %>%
+  column_spec(column = 1, background = "violet", border_left = TRUE, 
+              italic = TRUE) %>%
+  column_spec(column = 2, color = "blue", border_right = TRUE, bold = TRUE)
+```
+
+If you are knitting to html, you can also make the table scrollable to save space. I've illustrated this with a larger data frame below to show you what it looks like. The height argument uses number of pixels and may take some trial and error.
+
+```{r}
+kbl(USJudgeRatings) %>%
+  kable_paper("striped", full_width = TRUE) %>%
+  scroll_box(width = "75%", height = "400px")
+```
+
+For more examples including MANY more things you can do, check out [this guide](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html).

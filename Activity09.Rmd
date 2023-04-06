@@ -1,0 +1,203 @@
+---
+title: 'Activity 9 - Regression in R'
+author: "Dr. VanKrevelen -- STS3470 (Spring 2023)"
+date: 'Updated: `r Sys.Date()`'
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Directions:** Use this .RMD script to record your code / output / answers.
+
+Remember that with a .RMD file, you can run individual code chunks by clicking the green triangle button in the top right of the chunk or by putting your cursor on a line and hitting Cmd+Return (Mac) or Ctrl+Return (PC) like you would in a .R script. When you use the Knit button, it will run all the code in order in a fresh R session and produce your knitted file.
+
+Have questions? Find a classmate or Dr. V to ask!
+
+
+
+# Part A - Simple linear regression
+
+Simple linear regression is most often a way of describing a relationship between two quantitative variables. Before calculating a simple linear regression line, we might make a scatterplot and calculate a correlation coefficient, r. You can use the `cor()` function to find a correlation between two vectors.
+
+1. Using the `mtcars` data frame, create a scatterplot of the weight (`wt`) of cars on the x-axis and the mileage (`mpg`) of cars on the y-axis. Do the two variables have an approximately linear relationship between them? Is the relationship positive or negative? (Bonus: Add a simple linear regression line to your graph)
+
+```{r}
+
+```
+
+**Answer:** 
+
+<br>
+
+
+2. Calculate the correlation between the weight (`wt`) of cars and the mileage (`mpg`). You will enter the two vectors separated by a comma using the form `mtcars$___` for each vector. Enter the correlation below.
+
+```{r}
+
+```
+
+**r =**
+
+<br>
+
+
+3. We can use the `lm()` function to calculate the equation for a simple linear regression line. The general format is `lm(response ~ explanatory)`. You can either enter these as vectors (like you did with the `cor()` function) or enter just the variable name and add a `data = mtcars` argument. Write code to calculate the simple linear regression line. Store the output as an object called `out` and then print that object. Update $b_0$ and $b_1$ below to show your equation.
+
+```{r}
+
+```
+
+$\hat{y} = b_0 + b_1 * weight$
+
+<br>
+
+
+4. If we want more information about our linear regression, we can use the `summary()` function on our `lm()` output. This will give us standard errors, p-values, $R^2$ and more. Try this and fill in the answers below:
+
+```{r}
+
+```
+
+**Slope p-value =**
+
+**Intercept p-value =**
+
+**R^2 =**
+
+<br>
+
+
+5. Recall that the p-value associated with the slope corresponds to the hypothesis test: $H_0: \beta_1 = 0$ vs. $H_a: \beta_1 \ne 0$ where $\beta_1$ is the "true" slope if we had data for the entire population. In other words, the null hypothesis says there is no linear relationship between the weight of a car and its mileage. The alternative hypothesis says there IS some sort of linear relationship between the two. Write a conclusion for this test below that is in context of this example:
+
+**Conclusion:**
+
+<br>
+
+
+6. It's possible to run linear regressions with no y-intercept or with just a y-intercept (not that we want to do either in this case...). Which code do you think is which below? How can you tell?
+
+```{r}
+lm(mpg ~ 1, data = mtcars)
+lm(mpg ~ wt - 1, data = mtcars)
+```
+
+**Answer:**
+
+<br>
+
+
+7. Calculate the mean miles per gallon for this data frame. Where have you seen this number? Why does it make sense you'd get the same number here as you did there?
+
+```{r}
+
+```
+
+**Answer:**
+
+<br>
+
+
+
+# Part B - Multiple linear regression
+
+If we want to use multiple variables to predict a quantitative response, we need multiple linear regression. To add explanatory variables to a model in R, we separate them with a + sign in the `lm()` function. If we want to include an interaction between terms, we write `var1 * var2` where we replace var1 and var2 with the variable names. 
+
+8. Write code that uses weight, horsepower (`hp`), and displacement (`disp`) to predict mileage. Use the `summary()` function on your model output to see more information. Does it make sense to use all three of these variables to predict `mpg`? Why or why not?
+
+```{r}
+
+```
+
+**Answer:**
+
+<br>
+
+
+9. Re-run your model without the displacement variable (if you're not sure whey we are doing this, just ask!). Replace $b_0$, $b_1$, and $b_2$ below with the correct values for your model. Then write an interpretation of your y-intercept estimate and at least one of your slope estimates.
+
+```{r}
+
+```
+
+$\hat{y} = b_0 + b_1 * wt + b_2 * hp$
+
+**Interpretation of $b_0$:**
+
+**Interpretation of $b_1$ and/or $b_2$:**
+
+<br>
+
+
+10. Below are some further questions to consider:
+
+a. Did you get the same slope estimate for the weight variable in your model using simple linear regression and multiple linear regression? Why or why not?
+
+**Answer:**
+
+<br>
+
+
+b. The weight variable has a bigger estimate for the slope than horsepower does. Should we use that to determine that weight is "more important"? Why or why not?
+
+**Answer:**
+
+<br>
+
+
+c. The $R^2$ value was essentially the same when we included or did not include displacement in our model. Can this tell us these two models are equally good? Why or why not?
+
+**Answer:**
+
+<br>
+
+
+d. How does the correlation we got in part A relate to the $R^2$ value for our model that only used wt to predict mpg?
+
+**Answer:**
+
+<br>
+
+
+# (Optional) Part C - Recreating other tests with regression
+
+11. Many of the statistical tests we do could really be considered variations of regression. To illustrate this, consider our t-tests we did in activity 8. What p-value did we get with each test?
+
+```{r, message = FALSE}
+library(tidyr)
+library(dplyr)
+
+mysleep <- pivot_wider(sleep, id_cols = ID, names_from = group, 
+                       names_prefix = "extra", values_from = extra)
+mysleep <- mutate(mysleep, diff = extra1 - extra2)
+
+t.test(mysleep$diff)
+
+summary(lm(diff ~ 1, data = mysleep))
+```
+
+**Answer:**
+
+<br>
+
+
+12. The last question shows us that a one-sample t-test with a two-sided alternative is the same as a simple linear regression with only an intercept (no explanatory variable). A simple linear regression with a **categorical** explanatory variable that has two levels can produce the same p-values as a two-sample t-test. Which test does it replicate: Welch's or Student's?
+
+```{r}
+hedgehogs <- read.csv("https://raw.githubusercontent.com/vank-stats/STS3470-Spring2023/main/hw3%20-%20hedgehogs.csv")
+hedgehogs_sexknown <- filter(hedgehogs, Sex != "Unknown")
+t.test(Age ~ Sex, data = hedgehogs_sexknown, var.equal = FALSE)
+t.test(Age ~ Sex, data = hedgehogs_sexknown, var.equal = TRUE)
+
+summary(lm(Age ~ Sex, data = hedgehogs_sexknown))
+```
+
+**Answer:**
+
+<br>
+
+
+
+13. Explore whether you could get a regression model to recreate an ANOVA test. Are there other tests you've learned that you're curious about replicating with ANOVA?

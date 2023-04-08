@@ -1,5 +1,7 @@
 # Notes 8 Code
 
+# Looking up the t.test() arguments
+
 ?t.test
 
 
@@ -8,6 +10,7 @@
 set.seed(2303)
 myvalues <- rnorm(50, 102, 5)
 
+
 # T-tests with H0: mu = 100 and three different alternatives (≠, >, <)
 
 t.test(x = myvalues, alternative = "two.sided", mu = 100)
@@ -15,8 +18,36 @@ t.test(x = myvalues, alternative = "greater", mu = 100)
 t.test(x = myvalues, alternative = "less", mu = 100)
 
 
-# Practice: Old Faithful example
+# Calculate test stat using the formula
 
+test_stat <- (mean(myvalues) - 100) / (sd(myvalues) / sqrt(50))
+test_stat
+
+
+# Calculate p-value using Notes 7 functions
+
+pt(test_stat, 49) # Ha with <
+1 - pt(test_stat, 49) # Ha with >
+2 * pt(test_stat, 49, lower.tail = FALSE) # Ha with not equal
+
+
+
+# Practice: Old Faithful example
+# H0: mu = 60  vs. Ha: mu > 60 
+
+t.test(faithful$waiting, alternative = "greater", mu = 60, conf.level = 0.9)
+
+
+# Storing t.test() output
+
+out <- t.test(faithful$waiting, alternative = "greater", mu = 60, 
+              conf.level = 0.9)
+str(out) # check the structure of the output
+
+# Print just the test stat, CI, or p-value
+out$statistic
+out$conf.int
+out$p.value
 
 
 
@@ -82,9 +113,9 @@ apply(ci, MARGIN = 1, FUN = mean)
 # Example - What does __% confident mean?
 
 reps <- 1000
-n <- 10
-sd <- 5
-conf <- 0.9
+n <- 5
+sd <- 300
+conf <- 0.95
 
 output <- replicate(reps, t.test(rnorm(n, 0, sd), mu = 0, 
                                  alternative = "two.sided", 
@@ -93,6 +124,7 @@ output <- replicate(reps, t.test(rnorm(n, 0, sd), mu = 0,
 output <- t(output) # this makes each row a CI instead of each column
 contain_mu <- output[, 1] <= 0 & output[, 2] >= 0
 sum(contain_mu) / reps
+
 
 
 # Code for confidence interval graph in notes

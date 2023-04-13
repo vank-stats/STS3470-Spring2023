@@ -50,7 +50,7 @@ ui <- fluidPage(
           textOutput("textA"),
           br(),
           plotOutput("graphB"),
-          textOutput("textB"),
+          textOutput("textB")
         )
     )
 )

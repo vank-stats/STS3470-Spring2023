@@ -1,0 +1,225 @@
+---
+title: "Homework 5"
+author: 'Name: PUT YOUR NAME HERE'
+date: "Due Wednesday, April 26, 2023"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+You should rename this file so that you replace **yourlogin** with the username you use for Moodle/email/etc. For example, my file would be called **hw5_rvankrevelen.Rmd**. It's important to follow these guidelines exactly because I will be using an R package that automatically reads in your script, and it needs to be able to match files to students. If you have questions, just ask!
+
+Use the space below to load any R packages that you use in this file. I've started with `ggplot2`.
+
+```{r, message = FALSE}
+library(ggplot2)
+```
+
+---
+
+# Part 1 - The Power of a Test (25 points total)
+
+In statistical tests, we can reject $H_0$ or fail to reject $H_0$. It's possible in either case that $H_0$ is true or that $H_0$ is not true. Ideally, we want our conclusion / decision to match reality, but this can't always happen when making inference from data. 
+
+- If we reject $H_0$ when $H_0$ is true, we call this a **false positive** or a **Type I Error**.
+- If we fail to reject $H_0$ when $H_0$ is not true, we call this a **false negative** or a **Type II Error**
+
+The **power** is the probability that you *correctly* reject $H_0$ in favor of $H_a$ when $H_a$ is true. Unlike the null hypothesis, which specifies a single value for your parameter, the alternative hypothesis will have many possible values, and the power will differ for each of them. Ideally, we want a test with enough power to make it worth our time to collect data and conduct the test.
+
+<br>
+<br>
+
+
+
+1. (5 points) Use the `replicate()` function to carry out 1,000 t-tests ($H_0: \mu = 0$ vs. $H_a: \mu > 0$) on random samples of size 10 from a normal distribution with a mean of 1 and a standard deviation of 10. Calculate the p-value for each test and store it in an object called `pvals1`. Create a histogram of your p-values and calculate the proportion of the p-values that are less than 0.05.
+
+```{r}
+set.seed(41823)
+
+# Start your code here
+```
+
+**Proportion of p-values < 0.05 =**
+
+<br>
+
+
+2. (3 points) Was the null hypothesis true for the tests you ran? How often is your hypothesis test conclusion (using $\alpha = 0.05$) matching the reality of the situation under which you're conducting each hypothesis test? In other words, if $H_0$ is true, how often are failing to reject it, and if $H_a$ is true, how often are you finding sufficient evidence for $H_a$? 
+
+**Was $H_0$ true?:**
+
+<br>
+
+**How often did my conclusion match reality?:**
+
+
+<br>
+
+3. (5 points) Repeat question 1 but now generate your random samples of size 10 from a normal distribution with a **mean of 10** and a standard deviation of 10. You are still testing $H_0: \mu = 0$ vs. $H_a: \mu > 0$. Calculate the p-value for each test and store it in an object called `pvals10`. Create a histogram of your new p-values and calculate the proportion of the p-values that are less than 0.05.
+
+```{r}
+set.seed(23418)
+
+# Start your code here
+```
+
+**Proportion of p-values < 0.05 =**
+
+<br>
+
+
+4. (4 points) Does our hypothesis test have more **power** when $\mu = 1$ or when $\mu = 10$? Use the two simulations to explain this to someone who doesn't know about the concept of the power of a test.
+
+**Answer:**
+
+<br>
+
+
+5. (5 points) Again generate random samples from a normal distribution with a **mean of 1** and a standard deviation of 10, but this time use a **sample size of 100**. You are still testing $H_0: \mu = 0$ vs. $H_a: \mu > 0$. Calculate the p-value for each test and store it in an object called `pvals100`. Then calculate the proportion of the p-values that are less than 0.05.
+
+```{r}
+set.seed(18423)
+
+# Start your code here
+```
+
+**Proportion of p-values < 0.05 =**
+
+<br>
+
+
+6. (3 points) Using your previous answers, what role does sample size seem to play in the power of a test? Be specific using the values from your examples above and clearly stating what is meant by power.
+
+**Answer:**
+
+<br>
+
+
+---
+
+# Part 2 - ANOVA Tests (24 points total)
+
+The ANOVA test typically has three main assumptions:
+
+- Each group has the same population variance
+- Each group comes from a population with a normal distribution
+- Observations are independent from one another
+
+Let's explore how the first of these assumptions relates to the power of an ANOVA test.
+
+<br>
+<br>
+
+I've written a function for you below. Once you read the function into R, you will be able to use it to generate p-values for ANOVA tests corresponding to random data from three populations.
+
+```{r}
+random_anova_pval <- function(n = 5, mus = c(10, 10, 10), sds = c(5, 5, 5)) { 
+  df <- data.frame(group = rep(c("A", "B", "C"), each = n),
+                   response = c(rnorm(n, mus[1], sds[1]),
+                                rnorm(n, mus[2], sds[2]),
+                                rnorm(n, mus[3], sds[3])))
+  summary(aov(response ~ group, data = df))[[1]]$`Pr(>F)`[1]
+}
+```
+
+<br>
+
+For example, the code below uses the function to randomly generate data from populations with means of 10, 10, and 12, and standard deviations of 5, 5, and 8.
+
+<br>
+
+```{r}
+set.seed(123)
+random_anova_pval(mus = c(10, 10, 12), sds = c(5, 5, 8))
+random_anova_pval(mus = c(10, 10, 12), sds = c(5, 5, 8))
+```
+
+<br>
+
+I did this twice and got p-values of 0.345 and 0.537. In both cases, the alternative hypothesis is true (at least one population mean differs from another), but I would not have sufficient evidence to reach that conclusion based on my data.
+
+<br>
+<br>
+
+
+7. (6 points) Use the `random_anova_pval()` function along with the `replicate()` function to run 100 simulations where your three populations all have a mean of 10 and a standard deviation of 5. How often is your p-value less than 0.05? Does this seem about like what you'd expect? Why or why not?
+
+```{r}
+set.seed(321)
+
+# Start your code here
+
+```
+
+**Proportion of p-values < 0.05 =**
+
+**Is this about what you expect? Why or why not?**
+
+<br>
+
+
+8. (6 points) Now use the `random_anova_pval()` function along with the `replicate()` function to run 100 simulations where your three populations all have a mean of 10. The first two populations will have a standard deviation of 5 while the last will have a standard deviation of 25. How often is your p-value less than 0.05? What does this suggest about the impact of violating the equal population variances assumption when $H_0$ is true?
+
+```{r}
+set.seed(321)
+
+# Start your code here
+
+```
+
+**Proportion of p-values < 0.05 =**
+
+**Answer:**
+
+<br>
+
+
+9. (6 points) Now use the `random_anova_pval()` function along with the `replicate()` function to run 100 simulations where your first two populations have a mean of 10 and your third has a mean of 15. All three populations will have a standard deviation of 5. How often is your p-value less than 0.05? How does this relate to the power of the ANOVA test with this specific alternative hypothesis?
+
+```{r}
+set.seed(321)
+
+# Start your code here
+
+```
+
+**Proportion of p-values < 0.05 =**
+
+**Answer:**
+
+<br>
+
+
+10. (6 points) Lastly, use the `random_anova_pval()` function along with the `replicate()` function to run 100 simulations where your first two populations have a mean of 10 and your third has a mean of 15. This time the first two populations will have a standard deviation of 5, and the last will have a standard deviation of 25. How often is your p-value less than 0.05? What does this suggest about the impact of violating the equal population variances assumption when $H_a$ is true?
+
+```{r}
+set.seed(321)
+
+# Start your code here
+
+```
+
+**Proportion of p-values < 0.05 =**
+
+**Answer:**
+
+<br>
+
+
+---
+
+# Part C - Reflection (1 point)
+
+11. What is a statistical theory idea we've covered this semester that is new to you or that you feel you have a better understanding of now? Write a few sentences about what the idea is and how your understanding of it may help you in the future.
+
+**Answer**:
+
+<br>
+
+
+**Before you finish. Knit your document and make sure that all your answers are there.**

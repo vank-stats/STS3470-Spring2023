@@ -1,0 +1,176 @@
+---
+title: "Homework 4"
+author: 'Name: PUT YOUR NAME HERE'
+date: "Due Tuesday, April 4, 2023"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+You should rename this file so that you replace **yourlogin** with the username you use for Moodle/email/etc. For example, my file would be called **hw4_rvankrevelen.Rmd**. It's important to follow these guidelines exactly because I will be using an R package that automatically reads in your script, and it needs to be able to match files to students. If you have questions, just ask!
+
+Use the space below to load any R packages that you use in this file. I've started with `ggplot2`.
+
+```{r, message = FALSE}
+library(ggplot2)
+```
+
+---
+
+# Part A - Using the d/p/q/r functions (21 points total)
+
+Write code that accomplishes each of the following and prints your answer in your knitted document. Be sure to also fill in your answers in text below the code where prompted.
+
+<br>
+
+1. (3 points) Find the probability that a value from $\chi^2$ distribution with 4 d.f. is above 2.
+
+```{r}
+# Replace this comment with your code
+
+```
+
+**Probability =**
+
+<br>
+
+
+2. (4 points) Generate 100 random values from a $\chi^2$ distribution with 4 d.f. Determine how many of those values are above 2.
+
+```{r}
+set.seed(27409) # leave this line
+
+# Replace this comment with your code
+
+```
+
+**Number of values above 2 =**
+
+<br>
+
+
+3. (3 points) Find the value in an $F$ distribution with ndf = 2 and ddf = 18 that has a probability of 0.05 above it.
+
+```{r}
+# Replace this comment with your code
+
+```
+
+**F value with prob. 0.05 above it =**
+
+<br>
+
+
+4. (4 points) Find the probability density function (pdf) value of a standard ($Z$) normal curve at x = 1. Find the pdf value of a $T$ distribution with 5 degrees of freedom when x = 1.
+
+```{r}
+# Replace this comment with your code
+
+```
+
+**Pdf of Z when x is 1 =**
+
+**Pdf of T_5 when x is 1 =**
+
+<br>
+
+
+5. (3 points) Find the probability of obtaining a value less than -3 in a $T$ distribution with 1 d.f.
+
+```{r}
+# Replace this comment with your code
+
+```
+
+**Probability =**
+
+<br>
+
+
+6. (4 points) Find two values that have an area of 0.95 between them in an $F$ distribution with 6 n.d.f and 25 d.d.f.
+
+```{r}
+# Replace this comment with your code
+
+```
+
+**Two values =**
+
+<br>
+
+
+---
+
+# Part B - Central Limit Theorem (27 points total)
+
+In Activity 7, we began investigating the Central Limit Theorem. You will build on that in Part B. In this section, you will generate values from an $F$ distribution that has 2 and 6 degrees of freedom. You can use [StatKey](https://www.lock5stat.com/StatKey/theoretical_distribution/theoretical_distribution.html#F) to visualize this distribution if you'd like. The mean of the distribution is 1.5 and the standard deviation is approximately 2.6.
+
+<br>
+
+7. (9 points) Generate a vector (called `f_values`) that contains 50,000 values from an $F$ distribution with 2 n.d.f and 6 d.d.f. Create a histogram of those values. Your histogram should have a title indicating these are values from the population described above. Describe the shape of your histogram and calculate the mean and standard deviation of your randomly generated values.
+
+(Note: In `ggplot`, you can put NULL as your data argument if you are using a vector for your x argument). 
+
+```{r}
+# Replace this comment with your code
+
+```
+
+**Description of histogram shape:**
+
+**Mean =**
+
+**SD =**
+
+<br>
+
+
+8. (3 points) Put those 50,000 values into a matrix with 1,000 rows and 50 columns (representing 1,000 samples of size 50 from a population with the distribution you graphed above). Call your matrix `fdist_samples`.
+
+```{r}
+# Replace this comment with your code
+
+```
+
+<br>
+
+
+9. (7 points) Write code that calculates the sample mean for each row of your data frame and store them in a data frame called `fdist_means`. The column containing your sample means should be called `xbar`. Use this to create a histogram of your sample means. Give your histogram an appropriate title.
+
+```{r}
+# Replace this comment with your code
+
+```
+
+<br>
+
+
+10. (8 points) Calculate the mean and standard deviation of your sample means. Explain what the Central Limit Theorem *said* the distribution of sample means would look like and what it actually looked like in your 1,000 samples.
+
+```{r}
+# Replace this comment with your code
+
+```
+
+**Answer (address all three elements of CLT):**
+
+<br>
+
+
+---
+
+# Part C - Reflection (2 points)
+
+11. What did you feel went well in your preparation for exam 1? Is there anything that didn't go well in your preparation? What can you do before exam 2 to improve on that?
+
+**Answer**:
+
+<br>
+
+
+**Before you finish. Knit your document and make sure that all your answers are there.**

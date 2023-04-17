@@ -1,0 +1,88 @@
+---
+title: "Interactive Maps with `leaflet`"
+author: 'STS3470: Dr. VanKrevelen'
+date: "Tuesday, April 18, 2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The `leaflet` package can be used to make interactive maps if you have data with latitude / longitude information. A couple groups already did this in project 1, but I wanted to share it with the rest of you by showing everyone some of the cool things they did!
+
+First, let's load the `leaflet` package as well as `dplyr` for some data management.
+
+```{r, message = FALSE}
+library(leaflet)
+library(dplyr)
+```
+
+Tidy Tuesday included a data set of reported Bigfoot sightings. The data included many variables like the county and state of the sighting, the date, weather like temperature and visibility, and most importantly for us, latitude and longitude. Here is a quick look at the first 20 observations in the data using the kableExtra package from a previous Fun R Thing of the Week. You can see that the first column includes VERY long responses.
+
+```{r, message = FALSE}
+bigfoot <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-09-13/bigfoot.csv')
+
+library(kableExtra)
+
+bigfoot %>%
+  head(20) %>%
+  kbl() %>%
+  kable_classic("hover") %>%
+  scroll_box(height = "400px")
+```
+
+
+# Example 1
+
+One group chose to look only at Bigfoot sightings in Washington state. They had to remove some observations with missing values and then tell R that latitude and longitude should be numeric.
+
+```{r, message = FALSE}
+Washington <- bigfoot %>%
+  filter(state == "Washington") %>%
+  mutate(longitude = as.numeric(longitude), latitude = as.numeric(latitude))
+Washington <- Washington[complete.cases(Washington), ]
+```
+
+Then they used this data to create a map of the Bigfoot sightings. The `leaflet()` function creates the interactive map object, the `addProviderTiles()` functions help determine the look, and then the data is added in using `addMarkers()`. With `popup =`, they were able to customize what shows up when you click on a point and with `icon =` they changed the default image to a picture of Bigfoot! Notice how when you click on an icon, the pop up menu combines information about the visibility, season, and county of the sighting.
+
+```{r}
+bigfoot_map <- leaflet() %>%
+  addProviderTiles("Stamen.TerrainBackground") %>%
+  addProviderTiles("Stamen.TonerLines")  %>%
+  addProviderTiles( "Stamen.TonerLabels")  %>%
+  addMarkers(data = Washington, lng = ~longitude, lat = ~latitude, 
+            popup = ~ paste("<b>Visibility:</b>", visibility, "<br>", 
+                            "<b>Season:</b>", season, "<br>", "<b>County:</b>", 
+                            county), 
+          icon = list(iconUrl = 'https://cdn-icons-png.flaticon.com/512/2332/2332562.png',
+                      iconSize = c(25,25)))
+
+bigfoot_map
+```
+
+
+# Example 2
+
+Another group that also looked at the Bigfoot data chose to focus on North Carolina sightings. We can also remove observations that are missing latitude / longitude information.
+
+```{r}
+ncbigfoot <- bigfoot %>%
+  filter(state %in% "North Carolina", !is.na(longitude), !is.na(latitude))
+```
+
+This group wanted the user to be able to read what people had to say about each sighting, so they included the long first column (`observed`) as the pop up text.
+
+```{r}
+ncsightingsmap <- leaflet(ncbigfoot) %>%
+  addTiles() %>%  
+  addMarkers(~ longitude, ~latitude, popup = ~observed)
+ncsightingsmap
+```
+
+
+To learn more:
+
+- https://rstudio.github.io/leaflet/
+- https://bookdown.org/nicohahn/making_maps_with_r5/docs/leaflet.html
+- https://data.library.virginia.edu/data-scientist-as-cartographer-an-introduction-to-making-interactive-maps-in-r-with-leaflet/

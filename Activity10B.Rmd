@@ -1,0 +1,112 @@
+---
+title: 'Activity 10 - The Chaos Game'
+author: "Dr. VanKrevelen -- STS3470 (Spring 2023)"
+date: 'Updated: `r Sys.Date()`'
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Directions:** Use this .RMD script to record your code / output / answers.
+
+Remember that with a .RMD file, you can run individual code chunks by clicking the green triangle button in the top right of the chunk or by putting your cursor on a line and hitting Cmd+Return (Mac) or Ctrl+Return (PC) like you would in a .R script. When you use the Knit button, it will run all the code in order in a fresh R session and produce your knitted file.
+
+Have questions? Find a classmate or Dr. V to ask!
+
+Below is code to set up the Chaos Game (from the notes):
+
+```{r}
+# Set up Graph
+
+plot(0:2, 0:2, type = "n")
+x <- c(0, 1, 2)
+y <- c(0, 2, 0)
+points(x, y, pch = 19)
+labels <- c("A", "B", "C")
+text(x + 0.05, y, labels)
+segments(0, 0, 2, 0)
+segments(0, 0, 1, 2)
+segments(1, 2, 2, 0)
+points(1, 1, pch = 19)
+
+
+# Determine starting point and vertices to choose from
+
+myX <- 1
+myY <- 1
+myvertices <- c("A", "B", "C")
+
+
+# Run Chaos Game
+
+for(i in 1:10000) {
+  mycorner <- sample(myvertices, 1)
+  
+  if(mycorner == "A") {
+    myX <- (myX + 0) / 2
+    myY <- (myY + 0) / 2
+  } else if(mycorner == "B") {
+    myX <- (myX + 1) / 2
+    myY <- (myY + 2) / 2
+  } else {
+    myX <- (myX + 2) / 2
+    myY <- (myY + 0) / 2
+  }
+  points(myX, myY, pch = 19)
+}
+```
+
+Use the code and output to answer the following questions. If you ever aren't sure, try doing what it asks and see if you can figure out what's changing and why. You can also change how many iterations you have to something smaller than 10000 if you want to see how the code works over a smaller number of iterations.
+
+<br>
+<br>
+
+
+1) Why is it important that I put my initial `myX <- 1` and `myY <- 1` outside of the for loop? In other words, what would happen if I put it inside the loop where the code for `mycorner` is?
+
+**Answer:**
+
+<br>
+<br>
+
+
+2) Would it matter if I moved the code `myvertices <- c("A", "B", "C")` inside my for loop? What would change about how the code runs?
+
+**Answer:**
+
+<br>
+<br>
+
+
+3) What would happen if the `mycorner <- sample(myvertices, 1)` code were moved before the for loop (like `myvertices`)?
+
+**Answer:**
+
+<br>
+<br>
+
+
+4) What would happen if the `points(myX, myY, pch = 19)` code were placed outside the for loop at the end instead of inside of it?
+
+**Answer:**
+
+<br>
+<br>
+
+
+5) What is happening to the values for `myX` and `myY` during each iteration of the loop (i.e. when i = 1, then 2, then 3, etc.)?
+
+**Answer:**
+
+<br>
+<br>
+
+
+**Bonus:** What would happen if you updated the code to do one of the following?
+
+- Make it so that you can't go toward the same corner twice in a row
+- Start with a square instead of a triangle
+- Some other variation you can think of

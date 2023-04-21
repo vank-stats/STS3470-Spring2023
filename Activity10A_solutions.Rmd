@@ -1,0 +1,215 @@
+---
+title: "Activity 10A - Conditional Computing"
+author: "Dr. VanKrevelen -- STS3470 (Spring 2023)"
+date: 'Updated: `r Sys.Date()`'
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Directions:** Use this .RMD script to record your code / output / answers.
+
+Remember that with a .RMD file, you can run individual code chunks by clicking the green triangle button in the top right of the chunk or by putting your cursor on a line and hitting Cmd+Return (Mac) or Ctrl+Return (PC) like you would in a .R script. When you use the Knit button, it will run all the code in order in a fresh R session and produce your knitted file.
+
+Have questions? Find a classmate or Dr. V to ask!
+
+
+
+1. Below is code that calculates a p-value for a t-test and then uses if statements to update an output. Run the code and answer the questions associated with it.
+
+```{r}
+set.seed(9876)
+pval <- t.test(rnorm(30, 0, 5), mu = -2)$p.value
+status <- NA
+
+if(pval < 0.05){
+  status <-  "Reject null"
+}
+
+status
+```
+
+a. What is the true value of $\mu$?
+
+**Answer:** 0 (sampling from a normal distribution with mean 0)
+
+<br>
+
+
+b. What hypotheses are being tested?
+
+**Answer:** $H_0: \mu = -2$ vs. $H_a: \mu \ne -2$
+
+<br>
+
+
+c. What is our p-value?
+
+**Answer:** 0.015
+
+<br>
+
+
+d. What value does status have at the end?
+
+**Answer:** Reject null
+
+<br>
+
+
+2. Copy and paste the code from #1 below but use a seed of 1234.
+
+```{r}
+set.seed(1234)
+pval <- t.test(rnorm(30, 0, 5), mu = -2)$p.value
+status <- NA
+
+if(pval < 0.05){
+  status <-  "Reject null"
+}
+
+status
+```
+
+a. What is our p-value now?
+
+**Answer:** 0.535
+
+<br>
+
+
+b. What value does status have now?
+
+**Answer:** NA (it didn't change when I ran my if statement)
+
+<br>
+
+
+3. Rewrite this code using `ifelse()` and assigning a value of "Fail to reject null" if our p-value is > 0.05. Test it to verify you can get both answers.
+
+```{r}
+set.seed(1234)
+pval <- t.test(rnorm(30, 0, 5), mu = -2)$p.value
+status <- NA
+status <- ifelse(pval > 0.05, "Fail to reject null", "Reject null")
+status
+```
+
+<br>
+
+
+4. Try using `case_when()` to make status say "Reject null" if 0 < pval < 0.05, "Fail to reject null" if 0.05 < pval < 1, and "ERROR" if pval < 0 or pval > 1.
+
+```{r, message = FALSE}
+library(dplyr) # needed for case_when()
+
+pval <- 0.34
+
+case_when(pval < 0 ~ "ERROR",
+          pval < 0.05 ~ "Reject null",
+          pval <= 1 ~ "Fail to reject null",
+          TRUE ~ "ERROR")
+```
+
+<br>
+
+
+5. Many courses use scores in the 90s as an A, 80s as a B, 70s as a C, 60s as a D, and below 60 as an F. Complete the code below by filling in the blanks with appropriate symbols. 
+
+```{r, eval = TRUE}
+average <- 77
+if(average >= 90 & average <= 100) { grade <- "A" }
+if(average >= 80 & average < 90) { grade <- "B" }
+if(average >= 70 & average < 80) { grade <- "C" }
+if(average >= 60 & average < 70) { grade <- "D" }
+if(average < 60) { grade <- "F" }
+grade
+```
+
+a. Change `eval = FALSE` to `TRUE` when you are done and verify grade is assigned "C" for an average of 77.
+
+<br>
+
+
+b. Change average to 87 and re-run the code. Then change average to 70. Do you get the appropriate output both times?
+
+**Answer:** Yes
+
+<br>
+
+
+c. What would happen if a gradebook incorrectly had an average of 103 for someone? Try it out.
+
+**Answer:** It will report whatever grade was last calculated because 103 doesn't fall into any of the logical statements we created inside `if()`. In this case, it says "C" because I last checked an average of 70.
+
+<br>
+
+
+d. What if a typo listed someone's grade as -95 instead of 95?
+
+**Answer:** The same thing will happen. It will report the previous grade.
+
+<br>
+
+
+e. What could you do to improve the code to avoid the problems in part c/d? Try it out and see if it works.
+
+```{r}
+average <- 103
+if(average >= 90 & average <= 100) { grade <- "A" }
+if(average >= 80 & average < 90) { grade <- "B" }
+if(average >= 70 & average < 80) { grade <- "C" }
+if(average >= 60 & average < 70) { grade <- "D" }
+if(average < 60) { grade <- "F" }
+if(average > 100 | average < 0) { 
+  grade <- "Grade is negative or over 100. Is there a typo?" }
+grade
+```
+
+**Answer:** We could add another if statement that produces a warning message.
+
+<br>
+
+
+f. What happens if you have a vector of grades like the one below?
+
+```{r, eval = FALSE}
+average <- c(87, 100, 92, 74)
+if(average >= 90 & average <= 100) { grade <- "A" }
+if(average >= 80 & average < 90) { grade <- "B" }
+if(average >= 70 & average < 80) { grade <- "C" }
+if(average >= 60 & average < 70) { grade <- "D" }
+if(average < 60) { grade <- "F" }
+if(average > 100 | average < 0) { 
+  grade <- "Grade is negative or over 100. Is there a typo?" }
+grade
+```
+
+**Answer:** This produces an error saying my condition has length > 1.
+
+<br>
+
+
+g. (Bonus) Try recreating this code using `case_when()`. Does it work with vectors?
+
+```{r}
+average <- c(87, 100, 92, 74, -84, 62, 45, 192)
+grade <- case_when(average > 100 ~ "Error. Grade was above 100",
+                   average >= 90 ~ "A",
+                   average >= 80 ~ "B",
+                   average >= 70 ~ "C",
+                   average >= 60 ~ "D",
+                   average >= 0 ~ "F",
+                   TRUE ~ "Error. Grade was negative.")
+grade
+```
+
+**Answer:** Yes, `case_when()` does work with vectors!
+
+<br>
+
+

@@ -1,0 +1,170 @@
+---
+title: "Homework 6"
+author: 'Name: PUT YOUR NAME HERE'
+date: "Due Tuesday, May 2, 2023"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+You should rename this file so that you replace **yourlogin** with the username you use for Moodle/email/etc. For example, my file would be called **hw6_rvankrevelen.Rmd**. It's important to follow these guidelines exactly because I will be using an R package that automatically reads in your script, and it needs to be able to match files to students. If you have questions, just ask!
+
+Use the space below to load any R packages that you use in this file. I've started with `dplyr` and `ggplot2`.
+
+```{r, message = FALSE}
+library(dplyr)
+library(ggplot2)
+```
+
+---
+
+This homework assignment will primarily cover Notes 10 with some content connecting to earlier topics.
+
+# Part A - Conditional Computing Exercises (31 points total)
+
+1. (9 points total) We have four exams in our course (three unit exams plus a final exam), and the lowest of your four scores is dropped. Suppose you are deciding whether to take the final exam based on your scores on the first three exams. 
+
+a. (6 points) Use conditional computing to write code that (i) takes a vector of three exam scores, and (ii) produces a character scalar object with advice ("take final exam" or "do not take final exam"). The output should say "ERROR: impossible exam score" if any of the three scores are below 0 or above 100.
+
+```{r}
+
+```
+
+<br>
+
+
+b. (3 points) Use your exam 1 and 2 scores plus a possible (even if not likely) exam 3 score to demonstrate each of the possible outcomes above. In other words, if I got an 82 and 89 on my first two exams, I might show how I would reach different conclusions if my exam 3 score was a 60, a 99, or 1000.
+
+```{r}
+
+```
+
+<br>
+<br>
+
+
+
+2. (8 points total) We've seen different ways to change colors of points / bars in R. One other way is to have a vector that includes your colors as part of your data. You can then map color to that vector and use the `scale_color_identity()` function. 
+
+a. (5 points) Use the `case_when()` function from the `dplyr` package to create a new variable in the `mtcars` dataset called `disp_color`. The variable should contain the names of three colors with each color corresponding to when `cyl` is 4, 6, or 8. You may choose which three colors you use.
+
+```{r}
+
+```
+
+<br>
+
+
+b. (3 points) Create a `ggplot2` graph where color or fill is mapped to your new `disp_color` variable. Then use `scale_color_identity()` or `scale_fill_identity()` to make the different `cyl` categories match your new colors.
+
+```{r}
+
+```
+
+<br>
+<br>
+
+
+
+3. (8 points) Use conditional computing to write code will randomly generate 30 values and store them in a vector called `my_sample`. The code should generate them from:
+
+    - a standard normal distribution if `distribution` is "normal"
+    - from a T(29) distribution if `distribution` is "t"
+    - from a chi-squared(10) distribution if `distribution` is "chi-squared"
+    - and from a F(1, 5) distribution if `distribution` is "f"
+
+If none of the four values above is chosen for `distribution`, a message should be printed (but not stored as an object) that says "Please choose one of the following distributions: normal, t, chi-squared, or f."
+
+```{r}
+distribution <- "normal"
+
+# Start your code here
+```
+
+<br>
+<br>
+
+
+
+4. (6 points) The code below generates a 50% confidence interval for a population mean based on 10 random values from a standard normal distribution and stores it in a vector called `my_ci`. Use conditional computing to write code that uses `my_ci` and based on the values prints an appropriate statement saying...
+
+    - we can be 50% confident that mu1 is bigger than mu2
+    - we can be 50% confident that mu2 is bigger than mu1
+    - we cannot be 50% confident either population mean is bigger than the other
+
+```{r}
+my_ci <- t.test(rnorm(10), conf.level = 0.5)$conf.int[1:2]
+
+# Start your code here
+```
+
+<br>
+<br>
+
+
+---
+
+# Part B - For loops (17 points total)
+
+5. (6 points) In homework 5, we saw that the value for $\mu$ can impact the power of a hypothesis test. Specifically, tests are more powerful when the true value of $\mu$ is further from the $H_0$ value. The sample size is also related to the power of a test. The code below simulates the power of a two-sided test for $H_0: \mu = 0$ when $\mu$ is actually 1 (and $\sigma = 3$). Write a for loop that calculates the power for each possible sample size from 10 to 250 in increments of 10 (i.e. 10, 20, 30, etc.). The values should be stored in a vector called `power`. An example that accomplishes this for a single sample size is included below to get you started.
+
+```{r}
+n <- 10
+power <- mean(replicate(1000, t.test(rnorm(n, 1, 3))$p.value < 0.05))
+power
+```
+
+Note: When you're done, you should be able to run the code below to see what's called a power curve graph of your results.
+
+```{r, eval = FALSE}
+ggplot(NULL, aes(x = seq(10, 250, 10), y = power)) +
+  geom_point() +
+  geom_line() +
+  theme_bw() +
+  labs(x = "Sample size", y = "Power (Proportion of time correctly rejecting H0)", 
+       title = "Power of a two-sided test",
+       subtitle = "Null value of 0 with actual mu of 1 (sigma = 3)")
+```
+
+<br>
+<br>
+
+
+
+6. (6 points) Write a for loop that calculates a confidence interval for the population mean miles per gallon (`mpg`) based on the `mtcars` data. The loop should cover every confidence level from 1% to 99% (by 1% increments). For each interval, calculate the width of the interval and store it in a vector called `ci_width`.
+
+```{r}
+
+```
+
+<br>
+<br>
+
+
+
+7. (5 points) Create a graph that demonstrates how confidence interval width grows as confidence level increases. Does the width grow at a steady (i.e. linear) rate with confidence level? Justify your answer by referencing your graph.
+
+**Answer:**
+
+<br>
+<br>
+
+
+
+---
+
+# Part C - Reflection (2 points)
+
+8. What is one thing from this semester that you think you'll still remember a year from now. Why does that thing stick out to you? Your answer can be content you've learned, an example covered, or anything else, but make sure you address both parts of the question for full credit.
+
+**Answer**:
+
+<br>
+
+
+**Before you finish. Knit your document and make sure that all your answers are there.**

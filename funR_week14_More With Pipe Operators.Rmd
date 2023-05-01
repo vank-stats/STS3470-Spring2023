@@ -1,0 +1,64 @@
+---
+title: "More with Pipe Operator(s)"
+author: 'STS3470: Dr. VanKrevelen'
+date: "Tuesday, May 2, 2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Earlier this semester (Notes 3), we learned about the pipe operator `%>%`. This symbol, which is part of the `dplyr` package lets us take an object on the left of the operator and "pipe it into" the first argument of the function on the right of the operator.
+
+For example, let's say I want to take the `mtcars` dataset, calculate a new variable to say whether a car has an automatic or manual transmission, group by this new variable, and then summarize the mean miles per gallon for each transmission type.
+
+```{r, message = FALSE}
+library(dplyr)
+
+# With the pipe operator
+mtcars %>%
+  mutate(transmission = ifelse(am == 0, "automatic", "manual")) %>%
+  group_by(transmission) %>%
+  summarize(Avg_mpg = mean(mpg))
+
+# Without the pipe operator
+cars <- mutate(mtcars, transmission = ifelse(am == 0, "automatic", "manual"))
+cars <- group_by(cars, transmission)
+cars <- summarize(cars, Avg_mpg = mean(mpg))
+cars
+
+# Or...
+summarize(group_by(mutate(mtcars, 
+                          transmission = ifelse(am == 0, "automatic", "manual")),
+                   transmission), 
+          Avg_mpg = mean(mpg))
+```
+
+This works great for functions from the `tidyverse` (those in packages like `ggplot2`, `dplyr`, `tidyr`, etc.), but you may wonder what we would do if can't pipe our data into the first argument of a function. One such example is the `lm()` function (or the `aov()` function). Try running the code below and notice that you get an error.
+
+```{r, eval = FALSE}
+mtcars %>%
+  lm(mpg ~ wt)
+```
+
+It's actually possible to pipe data into a different part of a function than the first argument. To do this, we put a . where we want the data from the left of the pipe to go.
+
+```{r}
+mtcars %>%
+  lm(mpg ~ wt, data = .)
+```
+
+Some base R functions don't have an explicit data argument (like `table()`). We can still use the pipe operator with those by wrapping a function in { }. Here is an example:
+
+```{r}
+mtcars %>%
+  { table(.$am, .$cyl) }
+```
+
+Now I have a table showing me the number of cars with each combination of transmission and cylinders level.
+
+
+Curious to learn more (or to read about an alternative called the "native pipe" that is part of base R)? This is a nice resource: https://ivelasq.rbind.io/blog/understanding-the-r-pipe/
+
+Whether you find this helpful will depend on what you're doing, what you're used to, and more. However, now you have another option when writing code and may be better able to read code from someone else.

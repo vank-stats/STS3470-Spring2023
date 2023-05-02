@@ -1,0 +1,297 @@
+---
+title: "Activity 11 - Writing R Functions"
+author: "Dr. VanKrevelen -- STS3470 (Spring 2023)"
+date: 'Updated: `r Sys.Date()`'
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Directions:** Use this .RMD script to record your code / output / answers.
+
+Remember that with a .RMD file, you can run individual code chunks by clicking the green triangle button in the top right of the chunk or by putting your cursor on a line and hitting Cmd+Return (Mac) or Ctrl+Return (PC) like you would in a .R script. When you use the Knit button, it will run all the code in order in a fresh R session and produce your knitted file.
+
+Have questions? Find a classmate or Dr. V to ask!
+
+# Part A - Practice Creating Functions
+
+The code below can be used to explore Type I Errors (aka false positives). It uses a pre-specified number or samples, sample size, null value, and seed.
+
+```{r}
+set.seed(2320)
+mydata <- matrix(rnorm(1000 * 30), nrow = 1000, ncol = 30)
+mypvals <- NULL
+for(i in 1:1000) {
+  out <- t.test(mydata[i, ], alternative = "two.sided", mu = 0)
+  mypvals[i] <- out$p.value
+}
+
+sum(mypvals <= 0.05) / 1000
+```
+
+Let's write a function that let's a user choose different values for the simulation.
+
+1. Create a function called `rejectH0()` that takes the previous code and has the following arguments:
+
+    - samples (default of 1000)
+    - samplesize (default of 30)
+    - munull (default of 0)
+    - seed (default of 2320)
+
+Try running the function with no arguments specified and verify that you get the same value (0.051) that we got above.
+
+```{r}
+rejectH0 <- function(samples = 1000, samplesize = 30, munull = 0, seed = 2320) {
+  set.seed(seed)
+  mydata <- matrix(rnorm(samples * samplesize), nrow = samples, ncol = samplesize)
+  mypvals <- NULL
+  for(i in 1:samples) {
+    out <- t.test(mydata[i, ], alternative = "two.sided", mu = munull)
+    mypvals[i] <- out$p.value
+    }
+  sum(mypvals <= 0.05) / samples
+}
+
+rejectH0()
+```
+
+<br>
+
+
+2. Use your function to draw 5,000 samples of size 20 from a standard normal distribution and test $H_0: \mu = 0$ vs. $H_a: \mu \ne 0$. What proportion do you get? Is this surprising or what we would expect? Justify your answer.
+
+```{r}
+rejectH0(samples = 5000, samplesize = 20)
+```
+
+**Answer:** This is about what we would expect because our data comes from a population where mu = 0 and our null hypothesis says mu = 0. In other words, we are doing a bunch of tests in a world where H0 is true, so we will get p-values below 0.05 about 5% of the time.
+
+<br>
+
+
+3. Now draw the same 5,000 samples of size 20 but test $H_0: \mu = 1$ vs. $H_a: \mu \ne 1$. What proportion do we get this time? Explain why this answer makes sense when compared with your previous answer.
+
+```{r}
+rejectH0(samples = 5000, samplesize = 20, munull = 1)
+```
+
+**Answer:** In this example, mu is still 0 but my null hypothesis says mu is 1. In other words, the null hypothesis is incorrect, so it's good that I'm rejecting as often as I am.
+
+<br>
+
+
+4. What is the name for the proportion from the previous question? In other words, we would say the test has a __________________ of 0.9884.
+
+**Answer:** This number is the power. It's telling us how often we correctly reject the null hypothesis in this particular scenario (mu is actually 0, null says mu is 1, sample size of 20, pop sd of 1).
+
+<br>
+
+
+5. Edit our function so that it includes a fifth argument called `mutrue` with a default value of 0 that can be used to change the mean of the population from which our sample was drawn.
+
+```{r}
+rejectH0 <- function(samples = 1000, samplesize = 30, munull = 0, seed = 2320,
+                     mutrue = 0) {
+  set.seed(seed)
+  mydata <- matrix(rnorm(samples * samplesize, mean = mutrue), nrow = samples, 
+                   ncol = samplesize)
+  mypvals <- NULL
+  for(i in 1:samples) {
+    out <- t.test(mydata[i, ], alternative = "two.sided", mu = munull)
+    mypvals[i] <- out$p.value
+    }
+  sum(mypvals <= 0.05) / samples
+}
+
+# Demonstrating we get around 0.05 if munull and mutrue are the same
+rejectH0(samples = 5000, samplesize = 20, munull = 1, mutrue = 1)
+```
+
+<br>
+
+
+6. Use the function to draw 5,000 samples of size 10 from a normal distribution with mean 0.5 (and standard deviation 1 still) and to test $H_0: \mu = 0$ vs. $H_a: \mu \ne 0$. How does this answer compare to our previous answers and why do we get a number like this?
+
+```{r}
+rejectH0(samples = 5000, samplesize = 10, mutrue = 0.5, munull = 0)
+```
+
+**Answer:** In this case $H_0$ is false, so we reject it more than 5% of the time. However the true $\mu$ value is closer to our null hypothesis than in question 3, so our power isn't as high.
+
+<br>
+
+
+7. What would you expect to happen as you increase the sample size but keep the other elements of the function the same? Try testing this for a couple of new sample sizes.
+
+```{r}
+rejectH0(samples = 5000, samplesize = 50, mutrue = 0.5, munull = 0)
+rejectH0(samples = 5000, samplesize = 100, mutrue = 0.5, munull = 0)
+```
+
+**Answer:** If $H_0$ is false, I would expect larger sample sizes to mean I reject it more often (increased power). If $H_0$ is true, I should reject $H_0$ around 5% of the time regardless of sample size.
+
+<br>
+
+
+8. (Bonus) Could you write a for loop that uses your function to test samples of size 10, 20, 30, 40, and 50?
+
+```{r}
+power <- NULL
+for(i in seq(from = 10, to = 50, by = 10)) {
+  power[i / 10] <- rejectH0(samplesize = i, mutrue = 0.5, munull = 0)
+}
+rbind(seq(10, 50, 10), power)
+```
+
+<br>
+
+9. Write a function called `my_sum()` that contains a single integer argument. The function should compute the sum of all integers from 1 up to your argument. For exmaple `my_sum(3)` would calculate 1 + 2 + 3 and would output 6. Verify that your function works by testing a couple of examples. `my_sum(10)` should give you a value of 55 and `my_sum(100)` should give you a value of 5050.
+
+```{r}
+my_sum <- function(int = 1) {
+    vec <- 1:int
+    sum(vec)
+}
+my_sum(10)
+my_sum(100)
+
+# Note: I might want to add warnings if int isn't a number/integer if I really
+#   planned to use this function.
+```
+
+---
+
+# Part B - More practice with functions
+
+Many board games involve rolling one or more dice and recording a result like the sum of the rolls, the maximum of the rolls, or the minimum of the rolls. We can simulate rolling `k` dice with `n` sides by using the sample function as `sample(1:n, k, replace = TRUE)`.
+
+10. Write a function called `roll_dice()` with three arguments: dice, sides, type. The arguments should have respective default values of 2, 6, and "sum". The dice and sides arguments will be used in the `sample()` function example above. You should use conditional computing to output either the sum of the dice, the maximum of the dice, or the minimum of the dice (based on whether `type` is "sum", "min", or "max").
+
+```{r}
+roll_dice <- function(dice = 2, sides = 6, type = "sum") {
+  roll <- sample(1:sides, dice, replace = TRUE)
+  if(type == "sum") { result <- sum(roll) 
+    } else if(type == "min") { result <- min(roll) 
+    } else if(type == "max") { result <- max(roll) }
+  result
+}
+```
+
+<br>
+
+
+11. Games like Monopoly involve rolling two six-sided dice and using the sum to decide how far you move. Write a for loop that rolls two six-sided dice 1,000 times and records the sum of the rolls each time. Then create a graph displaying how often each sum occurs. What do you notice?
+
+```{r}
+roll <- NULL
+
+for(i in 1:1000) {
+  roll[i] <- roll_dice()
+}
+
+library(ggplot2)
+ggplot(NULL, aes(x = factor(roll))) +
+  geom_bar()
+```
+
+**Answer:** It makes a sort of triangle with a peak at 7. In other words, a value of 7 is most common, followed by 6/8, followed by 5/9, etc. until you get to 2/12.
+
+<br>
+
+
+12. A game like Dungeons and Dragons may ask a player to roll two 20-sided dice and take an action based on the maximum of the rolls. Write a for loop that rolls two 20-sided dice 1,000 times and records the maximum of the rolls each time. Then create a graph displaying how often each sum occurs. What do you notice?
+
+```{r}
+roll <- NULL
+
+for(i in 1:1000) {
+  roll[i] <- roll_dice(dice = 2, sides = 20, type = "max")
+}
+
+library(ggplot2)
+ggplot(NULL, aes(x = factor(roll))) +
+  geom_bar()
+```
+
+**Answer:** This also looks kind of like a triangle but with the peak on the right at 20. In other words, a value of 20 is most common with probabilities steadily decreasing until a value of 1. 
+
+<br>
+
+
+13. (Hard Bonus) In a game like Yahtzee you roll five dice. There are many ways to score points, but a Yahtzee is achieved when all five dice are the same number. A player can re-roll any number of dice two times (for three total rolls). (Note: You will not be able to use your current function to do this. You might be able to update it or to use the `sample()` function. Functions like `unique()` and `length()` can help you check if you have duplicates in your roll.)
+
+a. Use conditional computing to simulate rolling dice three times in a way that maximizes your chances of getting five dice of the same number.
+
+```{r}
+library(dplyr) # for arrange() function
+
+# Roll 5 dice and store in roll1
+
+roll1 <- sample(1:6, 5, replace = TRUE)
+
+# Check if I have duplicates in roll1, if not, re-roll all dice
+# If I do have duplicates, roll dice that aren't duplicates to combine with
+# duplicates for result of roll2
+
+if(length(unique(roll1)) == 5) {
+  roll2 <- sample(1:6, 5, replace = TRUE)
+} else {
+  duplicates <- arrange(data.frame(table(roll1)), desc(Freq))[1, 1]
+  aside2 <- roll1[roll1 == duplicates]
+  roll2 <- sample(1:6, 5 - length(aside2), replace = TRUE)
+  roll2 <- c(aside2, roll2)
+}
+
+# Check if I have duplicates in roll2, if not, re-roll all dice
+# If I do have duplicates, roll dice that aren't duplicates to combine with
+# duplicates for result of roll3
+
+if(length(unique(roll2)) == 5) {
+  roll3 <- sample(1:6, 5, replace = TRUE)
+} else {
+  duplicates <- arrange(data.frame(table(roll2)), desc(Freq))[1, 1]
+  aside3 <- roll2[roll2 == duplicates]
+  roll3 <- sample(1:6, 5 - length(aside3), replace = TRUE)
+  roll3 <- c(aside3, roll3)
+}
+
+# Check dice and print "Yahtzee!" if all five dice are the same
+roll3
+if(length(unique(roll3)) == 1) { "Yahtzee!" }
+```
+
+
+b. Put this code into a loop. Run 1,000 simulations to estimate how often someone would get a Yahtzee using this approach.
+
+```{r}
+yahtzees <- 0
+for(i in 1:1000) {
+  roll1 <- sample(1:6, 5, replace = TRUE)
+  if(length(unique(roll1)) == 5) { roll2 <- sample(1:6, 5, replace = TRUE)
+    } else {
+      duplicates <- arrange(data.frame(table(roll1)), desc(Freq))[1, 1]
+      aside2 <- roll1[roll1 == duplicates]
+      roll2 <- sample(1:6, 5 - length(aside2), replace = TRUE)
+      roll2 <- c(aside2, roll2)
+    }
+
+  if(length(unique(roll2)) == 5) {
+    roll3 <- sample(1:6, 5, replace = TRUE)
+  } else {
+    duplicates <- arrange(data.frame(table(roll2)), desc(Freq))[1, 1]
+    aside3 <- roll2[roll2 == duplicates]
+    roll3 <- sample(1:6, 5 - length(aside3), replace = TRUE)
+    roll3 <- c(aside3, roll3)
+    }
+
+if(length(unique(roll3)) == 1) { yahtzees <- yahtzees + 1 }
+}
+
+yahtzees / 1000
+```
+
+**Note:** When I ran this, I got a Yahtzee 3.6% of the time.

@@ -1,0 +1,38 @@
+---
+title: "Continuing to Learn R with Free Online Books"
+author: 'STS3470: Dr. VanKrevelen'
+date: "Tuesday, May 2, 2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+In the spirit of this being the end of the semester, I wanted to share some resources for places you may look to continue your growth with R in the future. Due to R packages like `bookdown`, anyone can create an online book. Due in part to R being a free and open source tool, there is a huge community of people who want to freely share materials and help others.
+
+If you're looking to explore available resources on your own, the [Big Book of R](https://www.bigbookofr.com/) collects links to hundreds of free R books/resources and is organized by topic. Below are some that I've found helpful or that sound useful to me.
+
+1. [R for Data Science](https://r4ds.had.co.nz/) - Co-written by Hadley Wickham who originally developed the `ggplot2` and `dplyr` packages (among others).
+
+2. [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/) - Another book by Hadley Wickham f you really want to level up your graphing skills
+
+3. [Mastering Shiny](https://mastering-shiny.org/) - One last book by Hadley Wickham if you want to learn everything about making shiny apps
+
+4. [Beyond Multiple Linear Regression](https://bookdown.org/roback/bookdown-BeyondMLR/) - If you want to improve your modeling tool kit for possible research, job applications, or grad school
+
+5. [An Introduction to Statistical Learning](https://www.statlearning.com/) - A highly regarded book that covers more modern machine learning type topics like classification models
+
+6. [Modern Data Science with R](https://mdsr-book.github.io/mdsr2e/) - Covers some of the topics we saw in class while extending them and also including things like machine learning approaches
+
+7. [Bayes Rules! An Introduction to Applied Bayesian Modeling](https://www.bayesrulesbook.com/) - If you're interested in learning more about Bayesian statistics
+
+8. [Telling Stories with Data](https://tellingstorieswithdata.com/) - Want to work on communicating statistical results? This book also include applications in R.
+
+9. [Modern Statistics for Modern Biology](https://www.huber.embl.de/msmb/) - A useful text for if your major(s) overlap with biological sciences
+
+10. [Thinking Outside The Grid - A "bare bones" intro to Rtistry concepts in R](https://thetidytrekker.com/post/thinking-outside-the-grid/thinking-outside-the-grid.html) - Examples and code to make generative art using R
+
+11. [Text Mining with R](https://www.tidytextmining.com/) - If you want to learn how to analyze text data using R with methods like sentiment analysis.
+
+While I could keep adding more and more books, I'll leave the rest of the exploration for you if you want to learn more. If you ever find other books or free resources that you like, I'd love to have you share them with me!
